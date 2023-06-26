@@ -12,6 +12,7 @@
 
     <!-- Custom CSS -->
     <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>{% block title %}{% endblock %} | KCL-UK - iGEM 2023</title>
 
@@ -21,7 +22,7 @@
   {% include 'menu.html' %}
 
   <!-- Page Content -->
-  <div class="container">
+  <div class="content">
     {% block page_content %}{% endblock %}
   </div>
 
@@ -30,5 +31,9 @@
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
