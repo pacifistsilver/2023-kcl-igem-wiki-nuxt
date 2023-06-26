@@ -7,7 +7,7 @@ body {
     -moz-osx-font-smoothing:grayscale;
     overflow-x:hidden;
     background-color:#efefef
-   }
+}
 section {
     height: 100%;
     width: 100%;
@@ -17,26 +17,25 @@ section {
     padding:0px;
     margin:0px;
 }
-
 p {
     text-align:justify;
     font-size:20px;
     line-height:30px;
     padding-bottom:20px
-   }
-
+}
 .row.home-sections {
     margin-left: auto;
 }
+
 .section.approach.aos-init.aos-animate.data-aos {
     background-color:#060927
-
 }
 .container {
     max-width: 1440px;
-  }
-
-.left-aligned { margin-left: auto; }
+}
+.left-aligned { 
+    margin-left: auto; 
+}
 .bg-dark { background-color: #1360ef !important; }
 .bg-hero { background-color: #45b06cff; }
 .bg-section {
@@ -63,8 +62,15 @@ p {
     padding-bottom: 50px;
     padding-top: 30px;
   }
-footer a { color: white; font-weight: bold; text-decoration: none; }
-footer a:hover { color: white; text-decoration: underline; }
+footer a {color: white; text-decoration: none;}
+
+.footer .creds .small > a:hover { 
+    color: #1e6cf7;
+    border-bottom: 1px solid #1e6cf7}
+.footer .creds .small > a {
+    border-bottom:1px solid #e5e7eb;
+    transition:all .3s ease
+}
 
 .footer p {
     font-size: 14px; 
@@ -76,15 +82,15 @@ footer a:hover { color: white; text-decoration: underline; }
 .footer .footer-details .logo-footer img{
     float: left;
     margin-right: 10px; 
-    margin-left: 25px;}
+    margin-left: 25px;
+}
 .footer .footer-details .sponsors > div {
     position:relative;
-
-    }
+}
 .footer .footer-details .sponsors> div a {
     display:inline-block;
     padding:10px;
-   }
+}
 .footer .footer-details .sponsors> div a img {
     transition:all .25s ease;
     height:44px;
@@ -97,17 +103,14 @@ footer a:hover { color: white; text-decoration: underline; }
 .footer .creds .creds-social > div {
     position:relative;
     right:0;
-
-    }
+}
 .footer .creds .creds-text > p {
     font-size: 12px;
-
 }
-
 .footer .creds .creds-social > div a {
     display:inline-block;
     padding:5px;
-   }
+ }
 .footer .creds .creds-social > div a img {
     transition:all .25s ease;
     height:30px;
