@@ -112,11 +112,10 @@ footer a {color: white; text-decoration: none;}
     padding:5px;
  }
 .footer .creds .creds-social > div a img {
-    transition:all .25s ease;
+    transition:all .5s ease;
     height:30px;
-    filter:grayscale(0.5);
 }
 .footer .creds .creds-social> div a img:hover {
     filter: invert(50%);
-    transition: all .5s ease;
+    transition: 1.2s;
 }
