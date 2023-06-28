@@ -119,3 +119,40 @@ footer a {color: white; text-decoration: none;}
     filter: invert(50%);
     transition: 1.2s;
 }
+
+/* Pema's code */
+
+.bold-italic {
+    font-weight: bold;
+    font-style: italic;
+}
+.adjusted-section {
+    padding-top: 70px;
+    margin-top: -70px; 
+}
+.underlined {
+    text-decoration: underline;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+    height: calc(100vh - 60px);
+    padding: 10px;
+    width: 200px;
+    background-color: #f0eee2 ;
+    overflow-y: auto;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.sticky a {
+    text-decoration: none;
+    color: #000000; 
+}
+
+/* Not working currently */
+.sticky a:hover {
+    transform: scale(1.1);
+}
