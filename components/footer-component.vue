@@ -1,3 +1,73 @@
+<template>
+<footer class="footer">
+  <div class="container">
+    <div class="row mb-4 footer-details">
+      <div class="col-sm-6 logo-footer">
+        <a href = "https://www.kcl.ac.uk/">
+          <img src="https://static.igem.org/mediawiki/2021/0/02/T--KCL_UK--KCL_logo.png" alt="iGEM King's College London" width= "160" height=auto>
+        </a>
+        <p class = "text-right">King's College London
+          <br>
+          Guy's Campus
+          <br>
+          <br>
+          kings.igem@gmail.com</p>
+      </div>
+
+      <div class = "col sm-6 sponsors">
+        <div>
+          <a href = "https://www.kclsu.org/">
+            <img src = "https://static.igem.wiki/teams/4584/wiki/t-kcl-uk-kclsu.png">
+          </a>
+          <a href = "https://www.kcl.ac.uk/">
+            <img src = "https://static.igem.wiki/teams/4584/wiki/t-kcl-uk-kres.png">
+          </a>
+          <a href = "https://www.kcl.ac.uk/">
+            <img src="https://static.igem.wiki/teams/4584/wiki/kcl-logo.svg">
+          </a>
+          <a href = "https://uk.neb.com/">
+            <img src = "https://static.igem.wiki/teams/4584/wiki/neb-logo-reversed-tagline2.svg">
+          </a>
+          <a href = "https://eu.idtdna.com/pages">
+            <img src = "https://static.igem.wiki/teams/4584/wiki/idt-logo.png">
+          </a>
+          <a href = "https://www.snapgene.com/">
+            <img src = "https://static.igem.wiki/teams/4584/wiki/logo-snapgene-dotmatics.svg">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+    <!-- The following MUST be on every page: license information and link to the repository on gitlab.igem.org -->
+    <div class="row justify-content-center mt-4 creds">
+
+      <div class="col-sm-10 creds-text">
+        <p class="small">© 2023 - iGEM King's College London.<br>
+          Content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" rel="license" target="_blank">Creative Commons Attribution 4.0 International license</a>.<br>
+          The repository used to create this website is available at <a href="https://gitlab.igem.org/2023/kcl-uk" rel="gitlab" target="_blank">gitlab.igem.org/2023/kcl-uk</a>.</p>
+      </div>
+
+      <div class="col-sm-2 creds-social"> 
+        <div>
+          <a href="https://www.instagram.com/igem_kcl/?hl=en/">
+            <img src="https://static.igem.wiki/teams/4497/wiki/footer/instagram.svg" alt="insta">
+          </a>
+          <a href="https://www.linkedin.com/company/king-s-college-london-igem">
+            <img src="https://static.igem.wiki/teams/4497/wiki/footer/linkedin.svg" alt="linkedin">
+          </a>
+          <a href="https://twitter.com/kcligem">
+            <img src="https://static.igem.wiki/teams/4497/wiki/footer/twitter.svg" alt="twitter">
+          </a>
+          <a href="https://www.facebook.com/igemkcl/">
+            <img src="https://static.igem.wiki/teams/4497/wiki/footer/facebook.svg" alt="facebook">
+          </a>
+          <a href="kings.igem@gmail.com">
+            <img src="https://static.igem.wiki/teams/4497/wiki/footer/email.svg" alt="email">
+          </a>
+        </div>
+      </div>
 
     </div>
   </div>
