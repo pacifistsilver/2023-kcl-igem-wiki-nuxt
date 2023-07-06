@@ -8,12 +8,11 @@ build:
   stage: build
   script:
     - npm install
-    - npm run generate
-
 
 pages:
   stage: deploy
   script:
+    - npm run generate
     - rm -rf public
     - mkdir public && cp -rf dist/* public
   artifacts:
@@ -23,5 +22,4 @@ pages:
 cache:
   paths:
     - node_modules
-    - dist
 
