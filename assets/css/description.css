@@ -1,0 +1,35 @@
+.custom-shape {
+    background-color: #a2b9eb;
+    border-radius: 0 0 50% 50% / 0 0 20px 20px;
+    padding: 20px;
+    animation-name: slideIn;
+    animation-duration: 3s;
+    animation-delay: 0.5;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(-70%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  h1 {
+    color: #fefefe;
+    font-size: 50px;
+    margin: 0;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
