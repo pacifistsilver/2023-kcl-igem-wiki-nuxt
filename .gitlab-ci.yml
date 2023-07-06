@@ -13,7 +13,8 @@ build:
 pages:
   stage: deploy
   script:
-    - rm -rf public
+    - mkdir .public
+    - cp -r * .public
   artifacts:
     paths:
       - public
