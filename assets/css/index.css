@@ -1,0 +1,7 @@
+.header {
+    display: grid;
+    grid: [track] 100%/[track] 100%;
+    height: calc(100vh - 7rem);
+    min-height: 500px;
+    margin-top: 57px;
+}

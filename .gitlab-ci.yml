@@ -1,12 +1,26 @@
-image: python:3.6
+image: node:18.16-alpine3.18
 
-pages:
+stages:
+  - build
+  - deploy
+
+build:
   stage: build
   script:
-  - pip install --no-cache-dir -r dependencies.txt
-  - FLASK_APP=app.py flask freeze
+    - npm install
+    - npm run generate
+
+pages:
+  stage: deploy
+  script:
+    - rm -rf public
+    - mkdir public && cp -rf dist/* public
   artifacts:
     paths:
-    - public
-  only:
-  - main
+      - public
+
+cache:
+  paths:
+    - node_modules
+    
+
