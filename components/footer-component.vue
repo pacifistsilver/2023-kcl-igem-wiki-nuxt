@@ -2,18 +2,19 @@
 <footer class="footer">
   <div class="container">
     <div class="row mb-4 footer-details">
-      <div class="col-sm-6 logo-footer">
+      <div class="col-sm-6 logo-footer d-flex align-items-center">
         <a href = "https://www.kcl.ac.uk/">
           <img src="https://static.igem.org/mediawiki/2021/0/02/T--KCL_UK--KCL_logo.png" alt="iGEM King's College London" width= "160" height=auto>
         </a>
-        <p class = "text-right">King's College London
+        <p>
+          <br>
+          King's College London
           <br>
           Guy's Campus
           <br>
           <br>
           kings.igem@gmail.com</p>
       </div>
-
       <div class = "col sm-6 sponsors">
         <div>
           <a href = "https://www.kclsu.org/">

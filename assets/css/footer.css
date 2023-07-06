@@ -19,3 +19,46 @@ footer a {color: white; text-decoration: none;}
     font-size: 14px; 
     line-height: 17px;
 }
+.footer .footer-details .logo-footer p {
+    margin-top: 20px;
+    }
+.footer .footer-details .logo-footer img{
+    float: left;
+    margin-right: 10px; 
+    margin-left: 25px;
+}
+.footer .footer-details .sponsors > div {
+    position:relative;
+}
+.footer .footer-details .sponsors> div a {
+    display:inline-block;
+    padding:10px;
+}
+.footer .footer-details .sponsors> div a img {
+    transition:all .25s ease;
+    height:44px;
+    filter:grayscale(1);
+}
+.footer .footer-details .sponsors> div a img:hover {
+    filter: grayscale(0%);
+    transition: 1.2s;
+}
+.footer .creds .creds-social > div {
+    position:relative;
+    right:0;
+}
+.footer .creds .creds-text > p {
+    font-size: 12px;
+}
+.footer .creds .creds-social > div a {
+    display:inline-block;
+    padding:5px;
+ }
+.footer .creds .creds-social > div a img {
+    transition:all .5s ease;
+    height:30px;
+}
+.footer .creds .creds-social> div a img:hover {
+    filter: invert(50%);
+    transition: 1.2s;
+}
