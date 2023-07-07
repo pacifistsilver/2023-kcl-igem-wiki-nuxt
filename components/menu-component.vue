@@ -20,7 +20,7 @@
                     </NuxtLink>
                     <ul class="dropdown-menu" aria-labelledby="navbar item">
                         <li><NuxtLink class="dropdown-item" to="./team">Team</NuxtLink></li>
-                        <li><NuxtLink class="dropdown-item" to="./">Attributions</NuxtLink></li>
+                        <li><NuxtLink class="dropdown-item" to="./attributions">Attributions</NuxtLink></li>
                     </ul>
                 </li>
 
@@ -31,7 +31,12 @@
                     </NuxtLink>
                     <ul class="dropdown-menu" aria-labelledby="navbar-item">
                         <li><NuxtLink class="dropdown-item" to="./description">Description</NuxtLink></li>
-                        <li><NuxtLink class="dropdown-item" to="./attributions">Attributions</NuxtLink></li>
+                        <li><NuxtLink class="dropdown-item" to="./model">model</NuxtLink></li>
+                        <li><NuxtLink class="dropdown-item" to="./experiments">Experiments</NuxtLink></li>
+                        <li><NuxtLink class="dropdown-item" to="./engineering">Engineering</NuxtLink></li>
+                        <li><NuxtLink class="dropdown-item" to="./results">Results</NuxtLink></li>
+                        <li><NuxtLink class="dropdown-item" to="./description">Proof of Concept</NuxtLink></li>
+                        <li><NuxtLink class="dropdown-item" to="./notebook">Notebook</NuxtLink></li>
                     </ul>   
                 </li>
 
