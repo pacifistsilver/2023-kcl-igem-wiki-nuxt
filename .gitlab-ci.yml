@@ -13,6 +13,7 @@ pages:
   stage: deploy
   script:
     - npm run generate
+    - cp -rf .output/public/* public
   artifacts:
     paths:
       - public
