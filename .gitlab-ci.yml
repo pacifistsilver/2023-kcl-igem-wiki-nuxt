@@ -14,7 +14,7 @@ pages:
   stage: deploy
   script:
     - rm -rf public
-    - mkdir public && cp -rf dist/* public
+    - mkdir public && cp -rf ./public
   artifacts:
     paths:
       - public
@@ -23,5 +23,3 @@ cache:
   paths:
     - node_modules
     - dist
-  untracked: true
-
