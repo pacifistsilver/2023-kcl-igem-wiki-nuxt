@@ -1,9 +1,10 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
         <div class="container" id="navbar-container">
-
             <!---- TEAM NAME ---->
-            <a class = "navbar-brand" href="./"><img id = "navbar-logo" src="https://static.igem.wiki/teams/4584/wiki/blue-logo-name-white-background-removebg-preview.png"></a>
+            <a class = "navbar-brand" href="./">
+                <img id = "navbar-brand img" src="https://static.igem.wiki/teams/4584/wiki/blue-logo-name-white-background-removebg-preview.png">
+            </a>
 
             <!---- SMALL SCREEN MENU ICON ---->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,19 +73,19 @@
 </template>  
 <script>
 export default {
-mounted() {
+  mounted() {
       this.$nextTick(function(){
         window.addEventListener("scroll", function(){
-          var navbar = document.getElementById("navbar-container");
-          var nav_classes = navbar.classList;
+          var navbar = document.getElementById("navbar")
+          var nav_classes = navbar.classList
           if(document.documentElement.scrollTop >= 150) {
-            if (nav_classes.contains("shrink") === false) {
-              nav_classes.toggle("shrink");
+            if (nav_classes.contains("navbar-scrolled") === false) {
+              nav_classes.toggle("navbar-scrolled");
             }
           }
           else {
-            if (nav_classes.contains("shrink") === true) {
-              nav_classes.toggle("shrink");
+            if (nav_classes.contains("navbar-scrolled") === true) {
+              nav_classes.toggle("navbar-scrolled");
             }
           }
         })

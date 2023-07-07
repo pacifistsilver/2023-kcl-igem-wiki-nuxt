@@ -4,17 +4,31 @@
     justify-content: space-around;
     height: 7rem;
     padding: 0 var(--side-margin);
-    transition: height 300ms;
     background-color: #fff;
     box-shadow: 0 2px 6px rgba(0,0,0,.1333333333);
     width: 100%;
     z-index: 10;
+    position: fixed;
+    transition: height 300ms;
 }
 
-#navbar-logo {
-    display: flex;
-    height: 100px;
+.navbar-scrolled {
+    height: 4.1176470588rem !important;
+    transition: height 300ms;   
+}
+
+.navbar-brand img {
+    height: 93px;
     user-select: none;}
+
+.navbar-brand   {
+    width: 94px;
+    height: 100%;
+    margin-right: 2rem;
+    padding: .4rem 0;
+    color: #000;
+    display: flex;
+}
 
 .nav-item {
     padding: .6rem 1rem;
@@ -34,6 +48,3 @@
     border-radius: 4px;
     transition: background-color 150ms;
 }
-#navbar-container {
-    max-width: 1100px;
-  }
