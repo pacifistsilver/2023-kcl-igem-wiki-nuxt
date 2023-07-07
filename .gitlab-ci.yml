@@ -22,4 +22,3 @@ cache:
   paths:
     - node_modules
     - dist
-    - nuxt
