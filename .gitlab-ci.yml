@@ -8,13 +8,12 @@ build:
   stage: build
   script:
     - npm install
-    - npm run generate
 
 pages:
   stage: deploy
   script:
-    - rm -rf public
-    - mkdir public && cp -rf dist/* public
+    - npm run generate
+    - cp -rf .output/public/* public
   artifacts:
     paths:
       - public
@@ -23,5 +22,4 @@ cache:
   paths:
     - node_modules
     - dist
-  untracked: true
-
+    - nuxt
