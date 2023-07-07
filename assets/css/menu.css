@@ -18,8 +18,8 @@
 }
 
 .navbar-brand img {
-    height: 93px;
-    user-select: none;}
+    height: 100%;
+    user-select: none;} 
 
 .navbar-brand   {
     width: 94px;
@@ -43,8 +43,11 @@
 #navbar-item {
     color: #000000;
     font-size: 1.2rem;
-    font-weight: bold   ;
+    font-weight: bold;
     padding: .6rem 1rem;
     border-radius: 4px;
     transition: background-color 150ms;
+}
+#navbar-container {
+    height: 100%;
 }
