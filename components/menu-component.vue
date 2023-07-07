@@ -31,7 +31,7 @@
                     </NuxtLink>
                     <ul class="dropdown-menu" aria-labelledby="navbar-item">
                         <li><NuxtLink class="dropdown-item" to="./description">Description</NuxtLink></li>
-                        <li><NuxtLink class="dropdown-item" to="./model">model</NuxtLink></li>
+                        <li><NuxtLink class="dropdown-item" to="./model">Model</NuxtLink></li>
                         <li><NuxtLink class="dropdown-item" to="./experiments">Experiments</NuxtLink></li>
                         <li><NuxtLink class="dropdown-item" to="./engineering">Engineering</NuxtLink></li>
                         <li><NuxtLink class="dropdown-item" to="./results">Results</NuxtLink></li>
@@ -72,6 +72,23 @@
 </template>  
 <script>
 export default {
-  // Component logic goes here
-};
+mounted() {
+      this.$nextTick(function(){
+        window.addEventListener("scroll", function(){
+          var navbar = document.getElementById("navbar-container");
+          var nav_classes = navbar.classList;
+          if(document.documentElement.scrollTop >= 150) {
+            if (nav_classes.contains("shrink") === false) {
+              nav_classes.toggle("shrink");
+            }
+          }
+          else {
+            if (nav_classes.contains("shrink") === true) {
+              nav_classes.toggle("shrink");
+            }
+          }
+        })
+      })
+    },
+}
 </script>
