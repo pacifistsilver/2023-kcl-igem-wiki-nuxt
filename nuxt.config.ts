@@ -21,6 +21,11 @@ export default defineNuxtConfig({
       ],
     }
   },
+  nitro: {
+    output: { 
+        publicDir: 'public'
+      }
+  },
   devtools: { enabled: true },
   css: [
     '~/assets/css/main.css',
