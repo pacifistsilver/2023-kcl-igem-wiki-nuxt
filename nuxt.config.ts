@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
+    baseURL: '/kcl-uk',
     head: {
       title: 'KCL - iGEM 2023',
       htmlAttrs: {
