@@ -55,6 +55,15 @@ p {
 @media screen and (max-width: 990px) {
     #section-nav {
         visibility: hidden;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 60px;
+        height: calc(100vh - 60px);
+        padding: 10px;
+        width: 200px;
+        background-color: #f0eee2 ;
+        overflow-y: auto;
+        border: 2px solid black;
     }
 }
 
@@ -73,6 +82,7 @@ p {
 .bold-italic {
     font-weight: bold;
     font-style: italic;
+    color: rgb(0, 97, 155);
 }
 
 .underlined {
@@ -92,10 +102,11 @@ p {
 
 .sticky a {
     text-decoration: none;
-    color: #000000; 
+    color: rgb(0, 97, 155);
+    transition: all .5s ease-in-out;
 }
 
 /* Not working currently */
 .sticky a:hover {
-    transform: scale(1.1);
+    color:black;
 }
