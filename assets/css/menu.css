@@ -22,7 +22,7 @@
     user-select: none;} 
 
 .navbar-brand   {
-    width: 94px;
+    width: fit-content;
     height: 100%;
     margin-right: 2rem;
     padding: .4rem 0;
