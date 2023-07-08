@@ -17,7 +17,6 @@ body {
     box-sizing: border-box;
 }
 section {
-    height: 100%;
     width: 100%;
     display:inline-block;
       }
@@ -53,6 +52,12 @@ p {
     height: 700px;
     padding: 80px 0;}
 
+@media screen and (max-width: 990px) {
+    #section-nav {
+        visibility: hidden;
+    }
+}
+
 /* CALLOUT */
 .bd-callout { padding:1.25rem; margin-top:1.25rem; margin-bottom:1.25rem; border:1px solid #e9ecef; border-left-width:.25rem; border-radius:.25rem }
 .bd-callout h4 { margin-bottom:.25rem }
@@ -69,10 +74,7 @@ p {
     font-weight: bold;
     font-style: italic;
 }
-.adjusted-section {
-    padding-top: 70px;
-    margin-top: -70px; 
-}
+
 .underlined {
     text-decoration: underline;
 }
@@ -86,9 +88,7 @@ p {
     width: 200px;
     background-color: #f0eee2 ;
     overflow-y: auto;
-    border-right: 2px solid black;
-    border-top: 2px solid black;
-}
+    border: 2px solid black;}
 
 .sticky a {
     text-decoration: none;
