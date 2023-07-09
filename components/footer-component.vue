@@ -15,7 +15,7 @@
           <br>
           kings.igem@gmail.com</p>
       </div>
-      <div class = "col sm-6 sponsors">
+      <div class = "col sm-6 sponsors d-flex align-items-center">
         <div>
           <a href = "https://www.kclsu.org/">
             <img src = "https://static.igem.wiki/teams/4584/wiki/t-kcl-uk-kclsu.png">
@@ -28,12 +28,6 @@
           </a>
           <a href = "https://uk.neb.com/">
             <img src = "https://static.igem.wiki/teams/4584/wiki/neb-logo-reversed-tagline2.svg">
-          </a>
-          <a href = "https://eu.idtdna.com/pages">
-            <img src = "https://static.igem.wiki/teams/4584/wiki/idt-logo.png">
-          </a>
-          <a href = "https://www.snapgene.com/">
-            <img src = "https://static.igem.wiki/teams/4584/wiki/logo-snapgene-dotmatics.svg">
           </a>
         </div>
       </div>
