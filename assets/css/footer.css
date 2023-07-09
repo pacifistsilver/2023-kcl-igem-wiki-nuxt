@@ -28,7 +28,8 @@ footer a {color: white; text-decoration: none;}
     margin-left: 25px;
 }
 .footer .footer-details .sponsors > div {
-    position:relative;
+    text-align: center;
+    margin-bottom: 30px;
 }
 .footer .footer-details .sponsors> div a {
     display:inline-block;
@@ -43,13 +44,28 @@ footer a {color: white; text-decoration: none;}
     filter: grayscale(0%);
     transition: 1.2s;
 }
+@media screen and (min-width: 992px){
 .footer .creds .creds-social > div {
     position:relative;
     right:0;
-}
-.footer .creds .creds-text > p {
+}}
+.footer .creds .creds-social > div {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+.footer .creds .creds-text .small {
+    text-align: center !important;
     font-size: 12px;
 }
+
+@media screen and (min-width: 992px) {
+    .footer .creds .creds-text .small {
+        text-align: left !important;
+        font-size: 12px;
+    }
+}
+
 .footer .creds .creds-social > div a {
     display:inline-block;
     padding:5px;
@@ -61,4 +77,11 @@ footer a {color: white; text-decoration: none;}
 .footer .creds .creds-social> div a img:hover {
     filter: invert(50%);
     transition: 1.2s;
+}
+
+@media (min-width: 576px) {
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 50%;
+        }
 }
