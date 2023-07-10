@@ -124,32 +124,30 @@ p {
 .underlined {
     text-decoration: underline;
 }
-#section-nav {
+.section-nav {
     padding-left:0;
     margin-top:40px;
     margin-bottom:40px;
     display:none
   }
 @media(min-width:992px) {
-#section-nav {
+.section-nav {
     display:block;
 }
 }
-#section-nav {
+.section-nav {
     position: -webkit-sticky;
     position: sticky;
-    top: 60px;
+    top: 75px;
     margin-top: 40px;
-    height: calc(100vh - 60px);
-    padding: 10px;
-    overflow-y: auto;
+    margin-bottom: 40px;
 }
 .section-nav-header {
     font-size: 20px;
     font-weight: bold;
     color: rgb(0, 97, 155);
 }
-.sticky a {
+.section-nav a {
     font-size: 20px;
     text-decoration: none;
     color: rgba(0,97,155,1);
@@ -159,12 +157,12 @@ p {
 }
 
 /* Not working currently */
-.sticky a:hover,
-.sticky a:focus {
+.section-nav a:hover,
+.section-nav a:focus {
     color: #666;
 }
 
-.sticky li.active > a {
+.section-nav li.active > a {
     color: #f2765d;
     font-weight: 500;
 }

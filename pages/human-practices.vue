@@ -15,15 +15,19 @@
         <div class = "container">
 
             <div class = "row">
-              <div class="sticky col-lg-3" id="section-nav">
-                <ul class = "list-unstyled">  
-                  <li class ="section-nav-header">CONTENTS</li>
-                  <li><a class="rounded" href="#introduction">Understanding the Problem</a></li>
-                  <li><a class="rounded" href="#define">Defining a Good Solution</a></li>                  
-                  <li><a class="rounded" href="#design">Designing a Good Solution</a></li>                 
-                  <li><a class="rounded" href="#implement">Our Implementation and Evaluation</a></li>             
-                  <li><a class="rounded" href="#ref">References</a></li>             
-                </ul>   
+              <div class = "col lg-3">
+                <nav class="section-nav">
+
+                    <ul class = "list-unstyled">  
+                      <li class ="section-nav-header">CONTENTS</li>
+                      <li><a  href="#introduction">Understanding the Problem</a></li>
+                      <li><a  href="#define">Defining a Good Solution</a></li>                  
+                      <li><a  href="#design">Designing a Good Solution</a></li>                 
+                      <li><a  href="#implement">Our Implementation and Evaluation</a></li>             
+                      <li><a href="#ref">References</a></li>            
+                    </ul>   
+
+                </nav>
               </div>
 
             <div id = "content-main" class="col-lg-9">
@@ -165,7 +169,7 @@ export default {
     created() {
         this.observer = new IntersectionObserver(this.onElementObserved, {
             root: this.$el,
-            threshold: 0.22,
+            threshold: 0.5,
         })
     },
     mounted() {
@@ -183,11 +187,11 @@ export default {
                 const id = target.getAttribute('id')
                 if (isIntersecting) {
                     this.$el
-                        .querySelector(`div li a[href="#${id}"]`)
+                        .querySelector(`nav li a[href="#${id}"]`)
                         .parentElement.classList.add('active')
                 } else {
                     this.$el
-                        .querySelector(`div li a[href="#${id}"]`)
+                        .querySelector(`nav li a[href="#${id}"]`)
                         .parentElement.classList.remove('active')
                 }
             })

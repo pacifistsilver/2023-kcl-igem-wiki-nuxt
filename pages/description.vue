@@ -10,19 +10,25 @@
 
       <main>
         <div class = "container">
-            <div class = "row">
-              <div class="sticky col-lg-3" id="section-nav">
-                <ul class = "list-unstyled">  
-                  <li class ="section-nav-header">CONTENTS</li>
-                  <li><a class="rounded" href="#project-description">Introduction</a></li>
-                  <li><a class="rounded" href="#colorectal-cancer">Colorectal Cancer</a></li>                  
-                  <li><a class="rounded" href="#solution">The Solution</a></li>                 
-                  <li><a class="rounded" href="#project-goals">Project Goals</a></li>             
-                  <li><a class="rounded" href="#references">References</a></li>             
-                </ul>   
-              </div>
+          <div class = "row">
+            <div class = "col lg-3">
+              <nav class="section-nav">
+
+                  <ul class = "list-unstyled">  
+                    <li class ="section-nav-header">CONTENTS</li>
+                    <li><a  href="#project-description">Introduction</a></li>
+                    <li><a  href="#colorectal-cancer">Colorectal Cancer</a></li>                  
+                    <li><a  href="#solution">The Solution</a></li>                 
+                    <li><a  href="#project-goals">Project Goals</a></li>             
+                    <li><a href="#references">References</a></li>            
+                  </ul>   
+
+              </nav>
+            </div>
+
 
             <div id = "description-content" class="col-lg-9">
+
               <section id = "project-description">
                 <h2 id="1" class="bold-italic adjusted-section" style="text-align: center;">Introduction</h2>
                 <p >
@@ -38,6 +44,7 @@
                 </p>
                 <hr>
               </section>  
+
               <section id = "colorectal-cancer">
                 <h3 id="2" class="bold-italic adjusted-section" style="text-align: center;">Colorectal Cancer: Defining the problem</h3>
                 <p >Colorectal cancer (CRC) ranks amongst the most prevalent oncological diseases, placing fourth in the 
@@ -104,6 +111,7 @@
                 </p>
                 <hr>
               </section>
+
               <section id = "project-goals">
                 <h3 id="5" class="bold-italic adjusted-section" style="text-align: center;">Project Goals</h3>
                 <ul style="font-size: 20px; margin-top: 30px;">
@@ -116,6 +124,7 @@
                 </ul>
                 <hr>
               </section>
+
               <section id = "references">
                 <h3 id="6" class="bold-italic adjusted-section" style="text-align: center;">References</h3>
                 <ul style="font-size: 20px; margin-top: 30px;">
@@ -130,7 +139,7 @@
                 </ul>
                 <hr>
               </section>
-            </div>
+            </div>  
           </div> 
         </div> 
       </main>
