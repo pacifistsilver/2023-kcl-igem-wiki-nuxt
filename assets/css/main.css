@@ -59,7 +59,7 @@ p {
 
 .bg .header-text {
     position: absolute;
-    font-size: 30px;
+    font-size: 40px;
     left: 50%;
     top: 45%;
     transform: translateY(-50%);
@@ -73,9 +73,9 @@ p {
     }
 }
 
-@media (min-width:768px) and (max-width:1180px) {
+@media (min-width:990px) and (max-width:1180px) {
     .bg .header-text {
-      left:220px;
+      left:12.5vw;
       font-size:50px;
       transform:translateX(0)
     }
@@ -83,7 +83,7 @@ p {
 
 @media screen and (min-width: 1180px) {
     .bg .header-text  {
-        left: 220px;
+        left: 12.5vw;
         font-size:60px; 
         transform:translateX(0) 
     }
