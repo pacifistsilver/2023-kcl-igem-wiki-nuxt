@@ -3,6 +3,7 @@
 @import "index";
 @import "menu";
 @import "description";
+@import "humanprac";
 
 body {
     font-family:sans-serif;
@@ -39,10 +40,15 @@ p {
 }
 .container {
     max-width: 1440px;
-}
+  }
 .left-aligned { 
     margin-left: auto; 
 }
+
+#content-main {
+    padding-top: 30px;
+  }
+
 .bg-dark { background-color: #efefee !important; }
 .bg-hero { background-color: #45b06cff; }
 .bg-section {
@@ -59,8 +65,7 @@ p {
     top: 45%;
     transform: translateY(-50%);
     transform: translateX(-50%);
-    text-shadow: #fff 1px 1px;
-    color: rgb(0, 97, 155);
+    color: white;
 }
 
 @media screen and (max-width: 990px) {
@@ -87,9 +92,12 @@ p {
 .bg {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 40vh;
   }
 
+.header-content {
+    margin-top: 3.5rem;
+}
 
 /* CALLOUT */
 .bd-callout { padding:1.25rem; margin-top:1.25rem; margin-bottom:1.25rem; border:1px solid #e9ecef; border-left-width:.25rem; border-radius:.25rem }
@@ -103,35 +111,62 @@ p {
 
 /* Pema's code */
 
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
 .bold-italic {
     font-weight: bold;
-    font-style: italic;
+    font-style: normal;
     color: rgb(0, 97, 155);
 }
 
 .underlined {
     text-decoration: underline;
 }
-
-.sticky {
+#section-nav {
+    padding-left:0;
+    margin-top:40px;
+    margin-bottom:40px;
+    display:none
+  }
+@media(min-width:992px) {
+#section-nav {
+    display:block;
+}
+}
+#section-nav {
     position: -webkit-sticky;
     position: sticky;
     top: 60px;
+    margin-top: 40px;
     height: calc(100vh - 60px);
     padding: 10px;
-    width: 200px;
-    background-color: #f0eee2 ;
     overflow-y: auto;
-    border: 2px solid black;}
-
-.sticky a {
-    text-decoration: none;
+}
+.section-nav-header {
+    font-size: 20px;
+    font-weight: bold;
     color: rgb(0, 97, 155);
+}
+.sticky a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(0,97,155,1);
     transition: all .5s ease-in-out;
+    line-height: 40px;
+    display: block;
 }
 
 /* Not working currently */
-.sticky a:hover {
-    color:black;
+.sticky a:hover,
+.sticky a:focus {
+    color: #666;
+}
+
+.sticky li.active > a {
+    color: #f2765d;
+    font-weight: 500;
 }
 
