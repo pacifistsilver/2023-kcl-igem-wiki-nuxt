@@ -1,46 +1,198 @@
 <template>
+  <div class = "content">
+    <div>
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Silver Medal Criterion #2</h4>
-      <p>Explain how you have determined your work is responsible and good for the world.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2023 Medals Page</a> for more information.</p>
+      <header class="header-content">
+
+        <div class="bg" style="
+        background:url(https://static.igem.wiki/teams/4584/wiki/humanprac-bg.png) center center no-repeat;
+        background-size:cover;">
+          <h1 style="text-align: center; font-weight: bold;" class="header-text">Human Practices</h1>
+        </div>
+      </header>
+
+      <main>
+        <div class = "container">
+
+            <div class = "row">
+              <div class="sticky col-lg-3" id="section-nav">
+                <ul class = "list-unstyled">  
+                  <li class ="section-nav-header">CONTENTS</li>
+                  <li><a class="rounded" href="#introduction">Understanding the Problem</a></li>
+                  <li><a class="rounded" href="#define">Defining a Good Solution</a></li>                  
+                  <li><a class="rounded" href="#design">Designing a Good Solution</a></li>                 
+                  <li><a class="rounded" href="#implement">Our Implementation and Evaluation</a></li>             
+                  <li><a class="rounded" href="#ref">References</a></li>             
+                </ul>   
+              </div>
+
+            <div id = "content-main" class="col-lg-9">
+              <section id = "introduction">
+                <h2 id="list-item-1" class="bold-italic adjusted-section" style="text-align: center;">1. The Problem</h2>
+                <p >
+                  The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
+                  which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
+                  Our journey officially began after conversing with one of our team member’s head of department, 
+                  who extensively researches the therapeutic application of such molecules, specifically microbubbles. 
+                  This discussion expanded our perspective on the vast potential for widening the clinical application of ultrasound. 
+                  Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles. 
+                  These structures are formed by certain proteins that are expressed in select aquatic bacteria species. 
+                  The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited component 
+                  for an ultrasound-detectable biosensor.
+                  The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
+                  which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
+                  Our journey officially began after conversing with one of our team member’s head of department, 
+                  who extensively researches the therapeutic application of such molecules, specifically microbubbles. 
+                  This discussion expanded our perspective on the vast potential for widening the clinical application of ultrasound. 
+                  Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles. 
+                  These structures are formed by certain proteins that are expressed in select aquatic bacteria species. 
+                  The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited component 
+                  for an ultrasound-detectable biosensor.
+                  The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
+                  which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
+                  Our journey officially began after conversing with one of our team member’s head of department, 
+                  who extensively researches the therapeutic application of such molecules, specifically microbubbles. 
+                  This discussion expanded our perspective on the vast potential for widening the clinical application of ultrasound. 
+                  Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles. 
+                  These structures are formed by certain proteins that are expressed in select aquatic bacteria species. 
+                  The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited component 
+                  for an ultrasound-detectable biosensor.
+                  The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
+                  which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
+                  Our journey officially began after conversing with one of our team member’s head of department, 
+                  who extensively researches the therapeutic application of such molecules, specifically microbubbles. 
+                  This discussion expanded our perspective on the vast potential for widening the clinical application of ultrasound. 
+                  Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles. 
+                  These structures are formed by certain proteins that are expressed in select aquatic bacteria species. 
+                  The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited component 
+                  for an ultrasound-detectable biosensor.
+                  The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
+                  which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
+                  Our journey officially began after conversing with one of our team member’s head of department, 
+                  who extensively researches the therapeutic application of such molecules, specifically microbubbles. 
+                  This discussion expanded our perspective on the vast potential for widening the clinical application of ultrasound. 
+                  Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles. 
+                  These structures are formed by certain proteins that are expressed in select aquatic bacteria species. 
+                  The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited component 
+                  for an ultrasound-detectable biosensor.
+                  The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
+                  which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
+                  Our journey officially began after conversing with one of our team member’s head of department, 
+                  who extensively researches the therapeutic application of such molecules, specifically microbubbles. 
+                  This discussion expanded our perspective on the vast potential for widening the clinical application of ultrasound. 
+                  Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles. 
+                  These structures are formed by certain proteins that are expressed in select aquatic bacteria species. 
+                  The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited component 
+                  for an ultrasound-detectable biosensor.
+                </p>
+              </section>  
+              <section id = "define">
+                <h2 id="list-item-2" class="bold-italic adjusted-section" style="text-align: center;">2. Defining a Solution</h2>
+                <p >
+                  The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
+                  which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
+                  Our journey officially began after conversing with one of our team member’s head of department, 
+                  who extensively researches the therapeutic application of such molecules, specifically microbubbles. 
+                  This discussion expanded our perspective on the vast potential for widening the clinical application of ultrasound. 
+                  Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles. 
+                  These structures are formed by certain proteins that are expressed in select aquatic bacteria species. 
+                  The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited component 
+                  for an ultrasound-detectable biosensor.
+                </p>
+                
+              </section>  
+              <section id = "design">
+                <h2 id="list-item-3" class="bold-italic adjusted-section" style="text-align: center;">3. Designing a Solution</h2>
+                <p >
+                  The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
+                  which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
+                  Our journey officially began after conversing with one of our team member’s head of department, 
+                  who extensively researches the therapeutic application of such molecules, specifically microbubbles. 
+                  This discussion expanded our perspective on the vast potential for widening the clinical application of ultrasound. 
+                  Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles. 
+                  These structures are formed by certain proteins that are expressed in select aquatic bacteria species. 
+                  The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited component 
+                  for an ultrasound-detectable biosensor.
+                </p>
+                
+              </section>  
+              <section id = "implement">
+                <h2 id="list-item-4" class="bold-italic adjusted-section" style="text-align: center;">4. Our Implementation</h2>
+                <p >
+                  The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
+                  which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
+                  Our journey officially began after conversing with one of our team member’s head of department, 
+                  who extensively researches the therapeutic application of such molecules, specifically microbubbles. 
+                  This discussion expanded our perspective on the vast potential for widening the clinical application of ultrasound. 
+                  Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles. 
+                  These structures are formed by certain proteins that are expressed in select aquatic bacteria species. 
+                  The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited component 
+                  for an ultrasound-detectable biosensor.
+                </p>
+                
+              </section>  
+              <section id = "ref">
+                <h2 id="list-item-5" class="bold-italic adjusted-section" style="text-align: center;">References</h2>
+                <p >
+                  The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
+                  which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
+                  Our journey officially began after conversing with one of our team member’s head of department, 
+                  who extensively researches the therapeutic application of such molecules, specifically microbubbles. 
+                  This discussion expanded our perspective on the vast potential for widening the clinical application of ultrasound. 
+                  Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles. 
+                  These structures are formed by certain proteins that are expressed in select aquatic bacteria species. 
+                  The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited component 
+                  for an ultrasound-detectable biosensor.
+                </p>
+                
+              </section>  
+
+            </div>
+          </div> 
+        </div> 
+      </main>
+
     </div>
-  
-    <div class="bd-callout bd-callout-info">
-      <h4>Best Integrated Human Practices</h4>
-      <p>To compete for the Best Integrated Human Practices prize, please describe your work on this page and also fill out the description on the <a href="https://competition.igem.org/deliverables/judging-form">judging form</a>.</p>
-      <p>How does your project affect society and how does society influence the direction of your project? How might ethical considerations and stakeholder input guide your project purpose and design and the experiments you conduct in the lab? How does this feedback enter into the process of your work all through the iGEM competition? Document a thoughtful and creative approach to exploring these questions and how your project evolved in the process to compete for this award!</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/awards">2023 Awards Page</a> for more information.</p>
-    </div>
   </div>
-</div>
-
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Overview</h2>
-    <hr>
-    <p>At iGEM we believe societal considerations should be upfront and integrated throughout the design and execution of synthetic biology projects. “Human Practices” refers to iGEM teams' efforts to actively consider how the world affects their work and their work affects the world. Through your Human Practices activities, your team should demonstrate how you have thought carefully and creatively about whether your project is responsible and good for the world. We invite you to explore issues relating (but not limited) to the ethics, safety, security, and sustainability of your project, and to show how this exploration feeds back into your project purpose, design, and execution.</p>
-    <p>Please note you can compete for the Silver Medal criterion #2 and the Best Integrated Human Practices prize with this page.</p>
-    <p>For more information, please see the <a href="https://responsibility.igem.org/human-practices/what-is-human-practices">Human Practices Hub</a>.</p>
-    <p>On this page, your team should document all of your Human Practices work and activities. You should write about the Human Practices topics you considered in your project, document any activities you conducted to explore these topics (such as engaging with experts and stakeholders), describe why you took a particular approach (including referencing any work you built upon), and explain if and how you integrated takeaways from your Human Practices work back into your project purpose, design and/or execution.</p>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2019.igem.org/Team:Thessaly/Human_Practices">2019 Thessaly</a></li>
-      <li><a href="https://2019.igem.org/Team:Linkoping_Sweden/Human_Practices">2019 Linkoping Sweden</a></li>
-      <li><a href="https://2019.igem.org/Team:FDR-HB_Peru/Human_Practices">2019 FDR HB Peru</a></li>
-      <li><a href="https://2020.igem.org/Team:William_and_Mary/Human_Practices">2020 William and Mary</a></li>
-      <li><a href="https://2020.igem.org/Team:Rochester/Human_Practices">2020 Rochester</a></li>
-      <li><a href="https://2020.igem.org/Team:Leiden/Human_Practices">2020 Leiden</a></li>
-      <li><a href="https://2020.igem.org/Team:Baltimore_BioCrew/Human_Practices">2020 Baltimore BioCrew</a></li>
-    </ul>
-  </div>
-</div>
-
 </template>
+<script>
+export default {
+    data() {
+        return {
+            observer: null,
+        }
+    },
+    created() {
+        this.observer = new IntersectionObserver(this.onElementObserved, {
+            root: this.$el,
+            threshold: 0.22,
+        })
+    },
+    mounted() {
+        this.$el.querySelectorAll('section[id]').forEach((section) => {
+            this.observer.observe(section)
+            console.log("observing")
+        })
+    },
+    beforeDestroy() {
+        this.observer.disconnect()
+    },
+    methods: {
+        onElementObserved(entries) {
+            entries.forEach(({ target, isIntersecting }) => {
+                const id = target.getAttribute('id')
+                if (isIntersecting) {
+                    this.$el
+                        .querySelector(`div li a[href="#${id}"]`)
+                        .parentElement.classList.add('active')
+                } else {
+                    this.$el
+                        .querySelector(`div li a[href="#${id}"]`)
+                        .parentElement.classList.remove('active')
+                }
+            })
+        },
+    },
+}
+
+</script>

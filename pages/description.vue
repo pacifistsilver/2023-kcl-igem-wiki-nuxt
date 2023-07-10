@@ -11,15 +11,15 @@
       <main>
         <div class = "container">
             <div class = "row">
-              <div class="sticky" id="section-nav">
-                <ul>  
-                  <li><a href="#1">Introduction</a></li>
-                  <li><a href="#2">Colorectal Cancer</a></li>
-                  <li><a href="#3">Solution</a></li>
-                  <li><a href="#4">Inspiration</a></li>
-                  <li><a href="#5">Project Goals</a></li>
-                  <li><a href="#6">References</a></li>
-                </ul>
+              <div class="sticky col-lg-3" id="section-nav">
+                <ul class = "list-unstyled">  
+                  <li class ="section-nav-header">CONTENTS</li>
+                  <li><a class="rounded" href="#project-description">Introduction</a></li>
+                  <li><a class="rounded" href="#colorectal-cancer">Colorectal Cancer</a></li>                  
+                  <li><a class="rounded" href="#solution">The Solution</a></li>                 
+                  <li><a class="rounded" href="#project-goals">Project Goals</a></li>             
+                  <li><a class="rounded" href="#references">References</a></li>             
+                </ul>   
               </div>
 
             <div id = "description-content" class="col-lg-9">
@@ -139,6 +139,43 @@
   </div>
 </template>
 <script>
-
+export default {
+    data() {
+        return {
+            observer: null,
+        }
+    },
+    created() {
+        this.observer = new IntersectionObserver(this.onElementObserved, {
+            root: this.$el,
+            threshold: 0.22,
+        })
+    },
+    mounted() {
+        this.$el.querySelectorAll('section[id]').forEach((section) => {
+            this.observer.observe(section)
+            console.log("observing")
+        })
+    },
+    beforeDestroy() {
+        this.observer.disconnect()
+    },
+    methods: {
+        onElementObserved(entries) {
+            entries.forEach(({ target, isIntersecting }) => {
+                const id = target.getAttribute('id')
+                if (isIntersecting) {
+                    this.$el
+                        .querySelector(`div li a[href="#${id}"]`)
+                        .parentElement.classList.add('active')
+                } else {
+                    this.$el
+                        .querySelector(`div li a[href="#${id}"]`)
+                        .parentElement.classList.remove('active')
+                }
+            })
+        },
+    },
+}
 
 </script>
