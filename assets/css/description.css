@@ -1,35 +1,50 @@
 .custom-shape {
-    background-color: #a2b9eb;
-    border-radius: 0 0 50% 50% / 0 0 20px 20px;
-    padding: 20px;
-    animation-name: slideIn;
-    animation-duration: 3s;
-    animation-delay: 0.5;
-    animation-fill-mode: forwards;
-  }
+  background: linear-gradient(200deg, #276bff, #b35f90);
+  background-size: 200% 200%;
+  padding: 20px;
+  animation: Gradient 7s ease infinite, slideIn 2s forwards;
+}
 
-  @keyframes slideIn {
-    from {
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+#title {
+  animation: fadeInOut 8s infinite;
+}
+
+#subtitle {
+  animation: fadeInOut 8s 4s infinite;
+}
+
+@keyframes Gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+@keyframes slideIn {
+  from {
       transform: translateY(-70%);
       opacity: 0;
-    }
-    to {
+  }
+  to {
       transform: translateY(0);
       opacity: 1;
-    }
   }
+}
 
-  h1 {
-    color: #fefefe;
-    font-size: 50px;
-    margin: 0;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+h1 {
+  color: #fefefe;
+  font-size: 50px;
+  margin: 0;
+}

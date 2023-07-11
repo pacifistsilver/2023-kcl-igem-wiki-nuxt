@@ -2,9 +2,10 @@
   <div class = "content">
     <div>
 
-      <header class="header-content">
+      <header class="custom-shape">
         <div class="bg">
-          <h1 style="text-align: center; font-weight: bold;" class="header-text">Description</h1>
+          <h1 id="title" style="text-align: center; font-weight: bold;" class="header-text">Ultrasound diagnosis tool for colorectal cancer</h1>
+          <h1 id="subtitle" style="text-align: center; font-weight: bold;" class="header-text">More info coming along sooon.</h1>
         </div>
       </header>
 
@@ -30,7 +31,7 @@
             <div id = "description-content" class="col-lg-9">
 
               <section id = "project-description">
-                <h2 id="1" class="bold-italic adjusted-section" style="text-align: center;">Introduction</h2>
+                <h2 id="1" class="bold-italic adjusted-section" style="text-align: center; margin-top: 30px;">Introduction</h2>
                 <p >
                   The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
                   which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
