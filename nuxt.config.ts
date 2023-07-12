@@ -25,7 +25,7 @@ export default defineNuxtConfig({
   ssr: false,
   devtools: { enabled: true },
   css: [
-    '~/assets/css/main.css',
+    '~/assets/css/main.scss',
   ],
   components: true,
   plugins: [{ src: "@/plugins/aos", ssr: false, mode: "client" }],
