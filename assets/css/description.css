@@ -2,7 +2,8 @@
   background: linear-gradient(200deg, #276bff, #b35f90);
   background-size: 200% 200%;
   padding: 20px;
-  animation: Gradient 7s ease infinite, slideIn 2s forwards;
+  min-height: 30vh;
+  animation: Gradient 6s ease infinite, slideIn 2s forwards;
 }
 
 @keyframes fadeInOut {
@@ -12,12 +13,14 @@
   100% { opacity: 0; }
 }
 
-#title {
-  animation: fadeInOut 8s infinite;
+#title, #subtitle {
+  font-size:2em;
+  opacity: 0;
+  animation: fadeInOut 10s infinite;
 }
 
 #subtitle {
-  animation: fadeInOut 8s 4s infinite;
+  animation: fadeInOut 10s 5s infinite;
 }
 
 @keyframes Gradient {
@@ -45,6 +48,15 @@
 
 h1 {
   color: #fefefe;
-  font-size: 50px;
-  margin: 0;
+  font-size: 5vw;
+  margin: 3.5px;
+}
+
+@media (max-width: 768px) {
+  #title {
+    font-size: 1.5em;
+  }
+  #subtitle {
+    font-size: 1.2em;
+  }
 }

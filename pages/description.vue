@@ -2,9 +2,9 @@
   <div class = "content">
     <div>
 
-      <header class="custom-shape">
+      <header class="header-content custom-shape">
         <div class="bg">
-          <h1 id="title" style="text-align: center; font-weight: bold;" class="header-text">Ultrasound diagnosis tool for colorectal cancer</h1>
+          <h1 id="title" style="text-align: center; font-weight: bold;" class="header-text">Ultrasound diagnostic tool for colorectal cancer</h1>
           <h1 id="subtitle" style="text-align: center; font-weight: bold;" class="header-text">More info coming along sooon.</h1>
         </div>
       </header>
