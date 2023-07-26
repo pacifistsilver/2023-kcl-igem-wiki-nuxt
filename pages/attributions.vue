@@ -1,9 +1,12 @@
 <template>
+  <main>
+    <div class="container">
 
-<div class="row mt-4">
-  <iframe style='width: 100%' id="igem-attribution-form" src="https://attributions.igem.org?team=KCL-UK&year=2023"></iframe>
-</div>
-
+      <div class="row mt-4">
+        <iframe style='width: 100%' id="igem-attribution-form" src="https://attributions.igem.org?team=KCL-UK&year=2023"></iframe>
+      </div>
+    </div>
+  </main>   
 </template>
 <script type="text/javascript">
 

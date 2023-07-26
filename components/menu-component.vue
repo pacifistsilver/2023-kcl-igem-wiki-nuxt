@@ -56,12 +56,9 @@
                     <NuxtLink class="nav-link dropdown-toggle" id="navbar-item" role="button" data-bs-toggle="dropdown" aria-expanded="false" to="./">Awards</NuxtLink>
                         <ul class="dropdown-menu" aria-labelledby="navbar-item">       
                             <li><NuxtLink class="dropdown-item" to="./education">Education</NuxtLink></li>
-                            <li><NuxtLink class="dropdown-item" to="./entrepreneurship">Entrepreneurship</NuxtLink></li>
-                            <li><NuxtLink class="dropdown-item" to="./hardware">Hardware</NuxtLink></li>
                             <li><NuxtLink class="dropdown-item" to="./inclusivity">Inclusivity</NuxtLink></li>
                             <li><NuxtLink class="dropdown-item" to="./measurement">Measurement</NuxtLink></li>
                             <li><NuxtLink class="dropdown-item" to="./model">Model</NuxtLink></li>
-                            <li><NuxtLink class="dropdown-item" to="./plant">Plant</NuxtLink></li>
                             <li><NuxtLink class="dropdown-item" to="./software">Software</NuxtLink></li>
                             <li><NuxtLink class="dropdown-item" to="./sustainable">Sustainable</NuxtLink></li>
                         </ul>
