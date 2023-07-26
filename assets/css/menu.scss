@@ -38,15 +38,17 @@
 #navbar-item:hover {
     background-color: var(--item-background, rgba(0,97,155,1));
     color: #fff;  
-    transition: all 0.1s ease-in-out 0s;
+    transition: all .5s cubic-bezier(0.17,0.17,0.41,1.0);
 }
 #navbar-item {
     color: #000000;
-    font-size: 1.2rem;
+    font-size: 1.2rem;  
     font-weight: bold;
     padding: .6rem 1rem;
     border-radius: 4px;
     transition: background-color 150ms;
+    transition: all .5s cubic-bezier(0.17,0.17,0.41,1.0);
+
 }
 #navbar-container {
     height: 100%;
