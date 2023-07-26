@@ -1,4 +1,10 @@
 <template>
+  <header class="header-content custom-shape">
+    <div class="bg">
+      <h1 id="title" style="text-align: center; font-weight: bold;" class="header-text">Experiments</h1>
+      <h1 id="subtitle" style="text-align: center; font-weight: bold;" class="header-text">More info coming along sooon.</h1>
+    </div>
+  </header>
   <main>
     <div class="container">
 
