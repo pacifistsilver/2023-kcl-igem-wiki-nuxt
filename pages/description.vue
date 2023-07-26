@@ -2,7 +2,7 @@
   <div class = "content">
     <div>
 
-      <header class="header-content custom-shape">
+      <header class="header-content custom-shape" id ="header">
         <div class="bg">
           <h1 id="title" style="text-align: center; font-weight: bold;" class="header-text">Ultrasound diagnostic tool for colorectal cancer</h1>
           <h1 id="subtitle" style="text-align: center; font-weight: bold;" class="header-text">More info coming along sooon.</h1>
@@ -204,40 +204,48 @@
 export default {
     data() {
         return {
+            currentPage: "Description",
             observer: null,
-        }
+            options: {
+              easing: [0.25, 0.1, 0.25, 1.0],
+              force: true,
+              cancelable: false,
+              x: false,
+              y: true,
+              offset: -80,
+            }
+          }
     },
     created() {
         this.observer = new IntersectionObserver(this.onElementObserved, {
             root: this.$el,
-            threshold: 0.22,
+            threshold: 0.5,
         })
     },
     mounted() {
         this.$el.querySelectorAll('section[id]').forEach((section) => {
             this.observer.observe(section)
-            console.log("observing")
         })
     },
     beforeDestroy() {
         this.observer.disconnect()
     },
-    methods: {
-        onElementObserved(entries) {
-            entries.forEach(({ target, isIntersecting }) => {
-                const id = target.getAttribute('id')
-                if (isIntersecting) {
-                    this.$el
-                        .querySelector(`div li a[href="#${id}"]`)
-                        .parentElement.classList.add('active')
-                } else {
-                    this.$el
-                        .querySelector(`div li a[href="#${id}"]`)
-                        .parentElement.classList.remove('active')
-                }
-            })
-        },
-    },
+    methods: {  
+      onElementObserved(entries) {
+          entries.forEach(({ target, isIntersecting }) => {
+              const id = target.getAttribute('id')
+              if (isIntersecting) {
+                  this.$el
+                      .querySelector(`div li a[href="#${id}"]`)
+                      .parentElement.classList.add('active')
+              } else {
+                  this.$el
+                      .querySelector(`div li a[href="#${id}"]`)
+                      .parentElement.classList.remove('active')
+              }
+          })
+      },
+  },
 }
 
 </script>
