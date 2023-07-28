@@ -3,6 +3,7 @@
 @import "index";
 @import "menu";
 @import "description";
+@import "team";
 
 body {
     font-family:sans-serif;
@@ -13,7 +14,7 @@ body {
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     overflow-x:hidden;
-    background-color:#efefef;
+    background-color:#fff;
     box-sizing: border-box;
 }
 section {
@@ -28,7 +29,6 @@ p {
     text-align:justify;
     font-size:20px;
     line-height:30px;
-    padding-bottom:20px
 }
 .row.home-sections {
     margin-left: auto;
@@ -48,7 +48,7 @@ p {
     padding-top: 30px;
   }
 
-.bg-dark { background-color: #efefee !important; }
+.bg-dark { background-color: #fff !important; }
 .bg-hero { background-color: #45b06cff; }
 .bg-section {
     background: url(https://placehold.co/1920x500) 50% no-repeat;
