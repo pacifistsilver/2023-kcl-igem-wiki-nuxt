@@ -33,8 +33,11 @@
       </div>
 
     </div>
+    <div class = "row">
+      <div class="line-left" style="width: 50%;"></div>
+    <div class="line-right" style="width: 50%;"></div>
+    </div>
 
-    <hr>
     <!-- The following MUST be on every page: license information and link to the repository on gitlab.igem.org -->
     <div class="row justify-content-center mt-4 creds">
 
