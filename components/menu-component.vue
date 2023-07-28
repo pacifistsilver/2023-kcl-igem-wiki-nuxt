@@ -20,7 +20,7 @@
                         Team
                     </NuxtLink>
                     <ul class="dropdown-menu" aria-labelledby="navbar item">
-                        <li><NuxtLink class="dropdown-item" to="./team">Team</NuxtLink></li>
+                        <li><NuxtLink class="dropdown-item" to="./members">Members</NuxtLink></li>
                         <li><NuxtLink class="dropdown-item" to="./attributions">Attributions</NuxtLink></li>
                     </ul>
                 </li>
