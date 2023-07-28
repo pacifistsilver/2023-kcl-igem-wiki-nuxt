@@ -1,3 +1,5 @@
+@use "global.scss";
+
 .navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
     display: flex;
     align-items: center;
@@ -36,7 +38,7 @@
     transition: background-color 150ms;
 }
 #navbar-item:hover {
-    background-color: var(--item-background, rgba(0,97,155,1));
+    background-color: var(--item-background, global.$color-coloblue);
     color: #fff;  
     transition: all .5s cubic-bezier(0.17,0.17,0.41,1.0);
 }
