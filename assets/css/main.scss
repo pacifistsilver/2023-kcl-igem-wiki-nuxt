@@ -150,14 +150,14 @@ p {
 .section-nav-header {
     font-size: .8rem;
     font-weight: bold;
-    color: rgb(0, 97, 155);
+    color: black;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 .section-nav a {
     font-size: 1.1em;
     text-decoration: none;
-    color: rgba(0,97,155,1);
+    color: #666;
     transition: all .5s ease-in-out;
     line-height: 40px;
     display: block;
@@ -172,14 +172,14 @@ p {
 .section-nav h3 {
     font-weight: 600;
     font-size: 0.8rem;
-    color: rgb(0, 97, 155);
+    color: #666;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 /* Not working currently */
 .section-nav a:hover,
 .section-nav a:focus {
-    color: #666;
+    color: #f2765d;
 }
 
 .section-nav li.active > a {

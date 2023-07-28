@@ -161,10 +161,19 @@
 </template>
 <script>
 export default {
-    data() {
+  data() {
         return {
+            currentPage: "Description",
             observer: null,
-        }
+            options: {
+              easing: [0.25, 0.1, 0.25, 1.0],
+              force: true,
+              cancelable: false,
+              x: false,
+              y: true,
+              offset: -80,
+            }
+          }
     },
     created() {
         this.observer = new IntersectionObserver(this.onElementObserved, {
@@ -175,28 +184,27 @@ export default {
     mounted() {
         this.$el.querySelectorAll('section[id]').forEach((section) => {
             this.observer.observe(section)
-            console.log("observing")
         })
     },
     beforeDestroy() {
         this.observer.disconnect()
     },
-    methods: {
-        onElementObserved(entries) {
-            entries.forEach(({ target, isIntersecting }) => {
-                const id = target.getAttribute('id')
-                if (isIntersecting) {
-                    this.$el
-                        .querySelector(`nav li a[href="#${id}"]`)
-                        .parentElement.classList.add('active')
-                } else {
-                    this.$el
-                        .querySelector(`nav li a[href="#${id}"]`)
-                        .parentElement.classList.remove('active')
-                }
-            })
-        },
-    },
+    methods: {  
+      onElementObserved(entries) {
+          entries.forEach(({ target, isIntersecting }) => {
+              const id = target.getAttribute('id')
+              if (isIntersecting) {
+                  this.$el
+                      .querySelector(`div li a[href="#${id}"]`)
+                      .parentElement.classList.add('active')
+              } else {
+                  this.$el
+                      .querySelector(`div li a[href="#${id}"]`)
+                      .parentElement.classList.remove('active')
+              }
+          })
+      },
+  },
 }
 
 </script>
