@@ -1,9 +1,14 @@
 <template>
   <header>
-    <div class = "container">
-      <div class = "team-header-contents row">
-        <h1 class = "team-header-title col-lg-4">Team</h1>
-        <p class = "team-header-text col-lg-8">Our team is committed to developing transformative therapies that decrease the burden of disease and increase healthspan on a population-level scale</p>
+    <div class="bg" style= "
+      background:url(https://static.igem.wiki/teams/4584/wiki/member-pics/3bfa7c0e-8c4c-4cbb-92a9-e32e00a644ef.jpeg) 
+      fixed center bottom; 
+      background-size:cover">
+      <div class = "container">
+        <div class = "team-header-contents row" src = "https://static.igem.wiki/teams/4584/wiki/member-pics/3bfa7c0e-8c4c-4cbb-92a9-e32e00a644ef.jpeg">
+          <h1 class = "team-header-title col-lg-4">Team</h1>
+          <p class = "team-header-text col-lg-8">Our team comprises a diverse group of students from various academic backgrounds, including biology, engineering, chemistry, and more. Together, we collaborate to harness the power of synthetic biology and contribute to the global iGEM community.</p>
+        </div>
       </div>
     </div>
   </header>
@@ -23,7 +28,7 @@
                 </div>
                 <div class = "teams-tab-person col-lg-3">
                   <div class = "teams-tab-person-img">
-                    <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img" alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
+                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/julia.jpg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/julia.jpg">
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Julija Gellere</p>
@@ -41,7 +46,7 @@
                 </div>
                 <div class = "teams-tab-person col-lg-3">
                   <div class = "teams-tab-person-img">
-                    <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img" alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
+                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/tiffie.jpeg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/tiffie.jpeg">
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Tiffanie Dihardjo</p>
@@ -55,7 +60,7 @@
               <div class = "team-tabs-people-row row">
                 <div class = "teams-tab-person col-lg-3 ">
                   <div class = "teams-tab-person-img">
-                    <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img" alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
+                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/pema.png" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/pema.png">
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Pema Tsering</p>
@@ -64,7 +69,7 @@
                 </div>
                 <div class = "teams-tab-person col-lg-3">
                   <div class = "teams-tab-person-img">
-                    <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img" alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
+                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/hamza.jpg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/hamza.jpg">
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Hamza Haji Nur</p>
@@ -73,7 +78,7 @@
                 </div>
                 <div class = "teams-tab-person col-lg-3">
                   <div class = "teams-tab-person-img">
-                    <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img" alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
+                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/dan.jpg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/dan.jpg">
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Daniel Wei Luo</p>
@@ -82,7 +87,7 @@
                 </div>
                 <div class = "teams-tab-person col-lg-3">
                   <div class = "teams-tab-person-img">
-                    <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img" alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
+                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/gigi.jpg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/gigi.jpg">
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Wing Gee Shum</p>
@@ -95,7 +100,7 @@
               <div class = "team-tabs-people-row row">
                 <div class = "teams-tab-person col-lg-3 ">
                   <div class = "teams-tab-person-img">
-                    <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img" alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
+                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/nicole.jpeg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/nicole.jpeg">
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Nicole Salem </p>
@@ -104,7 +109,7 @@
                 </div>
                 <div class = "teams-tab-person col-lg-3">
                   <div class = "teams-tab-person-img">
-                    <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img" alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
+                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/rheima.jpeg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/rheima.jpeg">
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Rheima Saptari</p>
@@ -113,7 +118,7 @@
                 </div>
                 <div class = "teams-tab-person col-lg-3">
                   <div class = "teams-tab-person-img">
-                    <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img" alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
+                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/jon.jpeg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/jon.jpeg">
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Jonathan Collard </p>
@@ -122,10 +127,10 @@
                 </div>
                 <div class = "teams-tab-person col-lg-3">
                   <div class = "teams-tab-person-img">
-                    <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img" alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
+                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/sri.jpeg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/sri.jpeg">
                   </div>
                   <div class = "teams-tab-person-info">
-                    <p class="team-tabs-person-name-desc1">Sri  Gullapalli</p>
+                    <p class="team-tabs-person-name-desc1">Sri Gullapalli</p>
                     <p class="team-tabs-person-name-desc2">Team Leader</p>
                   </div>
                 </div>
@@ -136,7 +141,7 @@
               <div class = "team-tabs-people-row row">
                 <div class = "teams-tab-person col-lg-3 ">
                   <div class = "teams-tab-person-img">
-                    <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img" alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
+                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/kati.jpg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/kati.jpg">
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Katalin Kovacs</p>
@@ -145,7 +150,7 @@
                 </div>
                 <div class = "teams-tab-person col-lg-3">
                   <div class = "teams-tab-person-img">
-                    <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img" alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
+                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/dan2.jpg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/dan2.jpg">
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Daniella Cetta</p>
@@ -154,7 +159,7 @@
                 </div>
                 <div class = "teams-tab-person col-lg-3">
                   <div class = "teams-tab-person-img">
-                    <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img" alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
+                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/wren.jpg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/wren.jpg">
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Uyen Tran</p>
@@ -163,7 +168,7 @@
                 </div>
                 <div class = "teams-tab-person col-lg-3">
                   <div class = "teams-tab-person-img">
-                    <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img" alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
+                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/margherita.jpeg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/margherita.jpeg">
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Margherita Autelitano</p>
