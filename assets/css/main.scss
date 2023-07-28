@@ -65,6 +65,8 @@ p {
     transform: translateY(-50%);
     transform: translateX(-50%);
     color: white;
+    text-shadow: 0 0 5px #000;
+
 }
 
 @media screen and (max-width: 990px) {
@@ -77,7 +79,8 @@ p {
     .bg .header-text {
       left:12.5vw;
       font-size:50px;
-      transform:translateX(0)
+      transform:translateX(0);
+      text-shadow: 0 0 5px #000;
     }
   }
 
@@ -85,7 +88,9 @@ p {
     .bg .header-text  {
         left: 12.5vw;
         font-size:60px; 
-        transform:translateX(0) 
+        transform:translateX(0);
+        text-shadow: 0 0 5px #000;
+
     }
 }
 .bg {
@@ -143,19 +148,34 @@ p {
     margin-bottom: 40px;
 }
 .section-nav-header {
-    font-size: 20px;
+    font-size: .8rem;
     font-weight: bold;
     color: rgb(0, 97, 155);
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 .section-nav a {
-    font-size: 20px;
+    font-size: 1.1em;
     text-decoration: none;
     color: rgba(0,97,155,1);
     transition: all .5s ease-in-out;
     line-height: 40px;
     display: block;
+    font-weight: 60;
+}
+.section-nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 
+.section-nav h3 {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: rgb(0, 97, 155);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 /* Not working currently */
 .section-nav a:hover,
 .section-nav a:focus {

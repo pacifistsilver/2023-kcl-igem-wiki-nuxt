@@ -5,7 +5,7 @@
       <header class="header-content">
 
         <div class="bg" style="
-        background:url(https://static.igem.wiki/teams/4584/wiki/humanprac-bg.png) center center no-repeat;
+        background:url(https://static.igem.wiki/teams/4584/wiki/human-practices-1.jpg) fixed center bottom;
         background-size:cover;">
           <h1 style="text-align: center; font-weight: bold;" class="header-text">Human Practices</h1>
         </div>
@@ -17,9 +17,9 @@
             <div class = "row">
               <div class = "col lg-3">
                 <nav class="section-nav">
+                  <h3>contents</h3>
 
-                    <ul class = "list-unstyled">  
-                      <li class ="section-nav-header">CONTENTS</li>
+                    <ul class = "section-nav-list">  
                       <li><a  href="#introduction">Understanding the Problem</a></li>
                       <li><a  href="#define">Defining a Good Solution</a></li>                  
                       <li><a  href="#design">Designing a Good Solution</a></li>                 

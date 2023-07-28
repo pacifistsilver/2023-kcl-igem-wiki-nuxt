@@ -14,9 +14,9 @@
           <div class = "row">
             <div class = "col lg-3">
               <nav class="section-nav">
+                <h3>contents</h3>
 
-                  <ul class = "list-unstyled">  
-                    <li class ="section-nav-header">CONTENTS</li>
+                  <ul class = "section-nav-list">  
                     <li><a  href="#project-description">Introduction</a></li>
                     <li><a  href="#colorectal-cancer">Colorectal Cancer</a></li>                  
                     <li><a  href="#solution">The Solution</a></li>                 
