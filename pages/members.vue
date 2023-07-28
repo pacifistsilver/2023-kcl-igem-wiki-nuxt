@@ -1,15 +1,11 @@
 <template>
   <header>
-    <div class="bg" style= "
+    <div class="team-tabs bg" style= "
       background:url(https://static.igem.wiki/teams/4584/wiki/member-pics/3bfa7c0e-8c4c-4cbb-92a9-e32e00a644ef.jpeg) 
-      fixed center bottom; 
+      fixed center; 
       background-size:cover">
-      <div class = "container">
-        <div class = "team-header-contents row" src = "https://static.igem.wiki/teams/4584/wiki/member-pics/3bfa7c0e-8c4c-4cbb-92a9-e32e00a644ef.jpeg">
-          <h1 class = "team-header-title col-lg-4">Team</h1>
-          <p class = "team-header-text col-lg-8">Our team comprises a diverse group of students from various academic backgrounds, including biology, engineering, chemistry, and more. Together, we collaborate to harness the power of synthetic biology and contribute to the global iGEM community.</p>
-        </div>
-      </div>
+          <h1 class = "header-text">Team Members</h1>
+          
     </div>
   </header>
   <main>
@@ -41,7 +37,7 @@
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">I Cheng Kan</p>
-                    <p class="team-tabs-person-name-desc2">Team Leader</p>
+                    <p class="team-tabs-person-name-desc2">Dry Lab</p>
                   </div>
                 </div>
                 <div class = "teams-tab-person col-lg-3">
@@ -50,7 +46,7 @@
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Tiffanie Dihardjo</p>
-                    <p class="team-tabs-person-name-desc2">Team Leader</p>
+                    <p class="team-tabs-person-name-desc2">Wet Lab</p>
                   </div>
                 </div>
               </div>
@@ -64,7 +60,7 @@
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Pema Tsering</p>
-                    <p class="team-tabs-person-name-desc2">Team Leader</p>
+                    <p class="team-tabs-person-name-desc2">Dry Lab</p>
                   </div>
                 </div>
                 <div class = "teams-tab-person col-lg-3">
@@ -73,7 +69,7 @@
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Hamza Haji Nur</p>
-                    <p class="team-tabs-person-name-desc2">Team Leader</p>
+                    <p class="team-tabs-person-name-desc2">Social Media</p>
                   </div>
                 </div>
                 <div class = "teams-tab-person col-lg-3">
@@ -82,7 +78,7 @@
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Daniel Wei Luo</p>
-                    <p class="team-tabs-person-name-desc2">Team Leader</p>
+                    <p class="team-tabs-person-name-desc2">Dry Lab</p>
                   </div>
                 </div>
                 <div class = "teams-tab-person col-lg-3">
@@ -91,7 +87,7 @@
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Wing Gee Shum</p>
-                    <p class="team-tabs-person-name-desc2">Team Leader</p>
+                    <p class="team-tabs-person-name-desc2">Social Media</p>
                   </div>
                 </div>
               </div>
@@ -104,7 +100,7 @@
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Nicole Salem </p>
-                    <p class="team-tabs-person-name-desc2">Team Leader</p>
+                    <p class="team-tabs-person-name-desc2">Human Practices</p>
                   </div>
                 </div>
                 <div class = "teams-tab-person col-lg-3">
@@ -113,7 +109,7 @@
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Rheima Saptari</p>
-                    <p class="team-tabs-person-name-desc2">Team Leader</p>
+                    <p class="team-tabs-person-name-desc2">Wetlab</p>
                   </div>
                 </div>
                 <div class = "teams-tab-person col-lg-3">
@@ -122,7 +118,7 @@
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Jonathan Collard </p>
-                    <p class="team-tabs-person-name-desc2">Team Leader</p>
+                    <p class="team-tabs-person-name-desc2">Human Practices</p>
                   </div>
                 </div>
                 <div class = "teams-tab-person col-lg-3">
@@ -131,7 +127,7 @@
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Sri Gullapalli</p>
-                    <p class="team-tabs-person-name-desc2">Team Leader</p>
+                    <p class="team-tabs-person-name-desc2">Wetlab</p>
                   </div>
                 </div>
               </div>
@@ -145,7 +141,7 @@
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Katalin Kovacs</p>
-                    <p class="team-tabs-person-name-desc2">Team Leader</p>
+                    <p class="team-tabs-person-name-desc2">Wetlab</p>
                   </div>
                 </div>
                 <div class = "teams-tab-person col-lg-3">
@@ -154,7 +150,7 @@
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Daniella Cetta</p>
-                    <p class="team-tabs-person-name-desc2">Team Leader</p>
+                    <p class="team-tabs-person-name-desc2">Wetlab</p>
                   </div>
                 </div>
                 <div class = "teams-tab-person col-lg-3">
@@ -163,7 +159,7 @@
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Uyen Tran</p>
-                    <p class="team-tabs-person-name-desc2">Team Leader</p>
+                    <p class="team-tabs-person-name-desc2">Wetlab</p>
                   </div>
                 </div>
                 <div class = "teams-tab-person col-lg-3">
@@ -172,7 +168,7 @@
                   </div>
                   <div class = "teams-tab-person-info">
                     <p class="team-tabs-person-name-desc1">Margherita Autelitano</p>
-                    <p class="team-tabs-person-name-desc2">Team Leader</p>
+                    <p class="team-tabs-person-name-desc2">Drylab</p>
                   </div>
                 </div>
               </div>
