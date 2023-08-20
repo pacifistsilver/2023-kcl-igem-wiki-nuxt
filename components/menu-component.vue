@@ -56,12 +56,9 @@
                     <li class="nav-item dropdown">
                         <NuxtLink class="nav-link dropdown-toggle" id="navbar-item" role="button" data-bs-toggle="dropdown" aria-expanded="false" to="./">Awards</NuxtLink>
                             <ul class="dropdown-menu" aria-labelledby="navbar-item">       
+                                <li><NuxtLink class="dropdown-item" to="./education">Best New Basic Part</NuxtLink></li>
+                                <li><NuxtLink class="dropdown-item" to="./measurement">Integrated Human Practices</NuxtLink></li>
                                 <li><NuxtLink class="dropdown-item" to="./education">Education</NuxtLink></li>
-                                <li><NuxtLink class="dropdown-item" to="./inclusivity">Inclusivity</NuxtLink></li>
-                                <li><NuxtLink class="dropdown-item" to="./measurement">Measurement</NuxtLink></li>
-                                <li><NuxtLink class="dropdown-item" to="./model">Model</NuxtLink></li>
-                                <li><NuxtLink class="dropdown-item" to="./software">Software</NuxtLink></li>
-                                <li><NuxtLink class="dropdown-item" to="./sustainable">Sustainable</NuxtLink></li>
                             </ul>
                     </li>
                 </ul>
