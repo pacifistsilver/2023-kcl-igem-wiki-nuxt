@@ -1,20 +1,5 @@
 @use "global.scss";
 
-.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 7rem;
-    padding: 0 var(--side-margin);
-    background-color: #fff;
-    box-shadow: 0 2px 6px rgba(0,0,0,.1333333333);
-    width: 100%;
-    z-index: 10;
-    position: fixed;
-    transition: height 300ms;
-}
-
-
 #navbar{   
     display: flex;
     align-items: center;
