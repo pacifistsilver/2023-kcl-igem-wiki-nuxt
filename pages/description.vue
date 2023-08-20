@@ -36,7 +36,7 @@
                   The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
                   which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
                   Our journey officially began after conversing with one of our team member’s head of department, 
-                  who extensively researches the therapeutic application of such molecules, specifically microbubbles. 
+                  who extensively researches the therapeutic application of such molecules. 
                   This discussion expanded our perspective on the vast potential for widening the clinical application of ultrasound. 
                   Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles. 
                   These structures are formed by certain proteins that are expressed in select aquatic bacteria species. 
@@ -116,7 +116,6 @@
               <section id = "project-goals">
                 <h3 id="5" class="bold-italic adjusted-section" style="text-align: center;">Project Goals</h3>
                 <ul style="font-size: 20px; margin-top: 30px;">
-                  <li>Validate the expression of chosen biomarker in the CRC cell line.</li>
                   <li>Design a plasmid containing ligand-inducible gene expression system for the CRC biomarker(s) and transform it to a competent E.coli Nissl strain.</li>
                   <li>Validate the sensitivity of the system in detecting biosensor.</li>
                   <li>Modify the plasmid containing ARG1 gene to be biosensor system-compatible.</li>
