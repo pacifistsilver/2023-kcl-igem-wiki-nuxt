@@ -1,4 +1,5 @@
 <template>
+  <!-- not happy with the current style -->
   <header>
     <div class="team-tabs-header bg" style= "
       background:url(https://static.igem.wiki/teams/4584/wiki/member-pics/3bfa7c0e-8c4c-4cbb-92a9-e32e00a644ef.jpeg) 
