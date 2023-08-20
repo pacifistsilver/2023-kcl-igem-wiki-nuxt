@@ -98,7 +98,7 @@
                   probiotic E.coli Nissl strain when the biomarker-specific synthetic receptor binds to CRC antigen. 
                   Gas vesicles (GVs) is air-filled aquatic bacterial proteins which oscillates non-linearly with ultrasound wave, 
                   this unique acoustic property results in enhanced ultrasound signal contrast detection, as demonstrated by the 
-                  Shapiro lab. Thus, the expression of the gene encoding for GVs, ARG1 can be used as a reporting gene (Shapiro, ..).
+                  Shapiro lab. Thus, the expression of the gene encoding for GVs, ARG1 can be used as a reporting gene (Shapiro, 2014).
                 </p>
                 <hr>
                 <h3 id="4" class="bold-italic adjusted-section" style="text-align: center;">Our motivation to tackle Colorectal Cancer</h3>
