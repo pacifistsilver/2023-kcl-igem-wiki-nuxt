@@ -1,16 +1,20 @@
+// libs 
 @import "~/node_modules/bootstrap/dist/css/bootstrap";
+
+// scss files 
 @import "footer";
 @import "index";
 @import "menu";
 @import "description";
 @import "team";
+@import "fonts";
 
 //@import "node_modules\hamburgers\_sass\hamburgers\hamburgers.scss";
 // use global.scss to store variables you use a lot. 
 
 
 body {
-    font-family:sans-serif;
+    font-family:"Gilroy";
     font: size 13px;   
     color: #000000;
     line-height:30px;
