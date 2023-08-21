@@ -1,5 +1,5 @@
 <script lang="ts" setup></script>
-
+<!-- ideas: risk quiz -->
 <template>
   <section class = "header">
     <div class = "container d-flex align-items-center" data-aos="fade-up" data-aos-duration="3000">
