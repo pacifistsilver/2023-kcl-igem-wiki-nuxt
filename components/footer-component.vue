@@ -29,6 +29,9 @@
           <a href = "https://uk.neb.com/">
             <img src = "https://static.igem.wiki/teams/4584/wiki/neb-logo-reversed-tagline2.svg">
           </a>
+          <a href = "https://www.snapgene.com/">
+            <img src = "https://static.igem.wiki/teams/4584/wiki/logo-snapgene-dotmatics.svg">
+          </a>
         </div>
       </div>
 
