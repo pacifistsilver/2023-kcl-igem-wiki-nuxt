@@ -61,6 +61,10 @@
                                 <li><NuxtLink class="dropdown-item" to="./education">Education</NuxtLink></li>
                             </ul>
                     </li>
+                    <li class="nav-item">
+                        <NuxtLink class="nav-link" id="navbar-item"  to="./results">Results</NuxtLink>
+                    </li>
+
                 </ul>
             </div>
         </div>
