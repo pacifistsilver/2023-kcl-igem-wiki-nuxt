@@ -42,7 +42,7 @@
 #navbar-item:hover {
     background-color: var(--item-background, global.$color-coloblue);
     color: #fff;  
-    transition: all .5s cubic-bezier(0.17,0.17,0.41,1.0);
+    transition: all .2s cubic-bezier(0.17,0.17,0.41,1.0);
 }
 #navbar-item {
     color: #000000;
@@ -51,7 +51,7 @@
     padding: .6rem 1rem;
     border-radius: 4px;
     transition: background-color 150ms;
-    transition: all .5s cubic-bezier(0.17,0.17,0.41,1.0);
+    transition: all .2s cubic-bezier(0.17,0.17,0.41,1.0);
 
 }
 #navbar-container {
