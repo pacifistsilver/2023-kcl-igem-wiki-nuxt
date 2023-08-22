@@ -30,7 +30,7 @@
 
             <div id = "description-content" class="col-lg-9">
 
-              <section id = "project-description">
+              <section id = "project-description" data-aos = "fade-up">
                 <h2 id="1" class="bold-italic adjusted-section" style="text-align: center; margin-top: 30px;">Introduction</h2>
                 <p >
                   The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
@@ -46,7 +46,7 @@
                 <hr>
               </section>  
 
-              <section id = "colorectal-cancer">
+              <section id = "colorectal-cancer" data-aos = "fade-up">
                 <h3 id="2" class="bold-italic adjusted-section" style="text-align: center;">Colorectal Cancer: Defining the problem</h3>
                 <p >Colorectal cancer (CRC) ranks amongst the most prevalent oncological diseases, placing fourth in the 
                   United Kingdom and third globally according to 2022 NHS data, with approximately two million new 
@@ -84,7 +84,7 @@
                 </p>
                 <hr>
               </section>
-              <section id = "solution">
+              <section id = "solution" data-aos = "fade-up">
                 <h3 id="3" class="bold-italic adjusted-section" style="text-align: center;">Our solution: Synthetic Biology</h3>
                 <p >Recognising the challenges associated with the diagnosis of CRC, 
                   ColoEcho is committed to devise a non-invasive and patient-friendly screening method that can be 
@@ -113,7 +113,7 @@
                 <hr>
               </section>
 
-              <section id = "project-goals">
+              <section id = "project-goals" data-aos = "fade-up">
                 <h3 id="5" class="bold-italic adjusted-section" style="text-align: center;">Project Goals</h3>
                 <ul style="font-size: 20px; margin-top: 30px;">
                   <li>Design a plasmid containing ligand-inducible gene expression system for the CRC biomarker(s) and transform it to a competent E.coli Nissl strain.</li>
@@ -125,7 +125,7 @@
                 <hr>
               </section>
 
-              <section id = "references">
+              <section id = "references" data-aos = "fade-up">
                 <h3 id="6" class="bold-italic adjusted-section" style="text-align: center;">References</h3>
                 <ul style="font-size: 15px; margin-top: 30px;">
                   <li>
