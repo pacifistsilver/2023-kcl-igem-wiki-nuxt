@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-xl navbar-light bg-light fixed-top" id="navbar">
         <div class="container" id="navbar-container">
             <!---- TEAM NAME ---->
-            <a class = "navbar-brand" href="./">
+            <a class = "navbar-brand" href="/">
                 <img id = "navbar-brand img" src="https://static.igem.wiki/teams/4584/wiki/blue-logo-name-white-background-removebg-preview.png">
             </a>
 

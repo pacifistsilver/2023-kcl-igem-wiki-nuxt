@@ -1,6 +1,6 @@
 <template>
 <footer class="footer">
-  <div class="container">
+  <div class="container" data-aos = "fade-up" data-aos-once = "true">
     <div class="row mb-4 footer-details">
       <div class="col-sm-6 logo-footer d-flex align-items-center">
         <a href = "https://www.kcl.ac.uk/">

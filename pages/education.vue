@@ -25,7 +25,7 @@
                 </nav>
               </div>
 
-            <div id = "content-main" class="col-lg-9">
+            <div id = "content-main" class="col-lg-9" data-aos = "fade-up">
               <section id = "introduction">
                 <h2 id="list-item-1" class="bold-italic adjusted-section" style="text-align: center;">Introduction</h2>
                 <p >
@@ -36,7 +36,7 @@
                 </p>
                 <hr>
               </section>  
-              <section id = "idea">
+              <section id = "idea" data-aos = "fade-up">
                 <h2 id="list-item-2" class="bold-italic adjusted-section" style="text-align: center;">Ideation</h2>
                 <p >
                   Initially, we had a great idea of what we wanted to convey. 
@@ -53,7 +53,7 @@
                 </p>
                 <hr>
               </section>  
-              <section id = "conclude">
+              <section id = "conclude" data-aos = "fade-up">
                 <h2 id="list-item-3" class="bold-italic adjusted-section" style="text-align: center;">Conclusion</h2>
                 <p >
                   Ultimately, we focused our lectures on colorectal cancer (CRC) and how synthetic biology can be 
