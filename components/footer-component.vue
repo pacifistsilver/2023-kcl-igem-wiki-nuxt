@@ -1,12 +1,12 @@
 <template>
 <footer class="footer">
-  <div class="container" data-aos = "fade-up" data-aos-once = "true">
+  <div class="container" data-aos = "fade-up" data-aos-duration = "1200">
     <div class="row mb-4 footer-details">
       <div class="col-sm-6 logo-footer d-flex align-items-center">
-        <a href = "https://www.kcl.ac.uk/">
+        <a href = "https://www.kcl.ac.uk/" data-aos = "fade-up" data-aos-duration = "1200">
           <img src="https://static.igem.org/mediawiki/2021/0/02/T--KCL_UK--KCL_logo.png" alt="iGEM King's College London" width= "160" height=auto>
         </a>
-        <p>
+        <p data-aos = "fade-up" data-aos-duration = "1400">
           <br>
           King's College London
           <br>
@@ -15,7 +15,7 @@
           <br>
           kings.igem@gmail.com</p>
       </div>
-      <div class = "col sm-6 sponsors d-flex align-items-center">
+      <div class = "col sm-6 sponsors d-flex align-items-center" data-aos = "fade-up" data-aos-duration = "1000">
         <div>
           <a href = "https://www.kclsu.org/">
             <img src = "https://static.igem.wiki/teams/4584/wiki/t-kcl-uk-kclsu.png">
@@ -37,8 +37,8 @@
 
     </div>
     <div class = "row">
-      <div class="line-left" style="width: 50%;"></div>
-    <div class="line-right" style="width: 50%;"></div>
+      <div class="line-left" data-aos = "fade-right" data-aos-duration = "1000" style="width: 50%;"></div>
+    <div class="line-right" data-aos = "fade-left" data-aos-duration = "1000" style="width: 50%;"></div>
     </div>
 
     <!-- The following MUST be on every page: license information and link to the repository on gitlab.igem.org -->
