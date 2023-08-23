@@ -1,5 +1,6 @@
 // libs 
 @import "~/node_modules/bootstrap/dist/css/bootstrap";
+@import "~/node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
 // scss files 
 @import "footer";
@@ -9,9 +10,7 @@
 @import "team";
 @import "fonts";
 
-//@import "node_modules\hamburgers\_sass\hamburgers\hamburgers.scss";
 // use global.scss to store variables you use a lot. 
-
 
 body {
     font-family:"Gilroy";
@@ -45,12 +44,7 @@ p {
 .section.approach.aos-init.aos-animate.data-aos {
     background-color:#060927
 }
-.container {
-    max-width: 1440px;
-  }
-.content-container {
-    max-width: 1440px;
-}
+    
 .left-aligned { 
     margin-left: auto; 
 }

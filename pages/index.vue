@@ -1,23 +1,12 @@
 <script lang="ts" setup></script>
 <!-- ideas: risk quiz -->
 <template>
-  <section class = "header">
-    <div class = "container d-flex align-items-center" data-aos="fade-up" data-aos-duration="3000">
-      <div class = "header-contents">
-        <h2>Welcome to KCL's 2023 iGEM Wiki! We're still working on our project, but make sure to check out our project description. Check back later in the summer for more updates!</h2>
-      </div>
-    </div>
-  </section>
-  <section class = "stats">
+  <section class = "index-header">
     <div class = "container">
-    </div>
-  </section>
-  <section>
-    <div class = "container">
-    </div>
-  </section>
-  <section>
-    <div class = "container">
+        <div class="col lg-6 w-50 mx-auto" >
+          <h2 class = "header-title text-center" data-aos="fade-up" data-aos-duration="1000">Introducing ColoEcho!</h2>
+          <p class = "header-text" data-aos="fade-up" data-aos-duration="1200"> Welcome to KCL's 2023 iGEM Wiki! We're still working on our project, but make sure to check out our project description. Check back later in the summer for more updates!</p>
+        </div>
     </div>
   </section>
 </template>
