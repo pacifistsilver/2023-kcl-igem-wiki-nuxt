@@ -56,7 +56,7 @@
                     <li class="nav-item dropdown">
                         <NuxtLink class="nav-link dropdown-toggle" id="navbar-item" role="button" data-bs-toggle="dropdown" aria-expanded="false" to="./">Awards</NuxtLink>
                             <ul class="dropdown-menu" aria-labelledby="navbar-item">       
-                                <li><NuxtLink class="dropdown-item" to="./parts">Best New Basic Part</NuxtLink></li>
+                                <li><NuxtLink class="dropdown-item" to="./parts">New Basic Part</NuxtLink></li>
                                 <li><NuxtLink class="dropdown-item" to="./ihp">Integrated Human Practices</NuxtLink></li>
                                 <li><NuxtLink class="dropdown-item" to="./education">Education</NuxtLink></li>
                             </ul>
