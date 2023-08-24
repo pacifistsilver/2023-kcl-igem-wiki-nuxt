@@ -1,3 +1,5 @@
+@use "global.scss";
+
 // libs 
 @import "~/node_modules/bootstrap/dist/css/bootstrap";
 @import "~/node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
@@ -10,10 +12,11 @@
 @import "team";
 @import "fonts";
 
+
 // use global.scss to store variables you use a lot. 
 
 body {
-    font-family:"Gilroy";
+    font-family: global.$main-font;
     font: size 13px;   
     color: #000000;
     line-height:30px;
