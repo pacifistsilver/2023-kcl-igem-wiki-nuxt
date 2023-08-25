@@ -7,20 +7,35 @@
     margin-top: 57px;
 }
 .index-wrapper {
-    padding-top: 10rem;
+    padding-top: 20rem;
     height: 100rem;
     background: linear-gradient(#16324f, #00619b);}
 
-.index-stats {
-    padding-top: 18rem;
+.index-stats .container {
+    top: 31rem;
 }
-
+    
+.loader__text {
+    display: flex;
+    margin-right: .24rem;
+    opacity: 0;
+}
 .header-text {
     line-height: 110%;
+    font-size: 67.9887px;
     color: global.$color-rose;
+    font-weight: 600;
 }
 
 .index-title {
-    color: white;
+    color: global.$color-white;
     font-size: 50px;
+}
+.index-text {
+    color: global.$color-rose;
+    font-size: 25px;
+
+}
+.white {
+    color: global.$color-white;
 }
