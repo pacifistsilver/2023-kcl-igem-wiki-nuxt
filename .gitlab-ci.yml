@@ -1,5 +1,9 @@
 image: node:18.16-alpine3.18
 
+workflow:
+  rules: 
+    - if: $CI_DEFAULT_BRANCH == "main"
+
 stages:
   - build
   - deploy
