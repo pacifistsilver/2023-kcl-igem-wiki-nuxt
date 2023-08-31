@@ -8,13 +8,15 @@
 }
 .index-wrapper {
     padding-top: 20rem;
-    height: 100rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background: linear-gradient(#152B3E, #00619b);}
 
-.index-stats .container {
-    top: 31rem;
+.index-section {
+    margin-top: 25em;
 }
-    
+
 .loader__text {
     display: flex;
     margin-right: .24rem;
@@ -27,15 +29,17 @@
     font-weight: 600;
 }
 
-.index-title {
+#index-title {
     color: global.$color-white;
-    font-size: 50px;
 }
 .index-text {
     color: global.$color-rose;
-    font-size: 25px;
+    font-size: 1.5em;
 
 }
 .white {
     color: global.$color-white;
+}
+#index-cards {
+    margin-top: 2rem;
 }

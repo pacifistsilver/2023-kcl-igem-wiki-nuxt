@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-xl navbar-light fixed-top" id="navbar">
+    <nav class="navbar navbar-expand-xl fixed-top" id="navbar">
         <div class="container" id="navbar-container">
             <!---- TEAM NAME ---->
             <a class = "navbar-brand" href="/kcl-uk/">

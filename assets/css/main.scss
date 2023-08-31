@@ -3,6 +3,10 @@
 // libs 
 @import "~/node_modules/bootstrap/dist/css/bootstrap";
 @import "~/node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+@import "~/node_modules/tailwindcss/base.css";
+@import "~/node_modules/tailwindcss/components.css";
+@import "~/node_modules/tailwindcss/utilities.css";
+
 
 // scss files 
 @import "footer";
@@ -110,9 +114,7 @@ p {
     height: 40vh;
   }
 
-.header-content {
-    margin-top: 3.5rem;
-}
+
 
 /* CALLOUT */
 .bd-callout { padding:1.25rem; margin-top:1.25rem; margin-bottom:1.25rem; border:1px solid #e9ecef; border-left-width:.25rem; border-radius:.25rem }
