@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-xl navbar-light bg-light fixed-top" id="navbar">
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top" id="navbar">
         <div class="container" id="navbar-container">
             <!---- TEAM NAME ---->
             <a class = "navbar-brand" href="/kcl-uk/">
@@ -12,7 +12,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="bg-light collapse navbar-collapse" id="navbarSupportedContent" >
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
                 <ul class="navbar-nav ml-auto left-aligned">
 
                     <!---- TEAM ---->

@@ -9,12 +9,12 @@
     justify-content: space-around;
     height: 7rem;
     padding: 0 var(--side-margin);
-    background-color: #e5e5e5;
-    box-shadow: 0 2px 6px rgba(0,0,0,.1333333333);
+    background-color: #13191E;
     width: 100%;
     z-index: 10;
     position: fixed;
-    transition: height 300ms;}
+    transition: height 300ms;
+    background: transparent;}
 
 .navbar-scrolled {
     height: 4.1176470588rem !important;
@@ -23,7 +23,14 @@
 
 .navbar-brand img {
     height: 100%;
-    user-select: none;} 
+    user-select: none;
+    filter: brightness(0) invert(1) opacity(80%);
+    transition: all .75s cubic-bezier(0.17,0.17,0.41,1.0);
+} 
+.navbar-brand img:hover {
+    filter: brightness(1) invert(0) opacity(100%);
+    transition: all .5s cubic-bezier(0.17,0.17,0.41,1.0);
+}
 
 .navbar-brand   {
     width: fit-content;
@@ -41,11 +48,11 @@
 }
 #navbar-item:hover {
     background-color: var(--item-background, global.$color-coloblue);
-    color: #fff;  
+    color: #ffffff;  
     transition: all .2s cubic-bezier(0.17,0.17,0.41,1.0);
 }
 #navbar-item {
-    color: #000000;
+    color: #ffffff;
     font-size: 1.2rem;  
     font-weight: bold;
     padding: .6rem 1rem;
