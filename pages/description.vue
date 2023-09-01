@@ -5,18 +5,18 @@
       <header class="header-content custom-shape" id ="header">
         <div class="bg">
           <h1 id="title" style="text-align: center; font-weight: bold;" class="header-text">Ultrasound diagnostic tool for colorectal cancer</h1>
-          <h1 id="subtitle" style="text-align: center; font-weight: bold;" class="header-text">More info coming along sooon.</h1>
+          <h1 id="subtitle" style="text-align: center; font-weight: bold;" class="header-text">More info coming along soon.</h1>
         </div>
       </header>
 
       <main>
-        <div class = "container">
-          <div class = "row">
-            <div class = "col lg-3">
+        <div class="container">
+          <div class="row">
+            <div class="col lg-3">
               <nav class="section-nav">
                 <h3>contents</h3>
 
-                  <ul class = "section-nav-list">  
+                  <ul class="section-nav-list">  
                     <li><a  href="#project-description">Introduction</a></li>
                     <li><a  href="#colorectal-cancer">Colorectal Cancer</a></li>                  
                     <li><a  href="#solution">The Solution</a></li>                 
@@ -43,7 +43,10 @@
                   The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited component 
                   for an ultrasound-detectable biosensor.
                 </p>
-                <hr>
+                <div class="line-container">
+                  <div class="line line-left" data-aos="fade-right"></div>
+                  <div class="line line-right" data-aos="fade-left"></div>
+                </div>
               </section>  
 
               <section id = "colorectal-cancer" data-aos = "fade-up">
@@ -82,7 +85,10 @@
                   group in existing screening programs, contribute to the underdiagnosis of early-stage CRC cases 
                   in the United Kingdom.
                 </p>
-                <hr>
+                <div class="line-container">
+                  <div class="line line-left" data-aos="fade-right"></div>
+                  <div class="line line-right" data-aos="fade-left"></div>
+                </div>
               </section>
               <section id = "solution" data-aos = "fade-up">
                 <h3 id="3" class="bold-italic adjusted-section" style="text-align: center;">Our solution: Synthetic Biology</h3>
@@ -100,7 +106,10 @@
                   this unique acoustic property results in enhanced ultrasound signal contrast detection, as demonstrated by the 
                   Shapiro lab. Thus, the expression of the gene encoding for GVs, ARG1 can be used as a reporting gene (Shapiro, 2014).
                 </p>
-                <hr>
+                <div class="line-container">
+                  <div class="line line-left" data-aos="fade-right"></div>
+                  <div class="line line-right" data-aos="fade-left"></div>
+                </div>
                 <h3 id="4" class="bold-italic adjusted-section" style="text-align: center;">Our motivation to tackle Colorectal Cancer</h3>
                 <p >Colorectal cancer holds a deep personal significance to us. As a diverse team, many of our members come from 
                   regions where late-stage diagnoses are common due to insufficient screening programs and poor disease awareness. 
@@ -110,7 +119,10 @@
                   could be at risk. This prompted us to contribute to the fight against colorectal cancer with the 
                   aim of enhancing early diagnosis and, consequently, improving patient survival outcomes.
                 </p>
-                <hr>
+                <div class="line-container">
+                  <div class="line line-left" data-aos="fade-right"></div>
+                  <div class="line line-right" data-aos="fade-left"></div>
+                </div>
               </section>
 
               <section id = "project-goals" data-aos = "fade-up">
@@ -122,10 +134,13 @@
                   <li>Transform modified plasmid containing ARG1 into competent E.Coli Nissl strain.</li>
                   <li>Verify the GVs expression when signal is detected with ultrasound.</li>
                 </ul>
-                <hr>
+                <div class="line-container">
+                  <div class="line line-left" data-aos="fade-right"></div>
+                  <div class="line line-right" data-aos="fade-left"></div>
+                </div>
               </section>
 
-              <section id = "references" data-aos = "fade-up">
+              <section id="references" data-aos="fade-up">
                 <h3 id="6" class="bold-italic adjusted-section" style="text-align: center;">References</h3>
                 <ul style="font-size: 15px; margin-top: 30px;">
                   <li>
@@ -189,7 +204,10 @@
                     </a>
                   </li>
                 </ul>
-                <hr>
+                <div class="line-container">
+                  <div class="line line-left" data-aos="fade-right"></div>
+                  <div class="line line-right" data-aos="fade-left"></div>
+                </div>
               </section>
             </div>  
           </div> 
@@ -201,50 +219,50 @@
 </template>
 <script>
 export default {
-    data() {
-        return {
-            currentPage: "Description",
-            observer: null,
-            options: {
-              easing: [0.25, 0.1, 0.25, 1.0],
-              force: true,
-              cancelable: false,
-              x: false,
-              y: true,
-              offset: -80,
-            }
+  data() {
+      return {
+          showReferences: false, // Add this line
+          currentPage: "Description",
+          observer: null,
+          options: {
+            easing: [0.25, 0.1, 0.25, 1.0],
+            force: true,
+            cancelable: false,
+            x: false,
+            y: true,
+            offset: -80,
           }
+        }
+  },
+  created() {
+      this.observer = new IntersectionObserver(this.onElementObserved, {
+          root: this.$el,
+          threshold: 0.5,
+      });
+  },
+  mounted() {
+      this.$el.querySelectorAll('section[id]').forEach((section) => {
+          this.observer.observe(section);
+      });
+  },
+  beforeDestroy() {
+      this.observer.disconnect();
+  },
+  methods: {  
+    onElementObserved(entries) {
+        entries.forEach(({ target, isIntersecting }) => {
+            const id = target.getAttribute('id');
+            if (isIntersecting) {
+                this.$el
+                    .querySelector(`div li a[href="#${id}"]`)
+                    .parentElement.classList.add('active');
+            } else {
+                this.$el
+                    .querySelector(`div li a[href="#${id}"]`)
+                    .parentElement.classList.remove('active');
+            }
+        });
     },
-    created() {
-        this.observer = new IntersectionObserver(this.onElementObserved, {
-            root: this.$el,
-            threshold: 0.5,
-        })
-    },
-    mounted() {
-        this.$el.querySelectorAll('section[id]').forEach((section) => {
-            this.observer.observe(section)
-        })
-    },
-    beforeDestroy() {
-        this.observer.disconnect()
-    },
-    methods: {  
-      onElementObserved(entries) {
-          entries.forEach(({ target, isIntersecting }) => {
-              const id = target.getAttribute('id')
-              if (isIntersecting) {
-                  this.$el
-                      .querySelector(`div li a[href="#${id}"]`)
-                      .parentElement.classList.add('active')
-              } else {
-                  this.$el
-                      .querySelector(`div li a[href="#${id}"]`)
-                      .parentElement.classList.remove('active')
-              }
-          })
-      },
   },
 }
-
 </script>
