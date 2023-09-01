@@ -62,7 +62,7 @@
         <div class="row justify-content-center">
 
           <div data-aos="fade-up" data-aos-duration="1000" class="col-9 aos-init aos-animate " >
-            <h3 class="display-4" id = "index-title" style="text-align: center !important;">Our technique</h3> 
+            <h3 class="display-1" id = "index-title" style="text-align: center !important;">Our technique</h3> 
             <p class="index-text" style="text-align: center !important;">
             Combining the technology of Ultrasound Molecular Imaging and Gas Vesicles, we have designed a system that can detect specific biomarkers, 
             that colorectal cancer cells overexpress.
@@ -71,7 +71,7 @@
         </div>
         <div class="row justify-content-center" id = "index-cards">
           <div data-aos="fade-up-right" data-aos-duration="1000" class="col-lg-4 aos-init aos-animate">
-            <div class="card text-center text-bg-secondary  ">
+            <div class="card text-center border-light " style = "background: transparent;">
               <div class="card-body"> 
                 <h4 class ="card-title">Gas Vesicles</h4> 
                 <h5 class ="card-subtitle" >It provides a patient-friendly diagnostic approach.</h5> 
@@ -83,7 +83,7 @@
           </div> 
 
           <div data-aos="fade-up-left" data-aos-duration="1000" class="col-lg-4 aos-init aos-animate">
-            <div class="card text-center ">
+            <div class="card text-center border-light " style = "background: transparent;">
               <div class="card-body"> 
                 <h4 class ="card-title">Ultrasound</h4> 
                 <h5 class ="card-subtitle" >It provides a patient-friendly diagnostic approach.</h5> 
@@ -96,6 +96,17 @@
 
         </div>
       </div>
+    </section>
+      <div class = "row">
+        <div class = "col">
+          <ul class = "thumbnails">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    <section>
+
+
     </section>
   </section>  
 </template>
