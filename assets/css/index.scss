@@ -43,3 +43,9 @@
 #index-cards {
     margin-top: 2rem;
 }
+#index-cards .card-title {
+    color: global.$color-white;
+}
+#index-cards .card-text, #index-cards .card-subtitle {
+    color: global.$color-rose;
+}
