@@ -1,8 +1,10 @@
 .custom-shape {
-  background: linear-gradient(200deg, #276bff, #b35f90);
+  background: linear-gradient(200deg, #00619B, #16324F);
   background-size: 200% 200%;
-  padding: 20px;
-  min-height: 30vh;
+  padding: 40px;
+  min-height: 60vh;
+  width:100%;
+  box-sizing: border-box;
   animation: Gradient 6s ease infinite, slideIn 2s forwards;
 }
 
