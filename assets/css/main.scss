@@ -1,5 +1,5 @@
 @use "global.scss";
-
+$hamburger-layer-color: #fff !default;
 // libs 
 @import "~/node_modules/bootstrap/dist/css/bootstrap";
 @import "~/node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
@@ -81,6 +81,9 @@ p {
     color: white;
     text-shadow: 0 0 5px #000;
 
+}
+.wrapper {
+    background: linear-gradient(#152B3E, #00619b);
 }
 
 // BG-SECTION media rules

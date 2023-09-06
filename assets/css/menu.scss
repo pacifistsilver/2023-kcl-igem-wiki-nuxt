@@ -65,5 +65,11 @@
     height: 100%;
 }
 
+@media (min-width: 1200px) {
+    .navbar-expand-xl .hamburger {
+      display: none;
+    }
+  }
+
 
 
