@@ -29,7 +29,12 @@ body {
     overflow-x:hidden;
     background-color:#fff;
     box-sizing: border-box;
+    background-color: #16324F;
+    background-blend-mode: screen;
+    
 }
+//    background: linear-gradient(#152B3E, transparent), linear-gradient(to bottom left, #152B3E, transparent), linear-gradient(to bottom right, #00619b, transparent);
+
 .container {
     position: relative;
 }

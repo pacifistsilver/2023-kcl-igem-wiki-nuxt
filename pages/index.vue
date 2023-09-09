@@ -6,13 +6,14 @@
       <div class = "container">
           <div class="title" >
             <h1 class = "header-text"> 
-              <span data-aos ="fade-down-left" data-aos-duration="500"> 
+              <span data-aos="fade-up" data-aos-duration="750">
                 <span class = "white">We are</span>
-                developing a new diagnostic</span>
-              <span data-aos ="fade-up-right" data-aos-duration="2000">
-                <span class = "white"> tool to create a better</span> 
-                Colon Cancer diagnosis.
+                developing a new diagnostic
               </span>
+              <span data-aos="fade-up" data-aos-duration="1000">
+                <span class = "white"> tool to create a better Colon Cancer </span> 
+              </span>
+              <span data-aos="fade-up" data-aos-duration="1250">diagnosis.</span>
             </h1>
           </div>
       </div>
@@ -111,5 +112,5 @@
   </section>  
 </template>
 <script>
+
 </script>
-<style scoped></style>
