@@ -13,14 +13,22 @@
     width: 100%;
     z-index: 10;
     position: fixed;
-    transition: height 300ms;
-    background: transparent;}
+    transition: height 300ms, opacity .83333s cubic-bezier(.53,0,.41,1);
+    background: transparent;
+}
 
 .navbar-scrolled {
     height: 4.1176470588rem !important;
-    transition: height 300ms;   
+    transition: height 300ms, opacity .83333s cubic-bezier(.53,0,.41,1);   
+    opacity: 1;
+    background: linear-gradient(180deg,#443758 19.27%,rgba(32,20,61,0)) !important;
 }
 
+.navbar-scrolled-bg {
+    background: linear-gradient(180deg,#443758 19.27%,rgba(32,20,61,0)) !important;
+    transition: opacity .83333s cubic-bezier(.53,0,.41,1);   
+    opacity: 0;
+}
 .navbar-brand img {
     height: 100%;
     user-select: none;

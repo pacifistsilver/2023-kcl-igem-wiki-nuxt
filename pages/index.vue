@@ -1,6 +1,9 @@
 <script lang="ts" setup></script>
 <!-- ideas: risk quiz -->
 <template>
+  <div class="static-bg">
+    <img src="https://static.igem.wiki/teams/4584/wiki/vector-2-1.svg" alt="">
+  </div>
   <section class ="index-wrapper"> 
     <section class = "index-header">
       <div class = "container">

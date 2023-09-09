@@ -1,5 +1,26 @@
 @use "global.scss";
 
+.static-bg {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: rotatingBg;
+    animation-timing-function: linear;
+    height: 312%;
+    left: -50%;
+    position: fixed;
+    top: -100%;
+    transform: translateX(50%);
+    width: 200%;
+    z-index: -1;
+}
+@keyframes rotatingBg {
+    0% {
+      transform:rotate(0)
+    }
+    to {
+      transform:rotate(1turn)
+    }
+  }
 .header {
     display: grid;
     grid: [track] 100%/[track] 100%;
@@ -14,11 +35,6 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image:
-    linear-gradient(#00619b, transparent), 
-    linear-gradient(to top left, #152B3E, transparent), 
-    linear-gradient(to top right, #00619b, transparent);
-    background-blend-mode: screen;
 }
 
 .index-section {
