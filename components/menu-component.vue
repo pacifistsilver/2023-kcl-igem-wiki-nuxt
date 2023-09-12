@@ -26,39 +26,39 @@
                         <ul class="dropdown-menu" aria-labelledby="navbar-item">
                             <li>
                                 <NuxtLink class="dropdown-item" to="./description">
-                                    <span class = "menuNavItem__label">Description</span>
+                                    <span>Description</span>
                                 </NuxtLink>
                             </li>
                             <li>
                                 <NuxtLink class="dropdown-item" to="./model">
-                                    <span class = "menuNavItem__label">Model</span>
+                                    <span>Model</span>
 
                                 </NuxtLink>
                             </li>
                             <li>
                                 <NuxtLink class="dropdown-item" to="./experiments">
-                                    <span class = "menuNavItem__label">Experiments</span>
+                                    <span>Experiments</span>
 
 
                                 </NuxtLink>
                             </li>
                             <li>
                                 <NuxtLink class="dropdown-item" to="./engineering">
-                                    <span class = "menuNavItem__label">Engineering</span>
+                                    <span>Engineering</span>
 
 
                                 </NuxtLink>
                             </li>
                             <li>
                                 <NuxtLink class="dropdown-item" to="./results">
-                                    <span class = "menuNavItem__label">Results</span>
+                                    <span>Results</span>
 
 
                                 </NuxtLink>
                             </li>
                             <li>
                                 <NuxtLink class="dropdown-item" to="./notebook">
-                                    <span class = "menuNavItem__label">Notebook</span>
+                                    <span>Notebook</span>
                                 </NuxtLink>
                             </li>
                         </ul>   
@@ -114,27 +114,29 @@
 export default {
   mounted() {
     this.$nextTick(function(){
+        var hamburger = document.querySelector(".hamburger");;
         window.addEventListener("scroll", function(){
-            var navbar = document.getElementById("navbar")
-            var nav_classes = navbar.classList
+            var is_scrolled = document.getElementById("app-layout")
             if(document.documentElement.scrollTop >= 150) {
-                if (nav_classes.contains("navbar-scrolled") === false) {
-                    nav_classes.toggle("navbar-scrolled");
+                if (is_scrolled.getAttribute("data-is-scrolled") === "false") {
+                    is_scrolled.setAttribute("data-is-scrolled", "true");
+
             }
             }
             else {
-                if (nav_classes.contains("navbar-scrolled") === true) {
-                    nav_classes.toggle("navbar-scrolled");
+                if (is_scrolled.getAttribute("data-is-scrolled") === "true") {
+                    is_scrolled.setAttribute("data-is-scrolled", "false")
             }
             }
+            
         })
-        window.addEventListener('click', function() {
+        hamburger.addEventListener('click', function() {
             // Toggle class "is-active"
-            var hamburger = document.querySelector(".hamburger");
             hamburger.classList.toggle("is-active");
             
             // Do something else, like open/close menu
-    })
+        })
+
 })
 }}
 </script>

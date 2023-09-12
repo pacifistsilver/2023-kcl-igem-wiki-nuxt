@@ -20,6 +20,7 @@ export default defineNuxtConfig({
           crossorigin: "anonymous"
         }
       ],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
     }
   },
   ssr: false,
@@ -29,4 +30,5 @@ export default defineNuxtConfig({
   ],
   components: true,
   plugins: [{ src: "@/plugins/aos", ssr: false, mode: "client" }],
+  
 })
