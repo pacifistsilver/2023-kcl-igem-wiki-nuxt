@@ -2,21 +2,21 @@
 <!-- ideas: risk quiz -->
 <template>
   <div class="static-bg">
-    <img src="https://static.igem.wiki/teams/4584/wiki/vector-2-1.svg" alt="">
+    <img src="https://static.igem.wiki/teams/4584/wiki/vector-21.svg" alt="">
   </div>
   <section class ="index-wrapper"> 
     <section class = "index-header">
       <div class = "container">
           <div class="title" >
             <h1 class = "header-text"> 
-              <span data-aos="fade-up" data-aos-duration="750">
+              <span data-aos="fade-up" data-aos-duration="750" data-aos-delay="0" data-aos-once="true">
                 <span class = "white">We are</span>
                 developing a new diagnostic
               </span>
-              <span data-aos="fade-up" data-aos-duration="1000">
+              <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-once="true">
                 <span class = "white"> tool to create a better Colon Cancer </span> 
               </span>
-              <span data-aos="fade-up" data-aos-duration="1250">diagnosis.</span>
+              <span data-aos="fade-up" data-aos-duration="1250" data-aos-delay="2000" data-aos-easing="ease-in-out" data-aos-once="true">diagnosis.</span>
             </h1>
           </div>
       </div>
