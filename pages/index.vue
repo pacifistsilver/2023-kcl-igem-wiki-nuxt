@@ -1,23 +1,45 @@
 <script lang="ts" setup></script>
 <!-- ideas: risk quiz -->
 <template>
-  <div class="static-bg">
-    <img src="https://static.igem.wiki/teams/4584/wiki/vector-21.svg" alt="">
+
+  <div class="bgObjects" aria-hidden="true">
+    <div class="bgObjectItem" >
+      <div class="bgObjectItem-Inner">
+        <img class="js-image" src="https://static.igem.wiki/teams/4584/wiki/bg-objects/bgobject-header3.png" alt="" decoding="async">
+      </div>
+    </div>
+    <div class="bgObjectItem" >
+      <div class="bgObjectItem-Inner">
+        <img class="js-image" src="https://static.igem.wiki/teams/4584/wiki/bg-objects/bgobject-header3.png" alt="" decoding="async">
+      </div>
+    </div>
+    <div class="bgObjectItem" >
+      <div class="bgObjectItem-Inner">
+        <img class="js-image" src="https://static.igem.wiki/teams/4584/wiki/bgobject.png" alt="" decoding="async">
+      </div>
+    </div>
   </div>
-  <section class ="index-wrapper"> 
-    <section class = "index-header">
+
+  <section class ="index__page__inner"> 
+    <section class = "headBlock__main">
       <div class = "container">
-          <div class="title" >
-            <h1 class = "header-text"> 
-              <span data-aos="fade-up" data-aos-duration="750" data-aos-delay="0" data-aos-once="true">
-                <span class = "white">We are</span>
-                developing a new diagnostic
-              </span>
-              <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-once="true">
-                <span class = "white"> tool to create a better Colon Cancer </span> 
-              </span>
-              <span data-aos="fade-up" data-aos-duration="1250" data-aos-delay="2000" data-aos-easing="ease-in-out" data-aos-once="true">diagnosis.</span>
-            </h1>
+          <div class="headBlock__titlesWrapper row ">
+            <div class = "col-9">
+              <h1 class = "headBlock__title__container row"> 
+                <span class = "headBlock__subtitle__line white text-center col-11 " data-aos="fade-left" data-aos-duration="0" data-aos-delay="0" data-aos-once="true">
+                  Introducing
+                </span>
+                <span class = "headBlock__title__line  white col-12 text-center " data-aos="fade-right" data-aos-duration="500" data-aos-delay="500" data-aos-once="true">ColoEcho</span>
+                <span class = "headBlock__description__line  col-12 text-center " data-aos="fade-up" data-aos-duration="1250" data-aos-delay="750" data-aos-once="true">
+                  A diagnostic tool for Colorectal Cancer
+                </span>
+              </h1>
+            </div>  
+            <div class = "index-headBlock__visual col-3">
+              <div class = "index_headBlockImage-container" data-aos="fade-left" data-aos-duration="1250" data-aos-delay="1300" data-aos-once="true">
+                <img src = "https://static.igem.wiki/teams/4584/wiki/gv.png" alt = "" decoding = "async">
+              </div>
+            </div>
           </div>
       </div>
 
@@ -100,16 +122,6 @@
 
         </div>
       </div>
-    </section>
-      <div class = "row">
-        <div class = "col">
-          <ul class = "thumbnails">
-            <li></li>
-          </ul>
-        </div>
-      </div>
-    <section>
-
 
     </section>
   </section>  
