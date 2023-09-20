@@ -26,22 +26,29 @@
     justify-content: space-around;
     height: 6rem;
     padding: 0 var(--side-margin);
-    background-color: #13191E;
+    background-color: transparent;
     width: 100%;
     z-index: 10;
     position: fixed;
-    transition: height 300ms, opacity .83333s cubic-bezier(.53,0,.41,1);
-    background: #142432;
+    background: transparent;
     border-radius: 0 0 25px 25px;
 }
 
+#navbarSupportedContent {
+  transition-duration: .2s, .4s, .2s;
+  transition-timing-function: linear,cubic-bezier(.19,1,.22,1),cubic-bezier(.19,1,.22,1);
+  transition-property: opacity, -webkit-transform, transform;
+
+}
 
 // shrink navbar on scroll
-[data-is-scrolled="true"] .navbar {
-    height: 5rem !important;
-    transition: height cubic-bezier(.19,1,.22,1), opacity .83333s cubic-bezier(.19,1,.22,1);   
-    opacity: 1;
-    background: #142432;
+[data-is-scrolled="true"] #navbarSupportedContent {
+  -webkit-transform:translateY(-100%);
+  transform: translateY(-100%);
+}
+
+[data-is-scrolled="true"]  #navbarSupportedContent {
+  opacity: 1;
 }
 
 // change navbar background on scroll
@@ -111,12 +118,19 @@
   }
 }
 // hamburger menu
+.hamburger {
+  visibility: hidden;
+}
+
 @media (min-width: 1200px) {
     .navbar-expand-xl .hamburger {
-      display: none;
+      visibility: hidden;
     }
   }
 
+[data-is-scrolled="true"]  .hamburger {
+  visibility: hidden;
+}
 // Menu Hover Effects
 
 .menuNavItem__label::after {

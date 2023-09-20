@@ -1,13 +1,55 @@
 @use "global.scss";
 
 // background objects
+
+@-webkit-keyframes bgObjectItemInnerAnim {
+    0% {
+      -webkit-transform:translateX(-4%);
+      transform:translateX(-4%)
+    }
+    to {
+      -webkit-transform:translateX(4%);
+      transform:translateX(4%)
+    }
+  }
+@keyframes bgObjectItemInnerAnim {
+    0% {
+        -webkit-transform:translateX(-4%);
+        transform:translateX(-4%)
+    }
+    to {
+        -webkit-transform:translateX(4%);
+        transform:translateX(4%)
+    }
+}
+@-webkit-keyframes bgObjectItemImageAnim {
+    0% {
+        -webkit-transform:translateY(-4%);
+        transform:translateY(-4%)
+    }
+    to {
+        -webkit-transform:translateY(4%);
+        transform:translateY(4%)
+    }
+}
+@keyframes bgObjectItemImageAnim {
+    0% {
+        -webkit-transform:translateY(-4%);
+        transform:translateY(-4%)
+    }
+    to {
+        -webkit-transform:translateY(4%);
+        transform:translateY(4%)
+    }
+}
+
 .bgObjects {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow: hidden;
     pointer-events: none;
     position: absolute;
-    top: -10vmax;
+    top: -0;
     -webkit-transition-duration: .2s;
     transition-duration: .2s;
     -webkit-transition-property: opacity;
@@ -68,15 +110,18 @@
     width: 100%;
 }
 
+.bgObjectItem:nth-child(odd){
+    -webkit-box-pack:end;
+    -ms-flex-pack:end;
+    justify-content:flex-end
+  }
+
 .bgObjectItem:nth-child(odd) .bgObjectItem-Inner {
-	margin-left: 40vmax;
-	margin-right: 0;
+	margin-left: 0;
+	margin-right: -40vmax;
 }
 
-.bgObjectItem:nth-child(even) .bgObjectItem-Inner {
-	margin-left: 0;
-	margin-right: 40vmax;
-}
+
 .header {
     display: grid;
     grid: [track] 100%/[track] 100%;
@@ -96,7 +141,7 @@
 }
 @media (min-width: 1024px) {
     .index__page__inner {
-      padding-top: 5.25rem;
+      padding-top: 0.25rem;
     }
   }
 .index-section {
