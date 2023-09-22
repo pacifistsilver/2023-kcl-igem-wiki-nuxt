@@ -7,14 +7,26 @@
 }
 
 @keyframes fadeInOut {
-  0% { opacity: 0; }
-  25% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
-#title, #subtitle {
-  font-size:2em;
+#title,
+#subtitle {
+  font-size: 2em;
   opacity: 0;
   animation: fadeInOut 10s infinite;
 }
@@ -25,24 +37,27 @@
 
 @keyframes Gradient {
   0% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
+
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
+
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
 
 @keyframes slideIn {
   from {
-      transform: translateY(-70%);
-      opacity: 0;
+    transform: translateY(-70%);
+    opacity: 0;
   }
+
   to {
-      transform: translateY(0);
-      opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -56,6 +71,7 @@
   #title {
     font-size: 1.5em;
   }
+
   #subtitle {
     font-size: 1.2em;
   }

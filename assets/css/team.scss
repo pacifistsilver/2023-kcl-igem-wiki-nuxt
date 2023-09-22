@@ -2,19 +2,22 @@
     padding-top: 7rem;
     margin: 0 auto;
     width: 61.9rem;
-  }
+}
+
 .team-header-text {
     font-size: 23.996px;
-    color:white;
+    color: white;
     line-height: 32px;
     text-shadow: 0 0 5px #000;
-}   
+}
+
 .team-header-title {
     font-size: 3rem;
     font-weight: 400;
     color: white;
     text-shadow: 0 0 5px #000;
 }
+
 .header-image-team {
     width: 100%;
     height: 100%;
@@ -24,14 +27,18 @@
     background-color: rgba(0, 0, 0, 0);
     background-size: auto;
     background-size: cover;
-    
+
 }
-.team-tabs-header.bg {height: 45vh}
+
+.team-tabs-header.bg {
+    height: 45vh
+}
 
 .team-tabs-content {
     margin: 0 auto;
     width: 9.92rem;
-  }
+}
+
 .team-tabs-people {
     display: grid;
     margin: 0 auto;
@@ -40,24 +47,27 @@
 .team-tabs-person {
     cursor: pointer;
     width: 2.1rem;
-  }
+}
+
 .teams-tab-person-img {
     height: 9.7rem;
     margin: 0 auto 0.16rem;
     position: relative;
     width: 10.7rem;
-    border-radius: 50%; 
+    border-radius: 50%;
 
 }
+
 .person-img {
     height: 100%;
     margin: 0 auto .16rem;
     position: relative;
     width: 10.71rem;
     object-fit: cover;
-    border-radius: 15%; 
+    border-radius: 15%;
 
 }
+
 .team-tabs-people-row {
     margin: 0 auto;
 }
@@ -69,42 +79,52 @@
     font-size: 17.997px;
     color: #00619b;
 }
+
 .team-tabs-person-name-desc {
     position: relative;
     text-align: center;
     font-size: 15.9973px;
     color: #009b87;
 }
+
 .team-tabs {
     margin-top: 4rem;
 }
-.teams-tab-person-img:hover::after, .teams-tab-person-img:hover::before{
+
+.teams-tab-person-img:hover::after,
+.teams-tab-person-img:hover::before {
     transform: scale(1, 1);
 }
+
 .teams-tab-person {
-    cursor: pointer;    
-  }
+    cursor: pointer;
+}
+
 .teams-tab-person:hover .team-tabs-person-name-title,
 .teams-tab-person:hover .team-tabs-person-name-desc {
-  text-decoration:underline;
+    text-decoration: underline;
 }
-.teams-tab-person-img::after, .teams-tab-person-img::before{
+
+.teams-tab-person-img::after,
+.teams-tab-person-img::before {
     content: '';
     position: absolute;
     inset: 0;
     transition: 0.3s;
 }
-.teams-tab-person-img::after{
+
+.teams-tab-person-img::after {
     border-right: 5px solid rgba(0, 155, 135, 0.75);
     border-left: 5px solid rgba(0, 155, 135, 0.75);
-    border-radius: 15%; 
+    border-radius: 15%;
     background: rgba(0, 155, 135, 0.2);
     transform: scale(1, 0);
 }
-.teams-tab-person-img::before{
+
+.teams-tab-person-img::before {
     border-top: 5px solid rgba(0, 155, 135, 0.75);
     border-bottom: 5px solid rgba(0, 155, 135, 0.75);
-    border-radius: 15%; 
+    border-radius: 15%;
     background: rgba(0, 155, 135, 0.2);
     transform: scale(0, 1);
 }

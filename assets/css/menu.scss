@@ -3,71 +3,72 @@
 
 // navitem padding 
 @media screen and (min-width: 1025px) {
-    .nav-item > a {
-      padding: .4em .8em;
-      position: relative;
-    }
-  }
-
-.nav-item > a {
+  .nav-item>a {
+    padding: .4em .8em;
     position: relative;
-    display: inline-block;
-    padding: .5em 1em .4em;
+  }
+}
+
+.nav-item>a {
+  position: relative;
+  display: inline-block;
+  padding: .5em 1em .4em;
 }
 
 .nav-item {
-    padding: .4em .8em;
-    transition: background-color 150ms;
+  padding: .4em .8em;
+  transition: background-color 150ms;
 }
 
-#navbar{   
-    display: inline-block;
-    align-items: center;
-    justify-content: space-around;
-    height: 6rem;
-    padding: 0 var(--side-margin);
-    background-color: transparent;
-    width: 100%;
-    z-index: 10;
-    position: fixed;
-    background: transparent;
-    border-radius: 0 0 25px 25px;
+#navbar {
+  display: inline-block;
+  align-items: center;
+  justify-content: space-around;
+  height: 6rem;
+  padding: 0 var(--side-margin);
+  background-color: transparent;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  background: transparent;
+  border-radius: 0 0 25px 25px;
 }
 
 #navbarSupportedContent {
   transition-duration: .2s, .4s, .2s;
-  transition-timing-function: linear,cubic-bezier(.19,1,.22,1),cubic-bezier(.19,1,.22,1);
+  transition-timing-function: linear, cubic-bezier(.19, 1, .22, 1), cubic-bezier(.19, 1, .22, 1);
   transition-property: opacity, -webkit-transform, transform;
 
 }
 
 // shrink navbar on scroll
 [data-is-scrolled="true"] #navbarSupportedContent {
-  -webkit-transform:translateY(-100%);
+  -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
 }
 
-[data-is-scrolled="true"]  #navbarSupportedContent {
+[data-is-scrolled="true"] #navbarSupportedContent {
   opacity: 1;
 }
 
 // change navbar background on scroll
 .navbar-scrolled-bg {
-    background: linear-gradient(180deg,#00314f  19.27%,rgba(32,20,61,0)) !important;
-    transition: opacity .83333s cubic-bezier(.53,0,.41,1);   
-    opacity: 0;
+  background: linear-gradient(180deg, #00314f 19.27%, rgba(32, 20, 61, 0)) !important;
+  transition: opacity .83333s cubic-bezier(.53, 0, .41, 1);
+  opacity: 0;
 }
 
 #navbar-item {
   color: #ffffff;
-  font-size: 1.2rem;  
+  font-size: 1.5rem;
   font-weight: bold;
   padding: .6rem .7rem;
 
 }
+
 #navbar-container {
   height: 100%;
-  max-width: 1700px;
+  max-width: 1850px;
 }
 
 // brand img effects 
@@ -80,17 +81,18 @@
 }
 
 .navbar-brand img {
-    height: 100%;
-    user-select: none;
-    filter: brightness(0) invert(1) opacity(80%);
-    transition: all .75s cubic-bezier(.19,1,.22,1);
-} 
-.navbar-brand img:hover {
-    filter: brightness(1) invert(0) opacity(100%);
-    transition: all .5s cubic-bezier(.19,1,.22,1);
+  height: 100%;
+  user-select: none;
+  filter: brightness(0) invert(1) opacity(80%);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
 }
 
-.navbar-brand  {
+.navbar-brand img:hover {
+  filter: brightness(1) invert(0) opacity(100%);
+  transition: all .5s cubic-bezier(.19, 1, .22, 1);
+}
+
+.navbar-brand {
   bottom: 0;
   height: 5rem;
   left: 1.6875rem;
@@ -102,14 +104,14 @@
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
-  transition-property: transform,-webkit-transform;
-  -webkit-transition-timing-function: cubic-bezier(.19,1,.22,1);
-  transition-timing-function: cubic-bezier(.19,1,.22,1);
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: cubic-bezier(.19, 1, .22, 1);
+  transition-timing-function: cubic-bezier(.19, 1, .22, 1);
   width: 5.875rem;
 }
 
 @media (min-width: 1024px) {
-  .navbar-brand  {
+  .navbar-brand {
     height: 6rem;
     left: 2.5rem;
     -webkit-transform-origin: top left;
@@ -117,51 +119,126 @@
     width: 10rem;
   }
 }
+
 // hamburger menu
 .hamburger {
   visibility: hidden;
 }
 
 @media (min-width: 1200px) {
-    .navbar-expand-xl .hamburger {
-      visibility: hidden;
-    }
+  .navbar-expand-xl .hamburger {
+    visibility: hidden;
   }
-
-[data-is-scrolled="true"]  .hamburger {
-  visibility: hidden;
 }
+
+[data-is-scrolled="true"] .hamburger {
+  visibility: visible;
+}
+
 // Menu Hover Effects
 
 .menuNavItem__label::after {
-    position: absolute;
-    -webkit-transform-origin: center left;
-    transform-origin: center left;
-    bottom: .14em;
-    left: -.1em;
-    width: 100%;
-    height: 2px;
-    content: "";
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    background-color: #ffffff;
-    -webkit-transition: background-color .2s linear,-webkit-transform .4s cubic-bezier(.19,1,.22,1);
-    transition: background-color .2s linear,-webkit-transform .4s cubic-bezier(.19,1,.22,1);
-    transition: background-color .2s linear,transform .4s cubic-bezier(.19,1,.22,1);
-    transition: background-color .2s linear,transform .4s cubic-bezier(.19,1,.22,1),-webkit-transform .4s cubic-bezier(.19,1,.22,1);
+  position: absolute;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+  bottom: .14em;
+  left: -.1em;
+  width: 100%;
+  height: 2px;
+  content: "";
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  background-color: #ffffff;
+  -webkit-transition: background-color .2s linear, -webkit-transform .4s cubic-bezier(.19, 1, .22, 1);
+  transition: background-color .2s linear, -webkit-transform .4s cubic-bezier(.19, 1, .22, 1);
+  transition: background-color .2s linear, transform .4s cubic-bezier(.19, 1, .22, 1);
+  transition: background-color .2s linear, transform .4s cubic-bezier(.19, 1, .22, 1), -webkit-transform .4s cubic-bezier(.19, 1, .22, 1);
 }
 
 @media screen and (min-width: 1025px) {
-    .menuNavItem__label::after {
-      height: 2px;
-      bottom: .1em;
-  
-    }
+  .menuNavItem__label::after {
+    height: 2px;
+    bottom: .1em;
+
   }
+}
 
 #navbar-item:hover .menuNavItem__label:after,
-#navbar-item.is-current .menuNavItem__label:after
- {
-  -webkit-transform:scaleX(1)!important;
-  transform:scaleX(1) !important;
+#navbar-item.is-current .menuNavItem__label:after {
+  -webkit-transform: scaleX(1) !important;
+  transform: scaleX(1) !important;
+}
+
+
+// navbar hamburger menu
+
+[data-is-scrolled="true"] .menuButton {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-duration: .2s, .2s, .6s, .6s;
+  transition-duration: .2s, .2s, .6s, .6s;
+  visibility: visible;
+}
+
+.menuButton {
+  opacity: 0;
+  position: fixed;
+  -webkit-transform: translateX(5.625rem);
+  transform: translateX(5.625rem);
+  -webkit-transition-delay: 0s, 0s, .2s, .2s;
+  transition-delay: 0s, 0s, .2s, .2s;
+  -webkit-transition-duration: .2s, .2s, 0s, 0s;
+  transition-duration: .2s, .2s, 0s, 0s;
+  -webkit-transition-property: opacity, visibility, -webkit-transform;
+  /* transition-property: opacity,visibility,-webkit-transform; */
+  /* transition-property: opacity,visibility,transform; */
+  transition-property: opacity, visibility, transform, -webkit-transform;
+  -webkit-transition-timing-function: linear, linear, cubic-bezier(.19, 1, .22, 1), cubic-bezier(.19, 1, .22, 1);
+  transition-timing-function: linear, linear, cubic-bezier(.19, 1, .22, 1), cubic-bezier(.19, 1, .22, 1);
+  visibility: hidden;
+}
+
+.p-menu,
+.menuButton {
+  right: 10.25rem;
+  top: 1.25rem;
+}
+
+// hamburger menu extension
+
+.p-menu {
+  opacity: 0;
+  position: fixed;
+  right: 1.6875rem;
+  top: 1.1875rem;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  -webkit-transition-property: opacity, visibility;
+  transition-property: opacity, visibility;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  visibility: hidden;
+  z-index: 11;
+}
+
+.p-menu[data-is-menu-opened="false"] {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s;
+  visibility: hidden;
+}
+
+.p-menu,
+.p-menuButton {
+  right: 1.25rem;
+  top: 1.25rem;
+}
+
+.p-menu[data-is-menu-opened="true"] {
+  opacity: 1;
+  visibility: visible;
 }
