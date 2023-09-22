@@ -21,7 +21,7 @@
                   <h3>contents</h3>
 
                     <ul class = "section-nav-list">  
-                      <li><a  href="#introduction">Understanding the Problem</a></li>
+                      <li><a  href="#introduction">Understanding the Problem </a></li>
                       <li><a  href="#define">Defining a Good Solution</a></li>                  
                       <li><a  href="#design">Designing a Good Solution</a></li>                 
                       <li><a  href="#implement">Our Implementation and Evaluation</a></li>             
