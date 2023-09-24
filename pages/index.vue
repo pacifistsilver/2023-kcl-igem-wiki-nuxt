@@ -2,7 +2,7 @@
 <!-- ideas: risk quiz -->
 <template>
   <div class="bgObjects" aria-hidden="true">
-    <div class="bgObjectItem">
+    <div class="bgObjectItem" >
       <div class="bgObjectItem-Inner">
         <img class="js-image" src="https://static.igem.wiki/teams/4584/wiki/bg-objects/bgobject-header3.png" alt=""
           decoding="async">
@@ -19,6 +19,7 @@
         <img class="js-image" src="https://static.igem.wiki/teams/4584/wiki/bgobject.png" alt="" decoding="async">
       </div>
     </div>
+
   </div>
 
   <section class="index__page__inner">
@@ -49,21 +50,19 @@
       </div>
 
     </section>
-    <section class="index-section">
-      <div class="container">
-        <div class="row">
-          <div class="col" data-aos="fade-up" data-aos-duration="900">
-            <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img"
-              alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
-          </div>
-          <div class="col" data-aos="fade-up" data-aos-duration="1200">
-            <h1 class="display-4" id="index-title">Project: ColoEcho</h1>
-            <p class="index-text">
-              We are developing a non-invasive diagnostic tool for detecting Colorectal Cancer in its early stages, aiming
-              to increase patient chances of survival.
-            </p>
-            <a type="button" class="btn btn-outline-primary" href="./description">Read More</a>
-          </div>
+    <section class = "index-section">
+      <div class = "container">
+        <div class = "row">
+            <div class="col" data-aos="fade-up" data-aos-duration="900">
+              <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img" alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
+            </div>
+            <div class="col" data-aos="fade-up" data-aos-duration="1200">
+              <h1 class = "display-4" id = "index-title">Project: ColoEcho</h1>
+              <p class = "index-text"> 
+                We are developing a non-invasive diagnostic tool for detecting Colorectal Cancer in its early stages, aiming to increase patient chances of survival.  
+              </p>
+              <a type="button" class="btn btn-outline-primary" href="./description" >Read More</a>
+            </div>
         </div>
       </div>
     </section>
@@ -85,7 +84,7 @@
               As a result, there is an imperative need to develop a diagnostic strategy that offers improved patient
               accessibility and
               addresses the limitations observed in current methodologies.</p>
-            <a type="button" class="btn btn-outline-primary" href="./description">Read More</a>
+            <a type="button" class="btn btn-outline-primary" href="./description" >Read More</a>
           </div>
         </div>
       </div>
@@ -139,6 +138,34 @@
         </div>
       </div>
 
+    </section>
+    <section class="container">
+      <div class="row">
+        <div class="col tabbed gallery">
+          <ul class="thumbnails">
+            <li>
+              <div class="c-borderedImage index_p-headBlockImage js-indexHeadBlockImage --portrait" data-is-loaded="true"
+                style="transform: translate(-50%, -50%) rotate(-1.83337deg); transition-delay: 0s;"
+                data-is-playing="true">
+                <div class="c-borderedImage__container js-borderedImageContainer"
+                  style="transition-duration: 1.2s; transform: rotate(-4.76875deg); transition-delay: 0s;">
+                  <div class="c-borderedImage__inner js-borderedImageInner"
+                    style="transition-duration: 1.2s; transform: translateX(1.7268%); transition-delay: 0s;">
+                    <picture>
+                      <source srcset="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" type="image/png">
+                      <img class="js-borderedImageImage" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" alt="" decoding="async">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
     </section>
   </section>
 </template>

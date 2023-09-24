@@ -56,7 +56,7 @@
     overflow: hidden;
     pointer-events: none;
     position: absolute;
-    top: -0;
+    top: 0;
     -webkit-transition-duration: .2s;
     transition-duration: .2s;
     -webkit-transition-property: opacity;
@@ -65,6 +65,7 @@
     transition-timing-function: linear;
     width: 100%;
     z-index: -2;
+    height: calc(100% + 20vmax);
 }
 
 .bgObjectItem {
@@ -92,7 +93,7 @@
 .bgObjectItem-Inner::before {
     content: "";
     display: block;
-    padding-top: 121.231%;
+    padding-top: 100.231%;
     width: 100%;
 }
 
@@ -133,6 +134,13 @@
     margin-right: -40vmax;
 }
 
+
+.bgObjectItem[data-is-template="true"] {
+    left: 0;
+    position: absolute;
+    top: 0;
+    visibility: visible;
+}
 
 .header {
     display: grid;
@@ -306,4 +314,160 @@
 #index-cards .card-text,
 #index-cards .card-subtitle {
     color: global.$color-rose;
+}
+
+.tabbed-gallery {
+    position: relative;
+    margin: 550px auto 0;
+}
+
+.tabbed-gallery .thumbnails {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tabbed-gallery .thumbnails {
+    list-style: none;
+    margin-left: -1%;
+    font-size: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.tabbed-gallery .thumbnails li {
+    display: inline-block;
+    margin-left: 1%;
+    vertical-align: middle;
+}
+
+// image gallery
+.c-borderedImage {
+    opacity: 0;
+    position: relative
+}
+
+.c-borderedImage:before {
+    content: "";
+    display: block;
+    width: 100%
+}
+
+.c-borderedImage.--square:before {
+    padding-top: 100%
+}
+
+.c-borderedImage.--sizeS.--portrait {
+    width: 9.9rem
+}
+
+.c-borderedImage.--sizeS.--portrait:before {
+    padding-top: 121.25%
+}
+
+.c-borderedImage.--sizeS.--landscape {
+    width: 12.00375rem
+}
+
+.c-borderedImage.--sizeS.--landscape:before {
+    padding-top: 82.4742268041%
+}
+
+.c-borderedImage.--sizeL.--portrait {
+    width: 13.921875rem
+}
+
+.c-borderedImage.--sizeL.--portrait:before {
+    padding-top: 121.1111111111%
+}
+
+.c-borderedImage.--sizeL.--landscape {
+    width: 269.775
+}
+
+.c-borderedImage.--sizeL.--landscape:before {
+    padding-top: 82.5688073394%
+}
+
+.c-borderedImage__container,
+.c-borderedImage__inner {
+    border-radius: 1rem;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.c-borderedImage__inner {
+    background: var(--color-gray);
+    overflow: hidden
+}
+
+.c-borderedImage__inner img {
+    height: 100%;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    width: 100%
+}
+
+.c-borderedImage__inner:after {
+    border: .5rem solid #fff;
+    border-radius: 1.25rem;
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.c-borderedImage[data-is-loaded=true] img {
+    opacity: 1
+}
+
+.c-borderedImage[data-is-playing=true] {
+    opacity: 1;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear
+}
+
+.c-borderedImage[data-is-playing=true] .c-borderedImage__container {
+    -webkit-transition-duration: 1.2s;
+    transition-duration: 1.2s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+    transition-timing-function: cubic-bezier(.215, .61, .355, 1)
+}
+
+.c-borderedImage[data-is-playing=true] .c-borderedImage__inner {
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-transition-duration: 1.2s;
+    transition-duration: 1.2s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-timing-function: cubic-bezier(.19, 1, .22, 1);
+    transition-timing-function: cubic-bezier(.19, 1, .22, 1)
 }
