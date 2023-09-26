@@ -19,7 +19,7 @@ export default defineNuxtConfig({
           body: true 
         }
       ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: './favicon-32x32.png' }],
     }
   },
   ssr: false,
