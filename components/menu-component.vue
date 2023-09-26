@@ -10,8 +10,7 @@
             <!---- SMALL SCREEN MENU ICON ---->
 
             <div class="menuButton">
-                <button class="hamburger hamburger--spin" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                <button class="hamburger hamburger--spin" type="button"
                     aria-label="Toggle navigation">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
@@ -19,51 +18,51 @@
                 </button>
             </div>
 
-            <div class="p-menu js-menu" id="menu" data-is-menu-opened="false" tabindex="-1">
-                <div class="p-menu__inner js-menuInner" style="height: 526px;">
-                    <div class="p-menu__contents js-menuContents">
+            <div class="p-menu" id="menu" data-is-menu-opened="false" tabindex="-1">
+                <div class="p-menu__inner" style="height: 526px;">
+                    <div class="p-menu__contents">
                         <nav class="p-menuNav" aria-label="ナビゲーションメニュー" itemscope="" itemprop="hasPart"
                             itemtype="http://schema.org/SiteNavigationElement">
                             <ul class="p-menuNavList">
                                 <li class="p-menuNavListItem" itemprop="hasPart" itemscope=""
                                     itemtype="http://schema.org/WebPage">
-                                    <a class="p-menuNavListItem__inner js-menuNavItem" itemprop="url" href="/"
+                                    <a class="p-menuNavListItem__inner" itemprop="url" href="/"
                                         data-path-id="index" aria-current="false"><span class="p-menuNavListItem__label"
                                             itemprop="name">Home</span></a>
                                 </li>
                                 <li class="p-menuNavListItem" itemprop="hasPart" itemscope=""
                                     itemtype="http://schema.org/WebPage">
-                                    <a class="p-menuNavListItem__inner js-menuNavItem" itemprop="url" href="/wedo/"
+                                    <a class="p-menuNavListItem__inner " itemprop="url" href="/wedo/"
                                         data-path-id="wedo" aria-current="false"><span class="p-menuNavListItem__label"
                                             itemprop="name">We Do</span></a>
                                 </li>
                                 <li class="p-menuNavListItem" itemprop="hasPart" itemscope=""
                                     itemtype="http://schema.org/WebPage">
-                                    <a class="p-menuNavListItem__inner js-menuNavItem" itemprop="url" href="/result/"
+                                    <a class="p-menuNavListItem__inner " itemprop="url" href="/result/"
                                         data-path-id="result" aria-current="false"><span class="p-menuNavListItem__label"
                                             itemprop="name">Result</span></a>
                                 </li>
                                 <li class="p-menuNavListItem" itemprop="hasPart" itemscope=""
                                     itemtype="http://schema.org/WebPage">
-                                    <a class="p-menuNavListItem__inner js-menuNavItem" itemprop="url" href="/career/"
+                                    <a class="p-menuNavListItem__inner " itemprop="url" href="/career/"
                                         data-path-id="career" aria-current="page"><span class="p-menuNavListItem__label"
                                             itemprop="name">Career</span></a>
                                 </li>
                                 <li class="p-menuNavListItem" itemprop="hasPart" itemscope=""
                                     itemtype="http://schema.org/WebPage">
-                                    <a class="p-menuNavListItem__inner js-menuNavItem" itemprop="url" href="/news/"
+                                    <a class="p-menuNavListItem__inner " itemprop="url" href="/news/"
                                         data-path-id="news" aria-current="false"><span class="p-menuNavListItem__label"
                                             itemprop="name">News</span></a>
                                 </li>
                                 <li class="p-menuNavListItem" itemprop="hasPart" itemscope=""
                                     itemtype="http://schema.org/WebPage">
-                                    <a class="p-menuNavListItem__inner js-menuNavItem" itemprop="url" href="/blog/"
+                                    <a class="p-menuNavListItem__inner " itemprop="url" href="/blog/"
                                         target="_blank" data-path-id="blog" aria-current="false"><span
                                             class="p-menuNavListItem__label" itemprop="name">Blog</span></a>
                                 </li>
                                 <li class="p-menuNavListItem" itemprop="hasPart" itemscope=""
                                     itemtype="http://schema.org/WebPage">
-                                    <a class="p-menuNavListItem__inner js-menuNavItem" itemprop="url" href="/company/"
+                                    <a class="p-menuNavListItem__inner " itemprop="url" href="/company/"
                                         data-path-id="company" aria-current="false"><span class="p-menuNavListItem__label"
                                             itemprop="name">Company</span></a>
                                 </li>
@@ -78,6 +77,7 @@
                     </button>
                 </div>
             </div>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto left-aligned">
                     <!---- PROJECT ---->
@@ -192,7 +192,7 @@ export default {
         var menu_opened_status = document.getElementById("menu")
 
         this.$nextTick(function () {
-            var hamburger = document.querySelector(".hamburger");;
+            var hamburger = document.querySelector(".hamburger");
             window.addEventListener("scroll", function () {
                 var is_scrolled = document.getElementById("app-layout")
                 if (document.documentElement.scrollTop >= 150) {
@@ -202,9 +202,11 @@ export default {
                     }
                 }
                 else {
-                    if (is_scrolled.getAttribute("data-is-scrolled") === "true") {
-                        is_scrolled.setAttribute("data-is-scrolled", "false")
-                    }
+                    is_scrolled.setAttribute("data-is-scrolled", "false")
+                    menu_opened_status.setAttribute("data-is-menu-opened", "false");
+                    hamburger.classList.remove("is-active");
+
+
                 }
 
             })
