@@ -1,5 +1,11 @@
 @use "global.scss";
 
+// bootstrap overrides
+
+.navbar-nav .dropdown-menu {
+  position: absolute !important;
+}
+
 
 // navitem padding 
 @media screen and (min-width: 1025px) {
@@ -7,6 +13,35 @@
     padding: .4em .8em;
     position: relative;
   }
+}
+
+
+// navbar rules
+
+.p-header {
+  height: 3.75rem;
+  left: 0;
+  padding: 0 1.6875rem;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 11;
+}
+
+@media (min-width: 1024px) {
+  .p-header {
+    height: 5.25rem;
+    padding: 0 2.5rem;
+  }
+}
+
+.p-headerLogo {
+  height: 1.375rem;
+  left: 2.5rem;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  width: 8.5625rem;
 }
 
 .nav-item>a {
@@ -20,43 +55,82 @@
   transition: background-color 150ms;
 }
 
-#navbar {
-  display: inline-block;
+.p-headerNav {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   align-items: center;
-  justify-content: space-around;
-  height: 6rem;
-  padding: 0 var(--side-margin);
-  background-color: transparent;
-  width: 100%;
-  z-index: 10;
-  position: fixed;
-  background: transparent;
-  border-radius: 0 0 25px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  position: relative;
+  flex-direction: row;
 }
 
-#navbarSupportedContent {
-  transition-duration: .2s, .4s, .2s;
-  transition-timing-function: linear, cubic-bezier(.19, 1, .22, 1), cubic-bezier(.19, 1, .22, 1);
-  transition-property: opacity, -webkit-transform, transform;
+.p-header__inner::after {
+  background-color: var(--color-black);
+  bottom: 0;
+  content: "";
+  height: .0625rem;
+  left: 0;
+  opacity: .15;
+  position: absolute;
+  right: 0;
+  -webkit-transition-delay: .8s;
+  transition-delay: .8s;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
 
+.p-headerNavList {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  align-items: center;
+  /* display: -webkit-box; */
+  /* display: -ms-flexbox; */
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.p-headerNavListItem {
+  pointer-events: all;
+  position: relative;
+}
+
+.p-headerNavListItem:not(:first-child) {
+  margin-left: .625rem;
 }
 
 // shrink navbar on scroll
-[data-is-scrolled="true"] #navbarSupportedContent {
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
+.p-header__inner {
+  transition-duration: .2s, .4s, .2s;
+  transition-timing-function: linear, cubic-bezier(.19, 1, .22, 1), cubic-bezier(.19, 1, .22, 1);
+  transition-property: opacity, -webkit-transform, transform;
 }
 
-[data-is-scrolled="true"] #navbarSupportedContent {
+[data-is-scrolled="true"] .p-header__inner {
+  -webkit-transform: translateY(-120%);
+  transform: translateY(-120%);
+}
+
+[data-is-scrolled="true"] .p-header__inner {
   opacity: 1;
 }
 
-// change navbar background on scroll
-.navbar-scrolled-bg {
-  background: linear-gradient(180deg, #00314f 19.27%, rgba(32, 20, 61, 0)) !important;
-  transition: opacity .83333s cubic-bezier(.53, 0, .41, 1);
-  opacity: 0;
-}
 
 #navbar-item {
   color: #ffffff;
@@ -66,33 +140,23 @@
 
 }
 
-#navbar-container {
-  height: 100%;
-  max-width: 1850px;
-}
 
 // brand img effects 
 
-@media (min-width: 1024px) {
-  [data-is-scrolled="true"] .navbar-brand img {
-    -webkit-transform: scale(0.73) translate(-1.25rem, -0.75rem);
-    transform: scale(0.73) translate(-1.25rem, -0.75rem);
-  }
-}
-
-.navbar-brand img {
+.p-headerLogo img {
   height: 100%;
   user-select: none;
   filter: brightness(0) invert(1) opacity(80%);
   transition: all .75s cubic-bezier(.19, 1, .22, 1);
 }
 
-.navbar-brand img:hover {
-  filter: brightness(1) invert(0) opacity(100%);
+.p-headerLogo img:hover {
+  filter: brightness(0.2) invert(1) opacity(100%);
   transition: all .5s cubic-bezier(.19, 1, .22, 1);
+  transform: scale(1.15)
 }
 
-.navbar-brand {
+.p-headerLogo {
   bottom: 0;
   height: 5rem;
   left: 1.6875rem;
@@ -111,8 +175,8 @@
 }
 
 @media (min-width: 1024px) {
-  .navbar-brand {
-    height: 6rem;
+  .p-headerLogo {
+    height: 6.75rem;
     left: 2.5rem;
     -webkit-transform-origin: top left;
     transform-origin: top left;
@@ -208,19 +272,22 @@
   right: 10.25rem;
   top: 1.25rem;
 }
+
 .p-menu[data-is-menu-opened="true"] {
   opacity: 1;
   visibility: visible;
 }
 
 .p-menu[data-is-menu-opened="false"] {
-	opacity: 0;
-	pointer-events: none;
-	-webkit-transition-delay: .4s;
-	transition-delay: .4s;
-	visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s;
+  visibility: hidden;
 }
+
 @media (min-width: 1024px) {
+
   .p-menu,
   .p-menuButton {
     right: 1.25rem;
@@ -281,7 +348,7 @@
   display: block;
   position: relative;
   width: 100%;
-  list-style-type: none 
+  list-style-type: none
 }
 
 .p-menuNav {
@@ -302,37 +369,37 @@
 }
 
 .p-menuNavListItem:first-child {
-	margin-bottom: 2.375rem;
+  margin-bottom: 2.375rem;
 }
 
 .p-menuNavListItem:not(:first-child) {
-	margin-top: .125rem;
+  margin-top: .125rem;
 }
 
 .p-menuNavListItem {
-	height: 1.625rem;
-	position: relative;
-	width: 100%;
+  height: 1.625rem;
+  position: relative;
+  width: 100%;
 }
 
 .p-menuNavListItem__label {
-	-webkit-font-feature-settings: normal;
-	font-feature-settings: normal;
-	color: var(--color-white);
-	display: inline-block;
-	font-family: TWK Everett,Noto Sans JP,sans-serif;
-	font-size: 1rem;
-	font-weight: 500;
-	letter-spacing: -.04em;
-	line-height: .92;
-	position: relative;
-	text-transform: none;
-	text-transform: uppercase;
-	white-space: nowrap;
-	z-index: 1;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  color: var(--color-white);
+  display: inline-block;
+  font-family: TWK Everett, Noto Sans JP, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -.04em;
+  line-height: .92;
+  position: relative;
+  text-transform: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 1;
 }
 
-li.p-menuNavListItem > a {
+li.p-menuNavListItem>a {
   text-decoration: none;
 }
 
