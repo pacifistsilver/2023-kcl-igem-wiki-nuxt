@@ -1,5 +1,5 @@
 <template>
-    <div class="menuButton">
+    <div class="p-menuButton">
         <button class="hamburger hamburger--spin" type="button" aria-label="Toggle navigation">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
@@ -8,7 +8,7 @@
     </div>
 
     <div class="p-menu" id="menu" data-is-menu-opened="false" tabindex="-1">
-        <div class="p-menu__inner" style="height: 526px;">
+        <div class="p-menu__inner" style="height: 394px;">
             <div class="p-menu__contents">
                 <nav class="p-menuNav" aria-label="ナビゲーションメニュー" itemscope="" itemprop="hasPart"
                     itemtype="http://schema.org/SiteNavigationElement">
@@ -57,145 +57,162 @@
         </a>
 
         <div class="p-header__inner">
-            <ul class="navbar-nav p-headerNav">
-                <!---- PROJECT ---->
-                <li class="nav-item dropdown p-headerNavListItem">
-                    <NuxtLink class="nav-link dropdown-toggle" id="navbar-item" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false" to="">
-                        <span class="menuNavItem__label">Project</span>
-
-                    </NuxtLink>
-                    <ul class="dropdown-menu" aria-labelledby="navbar-item">
-                        <li class = "p-headerNavListItem">
-                            <NuxtLink class="dropdown-item" to="./description">
-                                <span>Description</span>
-                            </NuxtLink>
-                        </li>
-                        <li class = "p-headerNavListItem">
-                            <NuxtLink class="dropdown-item" to="./model">
-                                <span>Model</span>
+            <div class="p-headerNav">
+                <div class="p-headerNavListWrapper">
+                    <ul class="navbar-nav p-headerNavList">
+                        <!---- PROJECT ---->
+                        <li class="nav-item dropdown p-headerNavListItem">
+                            <NuxtLink class="nav-link dropdown-toggle p-headerNavListItem__inner " id="navbar-item"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false" to="">
+                                <span class="p-headerNavListItem__label">Project</span>
 
                             </NuxtLink>
+                            <ul class="dropdown-menu " aria-labelledby="navbar-item">
+                                <li class="p-headerNavListItem">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./description">
+                                        <span class="p-headerNavListItem__label">Description</span>
+                                    </NuxtLink>
+                                </li>
+                                <li class="p-headerNavListItem">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./model">
+                                        <span class="p-headerNavListItem__label">Model</span>
+
+                                    </NuxtLink>
+                                </li>
+                                <li class="p-headerNavListItem">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./experiments">
+                                        <span class="p-headerNavListItem__label">Experiments</span>
+
+
+                                    </NuxtLink>
+                                </li>
+                                <li class="p-headerNavListItem">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./engineering">
+                                        <span class="p-headerNavListItem__label">Engineering</span>
+
+
+                                    </NuxtLink>
+                                </li>
+                                <li class="p-headerNavListItem">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./results">
+                                        <span class="p-headerNavListItem__label">Results</span>
+
+
+                                    </NuxtLink>
+                                </li>
+                                <li class="p-headerNavListItem">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./notebook">
+                                        <span class="p-headerNavListItem__label">Notebook</span>
+                                    </NuxtLink>
+                                </li>
+                            </ul>
                         </li>
-                        <li class = "p-headerNavListItem">
-                            <NuxtLink class="dropdown-item" to="./experiments">
-                                <span>Experiments</span>
 
-
+                        <!---- SAFETY ---->
+                        <li class="nav-item p-headerNavListItem">
+                            <NuxtLink class="nav-link p-headerNavListItem__inner" id="navbar-item" to="./safety">
+                                <span class="p-headerNavListItem__label">Safety</span>
                             </NuxtLink>
                         </li>
-                        <li class = "p-headerNavListItem">
-                            <NuxtLink class="dropdown-item" to="./engineering">
-                                <span>Engineering</span>
 
-
+                        <!---- HUMAN PRACTICES ---->
+                        <li class="nav-item p-headerNavListItem">
+                            <NuxtLink class="nav-link p-headerNavListItem__inner" id="navbar-item" to="./human-practices">
+                                <span class="p-headerNavListItem__label">Human Practices</span>
                             </NuxtLink>
                         </li>
-                        <li class = "p-headerNavListItem">
-                            <NuxtLink class="dropdown-item" to="./results">
-                                <span>Results</span>
 
-
+                        <!---- AWARDS ---->
+                        <li class="nav-item dropdown p-headerNavListItem">
+                            <NuxtLink class="nav-link dropdown-toggle p-headerNavListItem__inner" id="navbar-item"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false" to="./">
+                                <span class="p-headerNavListItem__label">Awards</span>
+                            </NuxtLink>
+                            <ul class="dropdown-menu" aria-labelledby="navbar-item">
+                                <li class="p-headerNavListItem">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./parts"><span
+                                            class="p-headerNavListItem__label">
+                                            New Basic Part
+                                        </span></NuxtLink>
+                                </li>
+                                <li class="p-headerNavListItem">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./ihp"><span
+                                            class="p-headerNavListItem__label">
+                                            Integrated Human Practices
+                                        </span></NuxtLink>
+                                </li>
+                                <li class="p-headerNavListItem">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./education"><span
+                                            class="p-headerNavListItem__label">
+                                            Education
+                                        </span></NuxtLink>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item p-headerNavListItem">
+                            <NuxtLink class="nav-link p-headerNavListItem__inner" id="navbar-item" to="./results">
+                                <span class="p-headerNavListItem__label">Results</span>
                             </NuxtLink>
                         </li>
-                        <li class = "p-headerNavListItem">
-                            <NuxtLink class="dropdown-item" to="./notebook">
-                                <span>Notebook</span>
+
+                        <li class="nav-item dropdown p-headerNavListItem">
+                            <NuxtLink class="nav-link dropdown-toggle p-headerNavListItem__inner" id="navbar-item"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false" to="./team">
+                                <span class="p-headerNavListItem__label">Team</span>
                             </NuxtLink>
+                            <ul class="dropdown-menu" aria-labelledby="navbar item">
+                                <li class="p-headerNavListItem">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./members">Members
+                                    </NuxtLink>
+                                </li>
+                                <li class="p-headerNavListItem">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./attributions">
+                                        Attributions</NuxtLink>
+                                </li>
+                            </ul>
                         </li>
+
                     </ul>
-                </li>
-
-                <!---- SAFETY ---->
-                <li class="nav-item p-headerNavListItem">
-                    <NuxtLink class="nav-link" id="navbar-item" to="./safety">
-                        <span class="menuNavItem__label">Safety</span>
-                    </NuxtLink>
-                </li>
-
-                <!---- HUMAN PRACTICES ---->
-                <li class="nav-item p-headerNavListItem">
-                    <NuxtLink class="nav-link" id="navbar-item" to="./human-practices">
-                        <span class="menuNavItem__label">Human Practices</span>
-                    </NuxtLink>
-                </li>
-
-                <!---- AWARDS ---->
-                <li class="nav-item dropdown p-headerNavListItem">
-                    <NuxtLink class="nav-link dropdown-toggle" id="navbar-item" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false" to="./">
-                        <span class="menuNavItem__label">Awards</span>
-                    </NuxtLink>
-                    <ul class="dropdown-menu" aria-labelledby="navbar-item">
-                        <li class = "p-headerNavListItem">
-                            <NuxtLink class="dropdown-item" to="./parts">New Basic Part</NuxtLink>
-                        </li>
-                        <li class = "p-headerNavListItem">
-                            <NuxtLink class="dropdown-item" to="./ihp">Integrated Human Practices</NuxtLink>
-                        </li>
-                        <li class = "p-headerNavListItem">
-                            <NuxtLink class="dropdown-item" to="./education">Education</NuxtLink>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item p-headerNavListItem">
-                    <NuxtLink class="nav-link" id="navbar-item" to="./results">
-                        <span class="menuNavItem__label">Results</span>
-                    </NuxtLink>
-                </li>
-
-                <li class="nav-item dropdown p-headerNavListItem">
-                    <NuxtLink class="nav-link dropdown-toggle" id="navbar-item" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false" to="./team">
-                        <span class="menuNavItem__label">Team</span>
-                    </NuxtLink>
-                    <ul class="dropdown-menu" aria-labelledby="navbar item">
-                        <li class = "p-headerNavListItem">
-                            <NuxtLink class="dropdown-item" to="./members">Members</NuxtLink>
-                        </li>
-                        <li class = "p-headerNavListItem">
-                            <NuxtLink class="dropdown-item" to="./attributions">Attributions</NuxtLink>
-                        </li>
-                    </ul>
-                </li>
-
-            </ul>
+                </div>
+            </div>
         </div>
     </nav>
 </template>  
 <script>
 export default {
     mounted() {
-        var menu_opened_status = document.getElementById("menu")
+        var menuElement = document.getElementById("menu")
+        const viewportSizeThreshold = 1024;
 
         this.$nextTick(function () {
-            var hamburger = document.querySelector(".hamburger");
             window.addEventListener("scroll", function () {
-                var is_scrolled = document.getElementById("app-layout")
+                var appLayoutElement = document.getElementById("app-layout")
                 if (document.documentElement.scrollTop >= 150) {
-                    if (is_scrolled.getAttribute("data-is-scrolled") === "false") {
-                        is_scrolled.setAttribute("data-is-scrolled", "true");
+                    if (appLayoutElement.getAttribute("data-is-scrolled") !== "false") {
+                        appLayoutElement.setAttribute("data-is-scrolled", "true");
 
                     }
                 }
                 else {
-                    is_scrolled.setAttribute("data-is-scrolled", "false")
-                    menu_opened_status.setAttribute("data-is-menu-opened", "false");
+                    appLayoutElement.setAttribute("data-is-scrolled", "false")
+                    menuElement.setAttribute("data-is-menu-opened", "false");
                     hamburger.classList.remove("is-active");
 
 
                 }
 
             })
+            var hamburger = document.querySelector(".hamburger");
             hamburger.addEventListener('click', function () {
                 // Toggle class "is-active"
                 hamburger.classList.toggle("is-active");
-                if (menu_opened_status.getAttribute("data-is-menu-opened") === "false") {
-                    menu_opened_status.setAttribute("data-is-menu-opened", "true");
+                console.log("clicked")
+                if (menuElement.getAttribute("data-is-menu-opened") === "false") {
+                    menuElement.setAttribute("data-is-menu-opened", "true");
 
                 }
                 else {
-                    menu_opened_status.setAttribute("data-is-menu-opened", "false")
+                    menuElement.setAttribute("data-is-menu-opened", "false")
                 }
 
             })
