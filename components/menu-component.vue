@@ -181,44 +181,50 @@
 <script>
 export default {
     mounted() {
-        var menuElement = document.getElementById("menu")
+        const menuElement = document.getElementById("menu");
+        const appLayoutElement = document.getElementById("app-layout");
+        const hamburger = document.querySelector(".hamburger");
         const viewportSizeThreshold = 1024;
 
-        this.$nextTick(function () {
-            window.addEventListener("scroll", function () {
-                var appLayoutElement = document.getElementById("app-layout")
-                if (document.documentElement.scrollTop >= 150) {
-                    if (appLayoutElement.getAttribute("data-is-scrolled") !== "false") {
-                        appLayoutElement.setAttribute("data-is-scrolled", "true");
+        function handleScroll() {
+            const scrollTop = document.documentElement.scrollTop;
 
-                    }
+            if (scrollTop >= 150) {
+                if (appLayoutElement.getAttribute("data-is-scrolled") === "false") {
+                    appLayoutElement.setAttribute("data-is-scrolled", "true");
                 }
-                else {
-                    appLayoutElement.setAttribute("data-is-scrolled", "false")
-                    menuElement.setAttribute("data-is-menu-opened", "false");
-                    hamburger.classList.remove("is-active");
+            } else {
+                appLayoutElement.setAttribute("data-is-scrolled", "false");
+                menuElement.setAttribute("data-is-menu-opened", "false");
+                hamburger.classList.remove("is-active");
+            }
+        };
 
+        function handleHamburgerClick() {
+            hamburger.classList.toggle("is-active");
 
-                }
+            if (menuElement.getAttribute("data-is-menu-opened") === "false") {
+                menuElement.setAttribute("data-is-menu-opened", "true");
+            } else {
+                menuElement.setAttribute("data-is-menu-opened", "false");
+            }
+        };
 
-            })
-            var hamburger = document.querySelector(".hamburger");
-            hamburger.addEventListener('click', function () {
-                // Toggle class "is-active"
-                hamburger.classList.toggle("is-active");
-                console.log("clicked")
-                if (menuElement.getAttribute("data-is-menu-opened") === "false") {
-                    menuElement.setAttribute("data-is-menu-opened", "true");
+        function handleViewportResize() {
+            const windowWidth = window.innerWidth;
 
-                }
-                else {
-                    menuElement.setAttribute("data-is-menu-opened", "false")
-                }
-
-            })
-
+            // Close the menu if the viewport width is less than or equal to the threshold.
+            if (windowWidth <= viewportSizeThreshold) {
+                menuElement.setAttribute("data-is-menu-opened", "false");
+                hamburger.classList.remove("is-active");
+            }
         }
-        )
-    }
-}
+        this.$nextTick(() => {
+            window.addEventListener("scroll", handleScroll);
+            window.addEventListener("resize", handleViewportResize);
+            hamburger.addEventListener("click", handleHamburgerClick);
+
+        });
+    },
+};
 </script>
