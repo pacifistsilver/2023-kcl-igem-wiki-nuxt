@@ -1,6 +1,6 @@
 <template>
     <div class="p-menuButton">
-        <button class="hamburger hamburger--spin" type="button" aria-label="Toggle navigation">
+        <button class="hamburger hamburger--collapse" type="button" aria-label="Toggle navigation">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
@@ -51,7 +51,7 @@
             </div>
         </div>
     </div>
-    <nav class="navbar p-header" id="navbar">
+    <nav class="p-header" id="navbar">
         <a class="p-headerLogo" href="/kcl-uk/">
             <img src="https://static.igem.wiki/teams/4584/wiki/blue-logo-name-white-background-removebg-preview.png">
         </a>
@@ -180,6 +180,16 @@
 </template>  
 <script>
 export default {
+    created() {
+        const windowWidth = window.innerWidth;
+        const rootFontSize = windowWidth >= 1440 ? (windowWidth / 1440) * 100 + "%" : "100%";
+        document.documentElement.style.fontSize = rootFontSize;
+        console.log("fuck")
+        this.$nextTick(() => {
+            document.documentElement.style.fontSize = rootFontSize;
+
+        });
+    },
     mounted() {
         const menuElement = document.getElementById("menu");
         const appLayoutElement = document.getElementById("app-layout");
@@ -218,13 +228,14 @@ export default {
                 menuElement.setAttribute("data-is-menu-opened", "false");
                 hamburger.classList.remove("is-active");
             }
-        }
+        };
         this.$nextTick(() => {
             window.addEventListener("scroll", handleScroll);
             window.addEventListener("resize", handleViewportResize);
             hamburger.addEventListener("click", handleHamburgerClick);
-
+            
         });
     },
+
 };
 </script>
