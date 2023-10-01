@@ -456,20 +456,16 @@ li.p-menuNavListItem>a {
   }
 
   .p-headerLogo {
-    height: 6.75rem;
+    height: 3.75rem;
     left: 2.5rem;
     -webkit-transform-origin: top left;
     transform-origin: top left;
     width: 10rem;
   }
 
-  .p-headerLogo {
-    margin-top: 2.5rem;
-  }
-
   [data-is-scrolled="true"] .p-headerLogo {
-    -webkit-transform: scale(.73) translate(-1.25rem, -.875rem);
-    transform: scale(.73) translate(-1.25rem, 0.875rem);
+    -webkit-transform: scale(.83);
+    transform: scale(.83);
   }
 
   .p-header {

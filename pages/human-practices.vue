@@ -5,8 +5,9 @@
       <header class="header-content">
 
         <div class="bg" style="
-        background:url(https://static.igem.wiki/teams/4584/wiki/human-practices-1.jpg) fixed center bottom;
-        background-size:cover;">
+        background-image:url(https://static.igem.wiki/teams/4584/wiki/human-practices-1.jpg);
+        background-position: center;
+         filter: grayscale(60%); ">
           <h1 style="text-align: center; font-weight: bold;" class="header-text">Human Practices</h1>
         </div>
       </header>

@@ -1,0 +1,155 @@
+@use "global.scss" as g;
+
+.index_p-card {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    /* display: block; */
+    /* display: -webkit-box; */
+    /* display: -ms-flexbox; */
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 6.5rem;
+}
+
+.index_p-contentsHeader__inner {
+    padding-bottom: 12.5rem;
+    padding-top: 12.5rem;
+}
+
+.index_p-contentsHeader__inner {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70rem;
+    padding-bottom: 6.25rem;
+    padding-top: 6.25rem;
+    position: relative;
+}
+
+.index_p-card li,
+.index_p-card ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.index_p-card__inner:not(:first-child) {
+    margin-left: -1.333%;
+}
+
+.index_p-card__inner {
+    -webkit-font-feature-settings: normal;
+    font-feature-settings: normal;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    border-radius: 50%;
+    /* display: -webkit-box; */
+    /* display: -ms-flexbox; */
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    font-family: g.$main-font;
+    font-size: 1.25rem;
+    font-weight: 500;
+    justify-content: center;
+    letter-spacing: -.04em;
+    line-height: .92;
+    position: relative;
+    text-transform: uppercase;
+    width: 26%;
+    transition: all .5s cubic-bezier(.19, 1, .22, 1);
+
+}
+
+.index_p-card__inner::before {
+    color: g.$color-rose;
+    font-size: .875rem;
+    left: 50%;
+    letter-spacing: -.04em;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -3em);
+    transform: translate(-50%, -3em);
+}
+
+.index_p-card__inner::after {
+    border: .0625rem dashed;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    padding-top: 100%;
+    position: relative;
+    width: 100%;
+    color: white
+}
+
+.index_p-card__inner:hover {
+    filter: brightness(0.2) invert(1) opacity(100%);
+    transition: all .5s cubic-bezier(.19, 1, .22, 1);
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.index_p-card__inner:first-child:before {
+    content: "01/"
+}
+
+.index_p-card__inner:nth-child(2):before {
+    content: "02/"
+}
+
+.index_p-card__inner:nth-child(3):before {
+    content: "03/"
+}
+
+.index_p-card__inner:nth-child(4):before {
+    content: "04/"
+}
+
+.index_p-cardItem__label {
+    left:50%;
+    position:absolute;
+    text-align:center;
+    top:50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    white-space:nowrap;
+    width:100%;
+    color: white;
+  }
+  
+
+@media (min-width: 1024px) {
+    .index_p-card {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        align-items: center;
+        display: block;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-top: 6.5rem;
+
+    }
+    .index_p-contentsHeader {
+        padding-left: 11.1111111111%;
+        padding-right: 11.1111111111%;
+    }
+
+}
