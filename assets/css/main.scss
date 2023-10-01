@@ -234,16 +234,19 @@ p {
 .section-nav {
     position: -webkit-sticky;
     position: sticky;
+    padding: 10px;
     top: 75px;
     margin-top: 40px;
     margin-bottom: 40px;
+    background-color: #16324F;
+    transform:translateX(-22%);
 }
 
 .section-nav-header {
     font-size: .8rem;
     font-weight: bold;
     color: #fff;
-    letter-spacing: 1px;
+    letter-spacing: 4px;
     text-transform: uppercase;
 }
 
@@ -252,7 +255,7 @@ p {
     text-decoration: none;
     color: #fff;
     transition: all .5s ease-in-out;
-    line-height: 40px;
+    line-height: 60px;
     display: block;
     font-weight: 60;
 }
@@ -269,9 +272,9 @@ p {
     color: #fff;
     letter-spacing: 1px;
     text-transform: uppercase;
+    transform: translateX(15%);
 }
 
-/* Not working currently */
 .section-nav a:hover,
 .section-nav a:focus {
     color: #f2765d;
@@ -280,4 +283,7 @@ p {
 .section-nav li.active>a {
     color: #f2765d;
     font-weight: 500;
+}
+.hovering {
+    cursor: pointer;
 }
