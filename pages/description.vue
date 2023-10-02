@@ -99,12 +99,60 @@
                   enhanced ultrasound contrast upon detection of a CRC biomarker, utilising ultrasonography to observe this. 
                   Ultrasound imaging is the chosen modality for its safe, cost-efficient, and easily accessible nature.
                 </p> 
-
+                <div class="wiki-image-container">
+                    <img src="https://static.igem.wiki/teams/4584/wiki/biorender-figures/biorender-figures/biorender.png" alt="biorender">
+                </div>
                 <p >To construct the ultrasound-biosensor system, we plan to induce the production of gas vesicles in engineered 
                   probiotic E.coli Nissel strain when the biomarker-specific synthetic receptor binds to CRC antigen. 
                   Gas vesicles (GVs) is air-filled aquatic bacterial proteins which oscillates non-linearly with ultrasound wave, 
                   this unique acoustic property results in enhanced ultrasound signal contrast detection, as demonstrated by the 
                   Shapiro lab. Thus, the expression of the gene encoding for GVs, ARG1 can be used as a reporting gene (Shapiro, 2014).
+                </p>
+                <div class="wiki-image-container">
+                    <img src="https://static.igem.wiki/teams/4584/wiki/biorender-figures/biorender-figures/biorender2.png" alt="biorender2">
+                </div>
+                <p>
+                  Focusing on the initial steps of the ultrasound-biosensor system, we delve into the solid tumor environment 
+                  where this intricate mechanism begins. Within this tumor milieu, L-lactate, a prominent metabolite, is 
+                  present in elevated concentrations. Our engineered probiotic E. coli Nissle strain is equipped with a 
+                  lactate permease, a protein transporter specifically tailored to facilitate the uptake of L-lactate. As 
+                  L-lactate is transported into the cell, it interacts with the Lldr regulatory protein. This binding event 
+                  triggers the activation of the P_Hyper spank promoter. Sequentially, this activation sets off a cascade: 
+                  firstly, the P_AlPaGA +1 promoter is induced, and subsequently, the ARG2 Serratia gene cluster is expressed. 
+                  This particular gene cluster holds the blueprint for the synthesis of gas vesicles, buoyant, 
+                  air-filled protein structures that exhibit unique acoustic properties.
+                </p>
+                <hr>
+                <div class="wiki-image-container">
+                    <img src="https://static.igem.wiki/teams/4584/wiki/biorender-figures/biorender-figures/biorender3.png" alt="biorender3">
+                </div>
+                <p>
+                  In the absence of a solid tumor, L-lactate levels remain unchanged. Without this key metabolite, 
+                  the engineered E. coli Nissle strain remains inactive. As a result, the cascade leading to the production 
+                  of gas vesicles is not triggered, ensuring that no gas vesicles are synthesized in the absence of the tumor 
+                  signature.
+                </p>
+                <div class="wiki-image-container">
+                    <img src="https://static.igem.wiki/teams/4584/wiki/biorender-figures/biorender-figures/rnap-in-plasmid-system-blocked-close-up-1.png" alt="biorender4">
+                </div>
+                <p>
+                  Diving deeper into the molecular intricacies of our engineered system, the fourth figure provides a 
+                  detailed visualization of the role of RNA polymerase (RNAP) within the plasmid context. 
+                  Under specific conditions, RNAP becomes dissociated, preventing its binding to the promoter regions in 
+                  the plasmid. This dissociation acts as a molecular switch, halting the transcriptional machinery. 
+                  Without RNAP's active involvement, the ARG2 gene remains transcriptionally silent. This finely-tuned 
+                  regulation ensures that the ARG2 gene, pivotal for gas vesicle production, is not transcribed, 
+                  thereby negating the synthesis of gas vesicles in the system.
+                </p>
+                <div class="wiki-image-container">
+                    <img src="https://static.igem.wiki/teams/4584/wiki/biorender-figures/biorender-figures/biorender5.png" alt="biorender5">
+                </div>
+                <p>
+                  This figure provides a vivid depiction of the gas vesicle (GV) structure. 
+                  Characterized by its unique cylindrical form, the GV is a marvel of nature, optimized for buoyancy. 
+                  The diagram underscores its intricate architecture and offers a scale reference, 
+                  highlighting its nanoscale dimensions. This compact size, coupled with its distinctive structure, 
+                  underscores the vesicle's ability to resonate effectively with ultrasound waves.
                 </p>
                 <div class="line-container">
                   <div class="line line-left" data-aos="fade-right"></div>
