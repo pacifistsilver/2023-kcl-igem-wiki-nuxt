@@ -7,7 +7,6 @@
   box-sizing: border-box;
   animation: Gradient 6s ease infinite, slideIn 2s forwards;
 }
-
 @keyframes fadeInOut {
   0% { opacity: 0; }
   25% { opacity: 1; }
@@ -71,3 +70,73 @@
     max-width: none; 
   }
 }
+/* human-practices page */
+.toggle-buttons {
+  margin-bottom: 20px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.box {
+  background-color: global.$color-rose;
+  color: global.$header-color;
+  padding: 20px;
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.box:hover {
+  background-color: rgb(182, 182, 223);
+}
+
+#human-practices {
+  display: block;
+}
+#integrated-human-practices {
+  display: block;
+}
+
+.timeline {
+  width: 200px;
+  border-left: 2px solid #333;
+  padding-left: 10px;
+}
+
+.entry {
+  margin-bottom: 20px;
+}
+
+.name {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  position: relative;
+}
+
+.details {
+  display: none;  /* Hide by default */
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;  /* Ensure it's in front when displayed */
+}
+/* ... (rest of your styles) */
+
+.content-section {
+  display: none;
+}
+
