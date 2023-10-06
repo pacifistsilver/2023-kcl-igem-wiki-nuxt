@@ -99,13 +99,6 @@
   background-color: rgb(182, 182, 223);
 }
 
-#human-practices {
-  display: block;
-}
-#integrated-human-practices {
-  display: block;
-}
-
 .timeline {
   width: 200px;
   border-left: 2px solid #333;
@@ -134,9 +127,3 @@
   position: relative;
   z-index: 1;  /* Ensure it's in front when displayed */
 }
-/* ... (rest of your styles) */
-
-.content-section {
-  display: none;
-}
-
