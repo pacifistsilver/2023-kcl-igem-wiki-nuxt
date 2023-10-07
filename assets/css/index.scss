@@ -202,55 +202,57 @@
     position: relative;
 }
 
-@media (min-width: 768px) {
-    .headBlock__titlesWrapper {
-        padding-top: 7.5rem;
-    }
-}
-
-@media (min-width: 1024px) {
-    .headBlock__titlesWrapper {
-        padding-top: 15rem;
-        ;
-    }
-}
 
 .headBlock__title__container {
     line-height: 100%;
+    width: inherit;
     color: global.$color-rose;
     font-weight: 600;
+    margin-top: 4rem;
+    position: relative;
+    margin-left: auto;
+    display: grid;
+    left: 2rem
 }
 
 .headBlock__title__container span {
-    display: inline-block;
     white-space: nowrap;
+    width: 100%;
     opacity: 1;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: #0066CC;
 }
 
 .headBlock__subtitle__line {
+    position: relative;
     line-height: inherit;
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: inherit;
     font-weight: 300;
     font-family: 'Gilroy-Bold';
+    color: inherit;
+    margin-left: 1em;
 
 }
 
 .headBlock__title__line {
-    font-size: 4rem;
+    position: relative;
+    font-size: 3rem;
     color: inherit;
     font-weight: inherit;
     filter: drop-shadow(1px 1px 3px black);
     letter-spacing: -.04em;
     line-height: .92;
     font-family: 'Gilroy-Semi-Bold';
-
+    color: inherit
 }
 
 .headBlock__description__line {
+    position: relative;
+    margin-left: 1em;
+
     line-height: inherit;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     color: inherit;
     font-weight: 200;
 }
@@ -258,26 +260,27 @@
 // headblock gasvesicle
 
 .index_headBlockImage-container img {
-    height: 125%;
     opacity: 1;
-    position: absolute;
     -webkit-transition-duration: .2s;
     transition-duration: .2s;
     -webkit-transition-property: opacity;
     transition-property: opacity;
     -webkit-transition-timing-function: linear;
     transition-timing-function: linear;
-    width: 30%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    width: 100%;
+    height: 100%;
     filter: drop-shadow(1px 1px 2px black);
 
 }
 
 .index_headBlockImage-container {
-    border-radius: 1rem;
-    height: 50%;
+    margin-top: 3.7rem;
+    left: -1.3rem;
     position: absolute;
-    width: 100%;
-    padding: 1em 5.25em 0em 0em;
+    width: 4rem;
+    height: 6rem;
 }
 
 @media (max-width: 480px) {
@@ -471,22 +474,42 @@
     transition-timing-function: cubic-bezier(.19, 1, .22, 1)
 }
 
+.c-kv {
+    height: 26.75rem;
+    padding-left: 7.2%;
+    padding-right: 7.2%;
+    position: relative;
+}
+
 @media (min-width: 640px) {
     .headBlock__subtitle__line {
-        font-size: 2.125rem;
+        font-size: 2.025rem;
     }
 
     .headBlock__title__line {
-        font-size: 4.8rem;
+        font-size: 5.5rem;
     }
 
     .headBlock__description__line {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .index_headBlockImage-container {
+        position: absolute;
+        height: 10rem;
+        width: 8rem;
+        left: -2.5rem
+    }
+
+    .headBlock__title__container {
+        left: 4.125rem;
+        margin-top: 1rem;
     }
 }
 
 @media (min-width: 768px) {
     .headBlock__subtitle__line {
+        margin-left: 1em;
         font-size: 2.625rem;
     }
 
@@ -496,26 +519,73 @@
 
     .headBlock__description__line {
         font-size: 1.2rem;
+        margin-left: 1em;
+    }
+
+    .index_headBlockImage-container {
+        position: absolute;
+        height: 17rem;
+        width: 14rem;
+        left: -1rem;
+    }
+
+    .headBlock__titlesWrapper {
+        padding-top: 7.5rem;
+        
+    }
+
+    .headBlock__title__container {
+        left: 11.125rem;
+        margin-top: 4rem;
+
     }
 }
 
 @media (min-width: 1024px) {
     .headBlock__subtitle__line {
+        margin-left: 1em;
         font-size: 3.6rem;
     }
 
     .headBlock__title__line {
+
         font-size: 7.5rem;
     }
 
     .headBlock__description__line {
         font-size: 1.7rem;
+        margin-left: 1em;
+
+    }
+
+    .headBlock__titlesWrapper {
+        padding-top: 12rem;
+        ;
+    }
+
+    .index_headBlockImage-container {
+        position: absolute;
+        height: 19rem;
+        width: 14rem;
+    }
+
+    .headBlock__title__container {
+        left: 11.125rem;
+        margin-top: 4rem;
+
+    }
+
+    .c-kv {
+        height: 35.5rem;
+        padding-left: 11.1111111111%;
+        padding-right: 11.1111111111%;
     }
 }
 
 @media (min-width: 1280px) {
     .headBlock__subtitle__line {
-        font-size: 4rem;
+        margin-left: 1em;
+        font-size: 3.2rem;
     }
 
     .headBlock__title__line {
@@ -523,6 +593,19 @@
     }
 
     .headBlock__description__line {
-        font-size: 2rem;
+        margin-left: 1em;
+        font-size: 1.5rem;
+    }
+
+    .index_headBlockImage-container {
+        position: absolute;
+        height: 20rem;
+        width: 16rem;
+        left:1.5rem
+    }
+
+    .headBlock__title__container {
+        left: 16.125rem;
+        margin-top: 4rem;
     }
 }
