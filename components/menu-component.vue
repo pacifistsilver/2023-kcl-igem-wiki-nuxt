@@ -185,7 +185,7 @@ export default {
             return this.$route.path === '/';
         }
     },
-    
+
     created() {
         const windowWidth = window.innerWidth;
         const rootFontSize = windowWidth >= 1440 ? (windowWidth / 1440) * 100 + "%" : "100%";
