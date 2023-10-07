@@ -474,14 +474,14 @@
     transition-timing-function: cubic-bezier(.19, 1, .22, 1)
 }
 
-.c-kv {
+.headBlock__inner {
     height: 26.75rem;
     padding-left: 7.2%;
     padding-right: 7.2%;
     position: relative;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 524px) {
     .headBlock__subtitle__line {
         font-size: 2.025rem;
     }
@@ -498,7 +498,9 @@
         position: absolute;
         height: 10rem;
         width: 8rem;
-        left: -2.5rem
+        left: -2.5rem;
+        margin-top: 0rem;
+
     }
 
     .headBlock__title__container {
@@ -527,6 +529,8 @@
         height: 17rem;
         width: 14rem;
         left: -1rem;
+        margin-top: 0rem;
+
     }
 
     .headBlock__titlesWrapper {
@@ -567,15 +571,18 @@
         position: absolute;
         height: 19rem;
         width: 14rem;
+        margin-top: 0rem;
+
     }
 
     .headBlock__title__container {
         left: 11.125rem;
         margin-top: 4rem;
+        
 
     }
 
-    .c-kv {
+    .headBlock__inner {
         height: 35.5rem;
         padding-left: 11.1111111111%;
         padding-right: 11.1111111111%;
@@ -599,6 +606,7 @@
 
     .index_headBlockImage-container {
         position: absolute;
+        margin-top: 0rem;
         height: 20rem;
         width: 16rem;
         left:1.5rem

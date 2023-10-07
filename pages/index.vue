@@ -25,7 +25,7 @@
   <section class="index__page__inner">
     <section class="headBlock__main">
       <div class="container">
-        <div class="c-kv">
+        <div class="headBlock__inner">
           <div class="headBlock__titlesWrapper">
             <div class="index_headBlockImage-container" data-aos="fade-right" data-aos-duration="1250"
               data-aos-delay="1300" data-aos-once="true">
