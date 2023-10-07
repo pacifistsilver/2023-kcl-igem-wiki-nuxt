@@ -1,5 +1,5 @@
 .custom-shape {
-  background: linear-gradient(200deg, #276bff, #c4b6be);
+  background: linear-gradient(200deg, #00619B, #16324F);
   background-size: 200% 200%;
   padding: 20px;
   min-height: 30vh;
@@ -96,7 +96,9 @@
 .box-reference:focus + .reference-content {
   max-height: 1000px;  // Adjust this value as needed
 }
-
+.box4 {
+  background-color: #2155a1;
+}
 /* human-practices page */
 
 #story {
@@ -160,4 +162,9 @@
   margin-top: 10px;
   position: relative;
   z-index: 1;  /* Ensure it's in front when displayed */
+}
+.humanpracticespic img {
+  width:160%;
+  height: 100%;
+  transform:translateX(-22%);
 }

@@ -51,7 +51,7 @@
             </div>
         </div>
     </div>
-    <nav class="p-header" id="navbar">
+    <nav class="p-header" id="navbar" :class="{ 'solid-blue-background': isIndexPage }">
         <a class="p-headerLogo" href="/kcl-uk/">
             <img src="https://static.igem.wiki/teams/4584/wiki/blue-logo-name-white-background-removebg-preview.png">
         </a>
@@ -180,6 +180,12 @@
 </template>  
 <script>
 export default {
+    computed: {
+        isIndexPage() {
+            return this.$route.path === '/';
+        }
+    },
+    
     created() {
         const windowWidth = window.innerWidth;
         const rootFontSize = windowWidth >= 1440 ? (windowWidth / 1440) * 100 + "%" : "100%";

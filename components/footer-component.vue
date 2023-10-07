@@ -4,12 +4,13 @@
       <div class="row mb-4 footer-details">
         <div class="col-sm-6 logo-footer d-flex align-items-center">
           <a href="https://www.kcl.ac.uk/" data-aos="fade-up" data-aos-duration="1200">
-            <img src="https://static.igem.org/mediawiki/2021/0/02/T--KCL_UK--KCL_logo.png"
+            <img class="myLogo" src="https://static.igem.wiki/teams/4584/wiki/blue-logo-name-white-background-removebg-preview.png"
               alt="iGEM King's College London" width="160" height=auto>
           </a>
           <p data-aos="fade-up" data-aos-duration="1400">
             <br>
             King's College London
+            <br>
             <br>
             Guy's Campus
             <br>

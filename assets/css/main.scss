@@ -287,3 +287,22 @@ p {
 .hovering {
     cursor: pointer;
 }
+// backtoTop button //
+#backToTop {
+    display: black; // Initially hidden
+    position: fixed;
+    bottom: 15px;
+    left: 8px;
+    z-index: 99; // Make sure it appears on top of other elements
+    border: none;
+    outline: none;
+    background-color: global.$color-coloblue; // Choose your desired background color
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    &:hover {
+        background-color: #228ecd; // Color when hovered
+    }
+}

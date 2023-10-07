@@ -184,10 +184,12 @@
                 <hr>
               </section>
 
-              <section id="references" data-aos="fade-up">
+              <button id="backToTop" title="Go to top" v-show="showBackToTop" @click="scrollToTop">Back to Top</button>
+
+              <section id="references" data-aos="fade-up" class="box4">
                 <h3 id="6" class="bold-italic adjusted-section box-reference hovering" @click="toggleReferences" style="text-align: center;">References</h3>
 
-                <div v-show="showReferences" class="reference-content">
+                <div v-show="showReferences">
                   <ul style="font-size: 15px; margin-top: 30px;">
                     <li>
                       <a href="https://doi.org/10.1016/j.amsu.2022.104453" target="_blank">
@@ -288,41 +290,63 @@ export default {
         y: true,
         offset: -80,
       },
-      showReferences: false
-    }
+      showReferences: false,
+      showBackToTop: false // New data property for the button
+    };
   },
   created() {
     this.observer = new IntersectionObserver(this.onElementObserved, {
       root: this.$el,
       threshold: 0.5,
-    })
+    });
   },
   mounted() {
     this.$el.querySelectorAll('section[id]').forEach((section) => {
-      this.observer.observe(section)
-    })
+      this.observer.observe(section);
+    });
+
+    // Add the scroll event listener for the "Back to Top" button
+    window.addEventListener("scroll", this.checkScrollPosition);
   },
   beforeDestroy() {
-    this.observer.disconnect()
+    this.observer.disconnect();
+
+    // Remove the scroll event listener
+    window.removeEventListener("scroll", this.checkScrollPosition);
   },
   methods: {
     onElementObserved(entries) {
       entries.forEach(({ target, isIntersecting }) => {
-        const id = target.getAttribute('id')
+        const id = target.getAttribute('id');
         if (isIntersecting) {
           this.$el
             .querySelector(`div li a[href="#${id}"]`)
-            .parentElement.classList.add('active')
+            .parentElement.classList.add('active');
         } else {
           this.$el
             .querySelector(`div li a[href="#${id}"]`)
-            .parentElement.classList.remove('active')
+            .parentElement.classList.remove('active');
         }
-      })
+      });
     },
-    toggleReferences() { 
-            this.showReferences = !this.showReferences;
+    toggleReferences() {
+      this.showReferences = !this.showReferences;
+    },
+    // Method to show/hide the "Back to Top" button
+    checkScrollPosition() {
+      if (document.body.scrollTop > window.innerHeight / 2 || document.documentElement.scrollTop > window.innerHeight / 2) {
+        this.showBackToTop = true;
+      } else {
+        this.showBackToTop = false;
+      }
+    },
+    // Method to scroll to the top of the page
+    scrollToTop() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
     }
-  },
+  }
 }
 </script>
+
+
