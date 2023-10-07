@@ -1,11 +1,16 @@
 .custom-shape {
-  background: linear-gradient(200deg, #276bff, #c4b6be);
+  background: linear-gradient(200deg, #00619B, #16324F);
   background-size: 200% 200%;
   padding: 20px;
   min-height: 30vh;
   animation: Gradient 6s ease infinite, slideIn 2s forwards;
 }
-
+.box-shape {
+  background-color: #00619B;   /* box color for the texts (could change it if needed)*/
+  border-radius: 15px;      /* Rounded corners */
+  padding: 20px;            /* Some padding inside the box for content */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);  /*shadow for text depth */
+}
 @keyframes fadeInOut {
   0% {
     opacity: 0;
@@ -75,4 +80,91 @@
   #subtitle {
     font-size: 1.2em;
   }
+}
+.box-reference {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.reference-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.box-reference:active + .reference-content,
+.box-reference:focus + .reference-content {
+  max-height: 1000px;  // Adjust this value as needed
+}
+.box4 {
+  background-color: #2155a1;
+}
+/* human-practices page */
+
+#story {
+  display: block;
+}
+.toggle-buttons {
+  margin-bottom: 20px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.box {
+  background-color: global.$color-white;
+  color: global.$header-color;
+  padding: 20px;
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.box:hover {
+  background-color: rgb(182, 182, 223);
+}
+
+#human-practices {
+  display: block;
+}
+.timeline {
+  width: 200px;
+  border-left: 2px solid #333;
+  padding-left: 10px;
+}
+
+.entry {
+  margin-bottom: 20px;
+}
+
+.name {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  position: relative;
+}
+
+.details {
+  display: none;  /* Hide by default */
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;  /* Ensure it's in front when displayed */
+}
+.humanpracticespic img {
+  width:160%;
+  height: 100%;
+  transform:translateX(-22%);
 }

@@ -16,8 +16,8 @@
           <div class="team-tabs-people-row row">
             <div class="teams-tab-person col-lg-3 ">
               <div class="teams-tab-person-img">
-                <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img"
-                  alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
+                <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/asmae.jpg" class="person-img"
+                  alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/asmae.jpg">
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Asmae Ait Abdallah</p>
@@ -81,8 +81,8 @@
             </div>
             <div class="teams-tab-person col-lg-3">
               <div class="teams-tab-person-img">
-                <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/dan.jpg" class="person-img" alt="DOG"
-                  src="https://static.igem.wiki/teams/4584/wiki/member-pics/dan.jpg">
+                <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/daniel.jpg" class="person-img" alt="DOG"
+                  src="https://static.igem.wiki/teams/4584/wiki/member-pics/daniel.jpg">
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Daniel Wei Luo</p>
@@ -126,8 +126,8 @@
             </div>
             <div class="teams-tab-person col-lg-3">
               <div class="teams-tab-person-img">
-                <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/jon.jpeg" class="person-img" alt="DOG"
-                  src="https://static.igem.wiki/teams/4584/wiki/member-pics/jon.jpeg">
+                <img data-src="https://static.igem.wiki/teams/4584/wiki/jonathan.jpg" class="person-img" alt="DOG"
+                  src="https://static.igem.wiki/teams/4584/wiki/jonathan.jpg">
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Jonathan Collard </p>
@@ -161,8 +161,8 @@
             </div>
             <div class="teams-tab-person col-lg-3">
               <div class="teams-tab-person-img">
-                <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/dan2.jpg" class="person-img" alt="DOG"
-                  src="https://static.igem.wiki/teams/4584/wiki/member-pics/dan2.jpg">
+                <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/daniella.jpg" class="person-img" alt="DOG"
+                  src="https://static.igem.wiki/teams/4584/wiki/member-pics/daniella.jpg">
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Daniella Cetta</p>

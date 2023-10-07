@@ -472,6 +472,9 @@ li.p-menuNavListItem>a {
     height: 5.25rem;
     padding: 0 2.5rem;
   }
+  .solid-blue-background {
+    background-color: global.$header-color; 
+  }
 
   .nav-item>a {
     padding: .4em .8em;

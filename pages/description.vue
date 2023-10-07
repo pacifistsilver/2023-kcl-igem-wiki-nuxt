@@ -36,7 +36,7 @@
           <h1 id="title" style="text-align: center; font-weight: bold;" class="header-text">Ultrasound diagnostic tool for
             colorectal cancer</h1>
           <h1 id="subtitle" style="text-align: center; font-weight: bold;" class="header-text">More info coming along
-            sooon.</h1>
+            soon.</h1>
         </div>
       </header>
 
@@ -184,83 +184,88 @@
                 <hr>
               </section>
 
-              <section id="references" data-aos="fade-up">
-                <h3 id="6" class="bold-italic adjusted-section" style="text-align: center;">References</h3>
-                <ul style="font-size: 15px; margin-top: 30px;">
-                  <li>
-                    <a href="https://doi.org/10.1016/j.amsu.2022.104453" target="_blank">
-                      AlZaabi, A., AlHarrasi, A., AlMusalami, A., AlMahyijari, N., Al Hinai, K., ALAdawi, H., & Al-Shamsi,
-                      H. O.
-                      (2022). Early onset colorectal cancer: Challenges across the cancer care continuum. Annals of
-                      Medicine and Surgery, 82, 104453. https://doi.org/10.1016/j.amsu.2022.104453
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://pubmed.ncbi.nlm.nih.gov/30207593/" target="_blank">
-                      Bray, F., Ferlay, J., Soerjomataram, I., Siegel, R. L., Torre, L. A., & Jemal, A. (2018).
-                      Global Cancer Statistics 2018: GLOBOCAN Estimates of Incidence and Mortality Worldwide for 36
-                      Cancers in
-                      185 Countries. CA: A Cancer Journal for Clinicians, 68(6), 394–424.
-                      https://pubmed.ncbi.nlm.nih.gov/30207593/
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://doi.org/10.1200/jgo.18.00214" target="_blank">
-                      Costas-Chavarri, A., Nandakumar, G., Temin, S., Lopes, G., Cervantes, A., Cruz Correa, M., Engineer,
-                      R.,
-                      Hamashima, C., Ho, G. F., Huitzil, F. D., Malekzadeh Moghani, M., Sharara, A. I., Stern, M. C., Teh,
-                      C.,
-                      Vázquez Manjarrez, S. E., Verjee, A., Yantiss, R., & Shah, M. A. (2019). Treatment of Patients With
-                      Early-Stage Colorectal Cancer: ASCO Resource-Stratified Guideline. Journal of Global Oncology, 5(5),
-                      1–19.
-                      https://doi.org/10.1200/jgo.18.00214
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://doi.org/10.1200/go.21.00111" target="_blank">
-                      Deo, S. V. S., Kumar, S., Bhoriwal, S., Shukla, N. K., Sharma, A., Thulkar, S., Das, P., Bhagat, P.,
-                      Dhall, K., Pathy, S., & Mohanti, B. K. (2021). Colorectal Cancers in Low- and Middle-Income
-                      Countries—
-                      Demographic Pattern and Clinical Profile of 970 Patients Treated at a Tertiary Care Cancer Center in
-                      India.
-                      JCO Global Oncology,7, 1110-1115. https://doi.org/10.1200/go.21.00111
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://doi.org/10.1016/s0140-6736(02)11121-4" target="_blank">
-                      Gollub, M. J. (2002). Virtual colonoscopy. The Lancet, 360(9338), 964.
-                      https://doi.org/10.1016/s0140-6736(02)11121-4
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://doi.org/10.3748/wjg.v23.i28.5086" target="_blank">
-                      Issa, I. A., & Noureddine, M. (2017). Colorectal cancer screening:
-                      An updated review of the available options. World Journal of Gastroenterology, 23(28), 5086.
-                      https://doi.org/10.3748/wjg.v23.i28.5086
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.nhs.uk/conditions/bowel-cancer-screening/" target="_blank">
-                      NHS. (2019). Overview - Bowel Cancer Screening. NHS.
-                      https://www.nhs.uk/conditions/bowel-cancer-screening/
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://doi.org/10.1038/nnano.2014.32" target="_blank">
-                      Shapiro, M. G., Goodwill, P. W., Neogy, A., Yin, M., Foster, F. S., Schaffer, D. V., & Conolly, S.
-                      M.
-                      (2014). Biogenic gas nanostructures as ultrasonic molecular reporters.
-                      Nature Nanotechnology, 9(4), 311-316. https://doi.org/10.1038/nnano.2014.32
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://doi.org/10.3322/caac.21772" target="_blank">
-                      Siegel, R. L., Wagle, N. S., Cercek, A., Smith, R. A., & Jemal, A. (2023).
-                      Colorectal cancer statistics, 2023. CA: A Cancer Journal for Clinicians.
-                      https://doi.org/10.3322/caac.21772
-                    </a>
-                  </li>
-                </ul>
+              <button id="backToTop" title="Go to top" v-show="showBackToTop" @click="scrollToTop">Back to Top</button>
+
+              <section id="references" data-aos="fade-up" class="box4">
+                <h3 id="6" class="bold-italic adjusted-section box-reference hovering" @click="toggleReferences" style="text-align: center;">References</h3>
+
+                <div v-show="showReferences">
+                  <ul style="font-size: 15px; margin-top: 30px;">
+                    <li>
+                      <a href="https://doi.org/10.1016/j.amsu.2022.104453" target="_blank">
+                        AlZaabi, A., AlHarrasi, A., AlMusalami, A., AlMahyijari, N., Al Hinai, K., ALAdawi, H., & Al-Shamsi,
+                        H. O.
+                        (2022). Early onset colorectal cancer: Challenges across the cancer care continuum. Annals of
+                        Medicine and Surgery, 82, 104453. https://doi.org/10.1016/j.amsu.2022.104453
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://pubmed.ncbi.nlm.nih.gov/30207593/" target="_blank">
+                        Bray, F., Ferlay, J., Soerjomataram, I., Siegel, R. L., Torre, L. A., & Jemal, A. (2018).
+                        Global Cancer Statistics 2018: GLOBOCAN Estimates of Incidence and Mortality Worldwide for 36
+                        Cancers in
+                        185 Countries. CA: A Cancer Journal for Clinicians, 68(6), 394–424.
+                        https://pubmed.ncbi.nlm.nih.gov/30207593/
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://doi.org/10.1200/jgo.18.00214" target="_blank">
+                        Costas-Chavarri, A., Nandakumar, G., Temin, S., Lopes, G., Cervantes, A., Cruz Correa, M., Engineer,
+                        R.,
+                        Hamashima, C., Ho, G. F., Huitzil, F. D., Malekzadeh Moghani, M., Sharara, A. I., Stern, M. C., Teh,
+                        C.,
+                        Vázquez Manjarrez, S. E., Verjee, A., Yantiss, R., & Shah, M. A. (2019). Treatment of Patients With
+                        Early-Stage Colorectal Cancer: ASCO Resource-Stratified Guideline. Journal of Global Oncology, 5(5),
+                        1–19.
+                        https://doi.org/10.1200/jgo.18.00214
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://doi.org/10.1200/go.21.00111" target="_blank">
+                        Deo, S. V. S., Kumar, S., Bhoriwal, S., Shukla, N. K., Sharma, A., Thulkar, S., Das, P., Bhagat, P.,
+                        Dhall, K., Pathy, S., & Mohanti, B. K. (2021). Colorectal Cancers in Low- and Middle-Income
+                        Countries—
+                        Demographic Pattern and Clinical Profile of 970 Patients Treated at a Tertiary Care Cancer Center in
+                        India.
+                        JCO Global Oncology,7, 1110-1115. https://doi.org/10.1200/go.21.00111
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://doi.org/10.1016/s0140-6736(02)11121-4" target="_blank">
+                        Gollub, M. J. (2002). Virtual colonoscopy. The Lancet, 360(9338), 964.
+                        https://doi.org/10.1016/s0140-6736(02)11121-4
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://doi.org/10.3748/wjg.v23.i28.5086" target="_blank">
+                        Issa, I. A., & Noureddine, M. (2017). Colorectal cancer screening:
+                        An updated review of the available options. World Journal of Gastroenterology, 23(28), 5086.
+                        https://doi.org/10.3748/wjg.v23.i28.5086
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.nhs.uk/conditions/bowel-cancer-screening/" target="_blank">
+                        NHS. (2019). Overview - Bowel Cancer Screening. NHS.
+                        https://www.nhs.uk/conditions/bowel-cancer-screening/
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://doi.org/10.1038/nnano.2014.32" target="_blank">
+                        Shapiro, M. G., Goodwill, P. W., Neogy, A., Yin, M., Foster, F. S., Schaffer, D. V., & Conolly, S.
+                        M.
+                        (2014). Biogenic gas nanostructures as ultrasonic molecular reporters.
+                        Nature Nanotechnology, 9(4), 311-316. https://doi.org/10.1038/nnano.2014.32
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://doi.org/10.3322/caac.21772" target="_blank">
+                        Siegel, R. L., Wagle, N. S., Cercek, A., Smith, R. A., & Jemal, A. (2023).
+                        Colorectal cancer statistics, 2023. CA: A Cancer Journal for Clinicians.
+                        https://doi.org/10.3322/caac.21772
+                      </a>
+                    </li>
+                  </ul>
+                </div>
                 <hr>
               </section>
             </div>
@@ -284,39 +289,64 @@ export default {
         x: false,
         y: true,
         offset: -80,
-      }
-    }
+      },
+      showReferences: false,
+      showBackToTop: false // New data property for the button
+    };
   },
   created() {
     this.observer = new IntersectionObserver(this.onElementObserved, {
       root: this.$el,
       threshold: 0.5,
-    })
+    });
   },
   mounted() {
     this.$el.querySelectorAll('section[id]').forEach((section) => {
-      this.observer.observe(section)
-    })
+      this.observer.observe(section);
+    });
+
+    // Add the scroll event listener for the "Back to Top" button
+    window.addEventListener("scroll", this.checkScrollPosition);
   },
   beforeDestroy() {
-    this.observer.disconnect()
+    this.observer.disconnect();
+
+    // Remove the scroll event listener
+    window.removeEventListener("scroll", this.checkScrollPosition);
   },
   methods: {
     onElementObserved(entries) {
       entries.forEach(({ target, isIntersecting }) => {
-        const id = target.getAttribute('id')
+        const id = target.getAttribute('id');
         if (isIntersecting) {
           this.$el
             .querySelector(`div li a[href="#${id}"]`)
-            .parentElement.classList.add('active')
+            .parentElement.classList.add('active');
         } else {
           this.$el
             .querySelector(`div li a[href="#${id}"]`)
-            .parentElement.classList.remove('active')
+            .parentElement.classList.remove('active');
         }
-      })
+      });
     },
-  },
+    toggleReferences() {
+      this.showReferences = !this.showReferences;
+    },
+    // Method to show/hide the "Back to Top" button
+    checkScrollPosition() {
+      if (document.body.scrollTop > window.innerHeight / 2 || document.documentElement.scrollTop > window.innerHeight / 2) {
+        this.showBackToTop = true;
+      } else {
+        this.showBackToTop = false;
+      }
+    },
+    // Method to scroll to the top of the page
+    scrollToTop() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }
+  }
 }
-
 </script>
+
+

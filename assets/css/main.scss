@@ -53,7 +53,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
-    background-color: #00619B;
+    background-color: #BEE5F4;
     box-sizing: border-box;
     background-blend-mode: screen;
 
@@ -234,16 +234,19 @@ p {
 .section-nav {
     position: -webkit-sticky;
     position: sticky;
+    padding: 10px;
     top: 75px;
     margin-top: 40px;
     margin-bottom: 40px;
+    background-color: #16324F;
+    transform:translateX(-22%);
 }
 
 .section-nav-header {
     font-size: .8rem;
     font-weight: bold;
     color: #fff;
-    letter-spacing: 1px;
+    letter-spacing: 4px;
     text-transform: uppercase;
 }
 
@@ -252,7 +255,7 @@ p {
     text-decoration: none;
     color: #fff;
     transition: all .5s ease-in-out;
-    line-height: 40px;
+    line-height: 60px;
     display: block;
     font-weight: 60;
 }
@@ -269,9 +272,9 @@ p {
     color: #fff;
     letter-spacing: 1px;
     text-transform: uppercase;
+    transform: translateX(15%);
 }
 
-/* Not working currently */
 .section-nav a:hover,
 .section-nav a:focus {
     color: #f2765d;
@@ -280,4 +283,26 @@ p {
 .section-nav li.active>a {
     color: #f2765d;
     font-weight: 500;
+}
+.hovering {
+    cursor: pointer;
+}
+// backtoTop button //
+#backToTop {
+    display: black; // Initially hidden
+    position: fixed;
+    bottom: 15px;
+    left: 8px;
+    z-index: 99; // Make sure it appears on top of other elements
+    border: none;
+    outline: none;
+    background-color: global.$color-coloblue; // Choose your desired background color
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    &:hover {
+        background-color: #228ecd; // Color when hovered
+    }
 }
