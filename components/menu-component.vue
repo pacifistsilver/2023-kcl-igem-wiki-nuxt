@@ -190,10 +190,9 @@ export default {
         const windowWidth = window.innerWidth;
         const rootFontSize = windowWidth >= 1440 ? (windowWidth / 1440) * 100 + "%" : "100%";
         document.documentElement.style.fontSize = rootFontSize;
-        console.log("fuck")
         this.$nextTick(() => {
             document.documentElement.style.fontSize = rootFontSize;
-        }
+        })
     },
     mounted() {
         const menuElement = document.getElementById("menu");
@@ -205,7 +204,6 @@ export default {
             const windowWidth = window.innerWidth;
             const rootFontSize = windowWidth >= 1440 ? (windowWidth / 1440) * 100 + "%" : "100%";
             document.documentElement.style.fontSize = rootFontSize;
-            console.log("fuck")
         };
 
         function handleScroll() {
