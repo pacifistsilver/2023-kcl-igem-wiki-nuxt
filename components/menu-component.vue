@@ -180,21 +180,25 @@
 </template>  
 <script>
 export default {
-    created() {
-        const windowWidth = window.innerWidth;
-        const rootFontSize = windowWidth >= 1440 ? (windowWidth / 1440) * 100 + "%" : "100%";
-        document.documentElement.style.fontSize = rootFontSize;
-        console.log("fuck")
-        this.$nextTick(() => {
+    beforeMount() {
+        if (document.readyState !== 'loading') {
+            const windowWidth = window.innerWidth;
+            const rootFontSize = windowWidth >= 1440 ? (windowWidth / 1440) * 100 + "%" : "100%";
             document.documentElement.style.fontSize = rootFontSize;
-
-        });
+        }
     },
     mounted() {
         const menuElement = document.getElementById("menu");
         const appLayoutElement = document.getElementById("app-layout");
         const hamburger = document.querySelector(".hamburger");
         const viewportSizeThreshold = 1024;
+
+        function changeRootFontSize() {
+            const windowWidth = window.innerWidth;
+            const rootFontSize = windowWidth >= 1440 ? (windowWidth / 1440) * 100 + "%" : "100%";
+            document.documentElement.style.fontSize = rootFontSize;
+            console.log("fuck")
+        };
 
         function handleScroll() {
             const scrollTop = document.documentElement.scrollTop;
@@ -229,13 +233,12 @@ export default {
                 hamburger.classList.remove("is-active");
             }
         };
-        this.$nextTick(() => {
-            window.addEventListener("scroll", handleScroll);
-            window.addEventListener("resize", handleViewportResize);
-            hamburger.addEventListener("click", handleHamburgerClick);
-            
-        });
-    },
+        window.addEventListener("scroll", handleScroll);
+        window.addEventListener("resize", handleViewportResize);
+        window.addEventListener("resize", changeRootFontSize);
+        document.onreadystatechange = () => { changeRootFontSize };
+        hamburger.addEventListener("click", handleHamburgerClick);
 
+    },
 };
 </script>
