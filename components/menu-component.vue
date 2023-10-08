@@ -8,7 +8,7 @@
     </div>
 
     <div class="p-menu" id="menu" data-is-menu-opened="false" tabindex="-1">
-        <div class="p-menu__inner" style="height: 394px;">
+        <div class="p-menu__inner" style="height: 24.938rem;">
             <div class="p-menu__contents">
                 <nav class="p-menuNav" aria-label="ナビゲーションメニュー" itemscope="" itemprop="hasPart"
                     itemtype="http://schema.org/SiteNavigationElement">
@@ -47,6 +47,12 @@
                                 aria-current="false"><span class="p-menuNavListItem__label" itemprop="name">Team</span></a>
                         </li>
                     </ul>
+                    <div class="c-roundedButton p-menuContactLink" itemprop="hasPart" itemscope=""
+                        itemtype="http://schema.org/WebPage">
+                        <a class="c-roundedButton__inner p-menuContactLink__inner js-menuNavItem" itemprop="url"
+                            href="/contact/" data-path-id="contact" aria-current="false"><span
+                                class="c-roundedButton__label p-menuContactLink__label" itemprop="name">Contact</span></a>
+                    </div>
                 </nav>
             </div>
         </div>
