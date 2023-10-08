@@ -1,16 +1,8 @@
 <template>
-    <div class="p-card">
-        <div class="p-card__inner">
-            <span class = "p-cardItem__label">Design</span>
-        </div>
-        <div class="p-card__inner">
-            <span class = "p-cardItem__label">Build</span>
-        </div>
-        <div class="p-card__inner">
-            <span class = "p-cardItem__label">Test</span>
-        </div>
-        <div class="p-card__inner">
-            <span class = "p-cardItem__label">Learn</span>
-        </div>
+    <div class="p-card" style="--m: 4; --tan: 0.41">
+            <a style="--i: 2" class = "p-cardItem__label">Design</a>
+            <a style="--i: 3" class = "p-cardItem__label">Build</a>
+            <a style="--i: 4" class = "p-cardItem__label">Test</a>
+            <a style="--i: 1" class = "p-cardItem__label">Learn</a>
     </div>
 </template>

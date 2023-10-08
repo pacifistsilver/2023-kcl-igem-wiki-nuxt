@@ -112,12 +112,13 @@
                 Addressing this issue, we incorporated additional questions into the second Biologix lecture series.
                 Fortunately, this adjustment resulted in heightened student engagement, with some expressing newfound
                 passion for synthetic biology in their feedback:
-
+                <br>
                 <blockquote class="blockquote">
-                  <p class="mb-0"> *The lecture was very interesting and informative about a subject I had no knowledge
-                    of.”
+                  <p class="mb-0"> "The lecture was very interesting and informative about a subject I had no knowledge
+                    of."
                   </p>
                 </blockquote>
+
                 <blockquote class="blockquote">
                   <p class="mb-0"> “Keep up the good work!! Really interested in this field!”
                   </p>

@@ -2,17 +2,17 @@
   <div class="content">
     <div class="index_p-contentsHeader row">
       <div class="index_p-contentsHeader_inner col-8">
-        <ol class="index_p-card">
-          <li class="index_p-card__inner">
+        <ol class="index_p-card" style="--m: 4; --tan: 0.41">
+          <li style="--i: 1" class="index_p-card__inner">
             <span class="index_p-cardItem__label">Learn</span>
           </li>
-          <li class="index_p-card__inner">
+          <li style="--i: 2" class="index_p-card__inner">
             <span class="index_p-cardItem__label">Design</span>
           </li>
-          <li class="index_p-card__inner">
+          <li style="--i: 3" class="index_p-card__inner">
             <span class="index_p-cardItem__label">Build</span>
           </li>
-          <li class="index_p-card__inner">
+          <li style="--i: 4" class="index_p-card__inner">
             <span class="index_p-cardItem__label">Test</span>
           </li>
         </ol>
@@ -187,13 +187,15 @@
               <button id="backToTop" title="Go to top" v-show="showBackToTop" @click="scrollToTop">Back to Top</button>
 
               <section id="references" data-aos="fade-up" class="box4">
-                <h3 id="6" class="bold-italic adjusted-section box-reference hovering" @click="toggleReferences" style="text-align: center;">References</h3>
+                <h3 id="6" class="bold-italic adjusted-section box-reference hovering" @click="toggleReferences"
+                  style="text-align: center;">References</h3>
 
                 <div v-show="showReferences">
                   <ul style="font-size: 15px; margin-top: 30px;">
                     <li>
                       <a href="https://doi.org/10.1016/j.amsu.2022.104453" target="_blank">
-                        AlZaabi, A., AlHarrasi, A., AlMusalami, A., AlMahyijari, N., Al Hinai, K., ALAdawi, H., & Al-Shamsi,
+                        AlZaabi, A., AlHarrasi, A., AlMusalami, A., AlMahyijari, N., Al Hinai, K., ALAdawi, H., &
+                        Al-Shamsi,
                         H. O.
                         (2022). Early onset colorectal cancer: Challenges across the cancer care continuum. Annals of
                         Medicine and Surgery, 82, 104453. https://doi.org/10.1016/j.amsu.2022.104453
@@ -210,22 +212,28 @@
                     </li>
                     <li>
                       <a href="https://doi.org/10.1200/jgo.18.00214" target="_blank">
-                        Costas-Chavarri, A., Nandakumar, G., Temin, S., Lopes, G., Cervantes, A., Cruz Correa, M., Engineer,
+                        Costas-Chavarri, A., Nandakumar, G., Temin, S., Lopes, G., Cervantes, A., Cruz Correa, M.,
+                        Engineer,
                         R.,
-                        Hamashima, C., Ho, G. F., Huitzil, F. D., Malekzadeh Moghani, M., Sharara, A. I., Stern, M. C., Teh,
+                        Hamashima, C., Ho, G. F., Huitzil, F. D., Malekzadeh Moghani, M., Sharara, A. I., Stern, M. C.,
+                        Teh,
                         C.,
-                        Vázquez Manjarrez, S. E., Verjee, A., Yantiss, R., & Shah, M. A. (2019). Treatment of Patients With
-                        Early-Stage Colorectal Cancer: ASCO Resource-Stratified Guideline. Journal of Global Oncology, 5(5),
+                        Vázquez Manjarrez, S. E., Verjee, A., Yantiss, R., & Shah, M. A. (2019). Treatment of Patients
+                        With
+                        Early-Stage Colorectal Cancer: ASCO Resource-Stratified Guideline. Journal of Global
+                        Oncology, 5(5),
                         1–19.
                         https://doi.org/10.1200/jgo.18.00214
                       </a>
                     </li>
                     <li>
                       <a href="https://doi.org/10.1200/go.21.00111" target="_blank">
-                        Deo, S. V. S., Kumar, S., Bhoriwal, S., Shukla, N. K., Sharma, A., Thulkar, S., Das, P., Bhagat, P.,
+                        Deo, S. V. S., Kumar, S., Bhoriwal, S., Shukla, N. K., Sharma, A., Thulkar, S., Das, P., Bhagat,
+                        P.,
                         Dhall, K., Pathy, S., & Mohanti, B. K. (2021). Colorectal Cancers in Low- and Middle-Income
                         Countries—
-                        Demographic Pattern and Clinical Profile of 970 Patients Treated at a Tertiary Care Cancer Center in
+                        Demographic Pattern and Clinical Profile of 970 Patients Treated at a Tertiary Care Cancer Center
+                        in
                         India.
                         JCO Global Oncology,7, 1110-1115. https://doi.org/10.1200/go.21.00111
                       </a>
