@@ -27,6 +27,7 @@
                 </nav>
               </div>
 
+
             <div id = "content-main" class="col-lg-9">
               <div class="box-container">
                 <div class="box" @click="showEducationContent">Kazakhstan</div>
@@ -36,20 +37,53 @@
               </div>
                         <!-- Content -->
               <div class="content-wrapper" id="human-practices-wrapper">
-                <div class="content-section" id="human-practices">
+                <section id="intro">
+                <h1 class="bold-italic adjusted-section"> Introduction </h1>
+                <p>
+                  This year, ColoEcho dedicated immense effort to designing, tailoring, and implementing educational
+                  events
+                  for a multitude of age groups. We identified five principles essential to a successful education:
+                  engagement,
+                  transparency, replicability, tailoring, and impact.
+                  <br>
+                <ul>
+                  <li> <b>Engagement</b>: For a non-scientific or younger community, engagement is crucial to instantly
+                    grabbing
+                    and maintaining attention. It inherently grants more autonomy to the audience and enhances mutual
+                    communication.</li>
+                  <li><b>Engagement</b>: For a non-scientific or younger community, engagement is crucial to instantly
+                    grabbing
+                    and maintaining attention. It inherently grants more autonomy to the audience and enhances mutual
+                    communication.</li>
+                  <li> <b>Replicability</b>: With the spirit of inclusivity and accessibility in mind, we are constantly
+                    mindful of how
+                    replicable our event is in terms of resources and labour. </li>
+                  <li> <b>Tailoring</b>: Given that our audience is of drastically different ages, cultures, and
+                    educational backgrounds,
+                    each event is tailored from the content to the method of delivery and style.</li>
+                  <li> <b>Impact</b>: With different populations, we may want to impact them to (1) be curious, (2) be
+                    invested, or (3) be proactive.</li>
+                </ul>
+                </p>
+              </section>
+              <div class="content-section" id="human-practices">
                   <section id = "introduction">
                     <h2 id="list-item-1" class="bold-italic adjusted-section" style="text-align: center;">Design</h2>
                     <p >
                       As a multicultural team, one of our main priority within our outreach and education was reaching a
                       diverse audience, ensuring efficient and effective communication with as many individuals as possible.
-                      This was particularly important for our educational outreach, given the the multicultural composition of
+                      This was particularly important for our educational outreach, given the the multicultural composition
+                  of
                       schools in London with pupils from all across the world. Therefore, we recognised the importance of
-                      developing cultural competency skills in order to interact effectively with people from various cultural
-                      backgrounds. Accordingly, to enhance our understanding of cultural competency, we read Erin Meyer’s ‘The
+                      developing cultural competency skills in order to interact effectively with people from various
+                  cultural
+                      backgrounds. Accordingly, to enhance our understanding of cultural competency, we read Erin Meyer’s
+                  ‘The
                       Cultural Map’ book which provided valuable insights on how to navigate and interact effectively across
                       diverse cultures.
                       <br>
-                      Furthermore, before launching any educational programs, we consulted Professor Thompson and our primary
+                      Furthermore, before launching any educational programs, we consulted Professor Thompson and our
+                  primary
                       investigator Dr.Anatoliy, for guidance on approaching different age groups and determining suitable
                       activities. After receiving general advice on how to structure our educational initiatives, we reached
                       out to local schools. We organised meetings with teachers to gain a deeper understanding of their
@@ -59,7 +93,8 @@
                   <section id = "build">
                     <h2 id="list-item-2" class="bold-italic adjusted-section" style="text-align: center;">Build</h2>
                     <p >
-                      Taking into consideration the advice we received, we began crafting the lecture slides for our Biologix
+                      Taking into consideration the advice we received, we began crafting the lecture slides for our
+                  Biologix
                       lecture series and TOK classes. While developing these lectures, we ensured to incorporate the
                       underlying science in synthetic biology and opportunities in the sector. This is to provide the public
                       with the necessary information to access the . Moreover, we structured these sessions to be
