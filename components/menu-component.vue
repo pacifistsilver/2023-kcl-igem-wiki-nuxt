@@ -14,37 +14,48 @@
                     itemtype="http://schema.org/SiteNavigationElement">
                     <ul class="p-menuNavList">
                         <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
-                            <a class="p-menuNavListItem__inner" itemprop="url" href="/" data-path-id="index"
-                                aria-current="false"><span class="p-menuNavListItem__label" itemprop="name">Home</span></a>
+                            <NuxtLink class="p-headerNavListItem__inner" to="./">
+                                <span class="p-headerNavListItem__label">Home</span>
+
+                            </NuxtLink>
                         </li>
                         <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
-                            <a class="p-menuNavListItem__inner " itemprop="url" href="/project/" data-path-id="wedo"
-                                aria-current="false"><span class="p-menuNavListItem__label"
-                                    itemprop="name">Project</span></a>
+                            <NuxtLink class="p-headerNavListItem__inner" to="./description">
+                                <span class="p-headerNavListItem__label">Project Description</span>
+
+                            </NuxtLink>
                         </li>
                         <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
-                            <a class="p-menuNavListItem__inner " itemprop="url" href="/safety/" data-path-id="result"
-                                aria-current="false"><span class="p-menuNavListItem__label"
-                                    itemprop="name">Safety</span></a>
+                            <NuxtLink class="p-headerNavListItem__inner" to="./safety">
+                                <span class="p-headerNavListItem__label">Safety</span>
+
+                            </NuxtLink>
+
                         </li>
                         <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
-                            <a class="p-menuNavListItem__inner " itemprop="url" href="/humanprac/" data-path-id="career"
-                                aria-current="page"><span class="p-menuNavListItem__label" itemprop="name">Human
-                                    Practices</span></a>
+                            <NuxtLink class="p-headerNavListItem__inner" to="./humanprac">
+                                <span class="p-headerNavListItem__label">Human Practices</span>
+
+                            </NuxtLink>
                         </li>
                         <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
-                            <a class="p-menuNavListItem__inner " itemprop="url" href="/awards/" data-path-id="news"
-                                aria-current="false"><span class="p-menuNavListItem__label"
-                                    itemprop="name">Awards</span></a>
+                            <NuxtLink class="p-headerNavListItem__inner" to="./awards">
+                                <span class="p-headerNavListItem__label">Awards</span>
+
+                            </NuxtLink>
                         </li>
                         <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
-                            <a class="p-menuNavListItem__inner " itemprop="url" href="/results/" target="_blank"
-                                data-path-id="blog" aria-current="false"><span class="p-menuNavListItem__label"
-                                    itemprop="name">Results</span></a>
+                            <NuxtLink class="p-headerNavListItem__inner" to="./resukts">
+                                <span class="p-headerNavListItem__label">Results</span>
+
+                            </NuxtLink>
+
                         </li>
                         <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
-                            <a class="p-menuNavListItem__inner " itemprop="url" href="/team/" data-path-id="company"
-                                aria-current="false"><span class="p-menuNavListItem__label" itemprop="name">Team</span></a>
+                            <NuxtLink class="p-headerNavListItem__inner" to="./members">
+                                <span class="p-headerNavListItem__label">Team</span>
+
+                            </NuxtLink>
                         </li>
                     </ul>
                     <div class="c-roundedButton p-menuContactLink" itemprop="hasPart" itemscope=""
@@ -111,6 +122,11 @@
                                         <span class="p-headerNavListItem__label">Notebook</span>
                                     </NuxtLink>
                                 </li>
+                                <li class="p-headerNavListItem">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./contribution">
+                                        <span class="p-headerNavListItem__label">Contributions</span>
+                                    </NuxtLink>
+                                </li>
                             </ul>
                         </li>
 
@@ -130,10 +146,12 @@
 
                         <!---- AWARDS ---->
                         <li class="nav-item dropdown p-headerNavListItem">
-                            <NuxtLink class="nav-link dropdown-toggle p-headerNavListItem__inner" id="navbar-item"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false" to="./">
+                            <NuxtLink class="nav-link dropdown-toggle p-headerNavListItem__inner " id="navbar-item"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false" to="">
                                 <span class="p-headerNavListItem__label">Awards</span>
+
                             </NuxtLink>
+
                             <ul class="dropdown-menu" aria-labelledby="navbar-item">
                                 <li class="p-headerNavListItem">
                                     <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./parts"><span
