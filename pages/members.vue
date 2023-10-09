@@ -36,8 +36,8 @@
             </div>
             <div class="teams-tab-person col-lg-3">
               <div class="teams-tab-person-img">
-                <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img"
-                  alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
+                <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/tiffany.jpg" class="person-img"
+                  alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/tiffany.jpg">
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">I Cheng Kan</p>
@@ -46,8 +46,8 @@
             </div>
             <div class="teams-tab-person col-lg-3">
               <div class="teams-tab-person-img">
-                <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/tiffie.jpeg" class="person-img"
-                  alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/tiffie.jpeg">
+                <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/tiffanie.jpg" class="person-img"
+                  alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/tiffanie.jpg">
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Tiffanie Dihardjo</p>
@@ -61,8 +61,8 @@
           <div class="team-tabs-people-row row">
             <div class="teams-tab-person col-lg-3 ">
               <div class="teams-tab-person-img">
-                <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/pema.png" class="person-img" alt="DOG"
-                  src="https://static.igem.wiki/teams/4584/wiki/member-pics/pema.png">
+                <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/pema.jpg" class="person-img" alt="DOG"
+                  src="https://static.igem.wiki/teams/4584/wiki/member-pics/pema.jpg">
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Pema Tsering</p>
@@ -106,8 +106,8 @@
           <div class="team-tabs-people-row row">
             <div class="teams-tab-person col-lg-3 ">
               <div class="teams-tab-person-img">
-                <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/nicole.jpeg" class="person-img"
-                  alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/nicole.jpeg">
+                <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/nicole.jpg" class="person-img"
+                  alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/nicole.jpg">
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Nicole Salem </p>
@@ -116,8 +116,8 @@
             </div>
             <div class="teams-tab-person col-lg-3">
               <div class="teams-tab-person-img">
-                <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/rheima.jpeg" class="person-img"
-                  alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/rheima.jpeg">
+                <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/rheima.jpg" class="person-img"
+                  alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/rheima.jpg">
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Rheima Saptari</p>
@@ -136,8 +136,8 @@
             </div>
             <div class="teams-tab-person col-lg-3">
               <div class="teams-tab-person-img">
-                <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/sri.jpeg" class="person-img" alt="DOG"
-                  src="https://static.igem.wiki/teams/4584/wiki/member-pics/sri.jpeg">
+                <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/sri.jpg" class="person-img" alt="DOG"
+                  src="https://static.igem.wiki/teams/4584/wiki/member-pics/sri.jpg">
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Sri Gullapalli</p>
@@ -171,8 +171,8 @@
             </div>
             <div class="teams-tab-person col-lg-3">
               <div class="teams-tab-person-img">
-                <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/wren.jpg" class="person-img" alt="DOG"
-                  src="https://static.igem.wiki/teams/4584/wiki/member-pics/wren.jpg">
+                <img data-src="https://static.igem.wiki/teams/4584/wiki/wren.jpg" class="person-img" alt="DOG"
+                  src="https://static.igem.wiki/teams/4584/wiki/wren.jpg">
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Uyen Tran</p>
@@ -181,8 +181,8 @@
             </div>
             <div class="teams-tab-person col-lg-3">
             <div class="teams-tab-person-img">
-              <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/margherita.jpeg" class="person-img"
-                alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/margherita.jpeg">
+              <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/margherita.jpg" class="person-img"
+                alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/margherita.jpg">
             </div>
             <div class="teams-tab-person-info">
               <p class="team-tabs-person-name-title">Margherita Autelitano</p>
