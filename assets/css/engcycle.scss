@@ -63,10 +63,6 @@
         rotate(var(--az)) translate(var(--r)) rotate(calc(-1*var(--az)))
 }
 
-img {
-    max-width: 100%
-}
-
 .index_p-card__inner {
     -webkit-font-feature-settings: normal;
     font-feature-settings: normal;
