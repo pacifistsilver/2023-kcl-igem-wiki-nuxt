@@ -1,7 +1,6 @@
 @use "global.scss";
 
 // background objects
-
 @-webkit-keyframes bgObjectItemInnerAnim {
     0% {
         -webkit-transform: translateX(-4%);
@@ -50,13 +49,15 @@
     }
 }
 
+
 .bgObjects {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    height: calc(100% + 20vmax);
     overflow: hidden;
     pointer-events: none;
     position: absolute;
-    top: 0;
+    top: -20vmax;
     -webkit-transition-duration: .2s;
     transition-duration: .2s;
     -webkit-transition-property: opacity;
@@ -65,7 +66,9 @@
     transition-timing-function: linear;
     width: 100%;
     z-index: -2;
-    height: calc(100% + 20vmax);
+    background: linear-gradient(#152B3E, #00619b);
+
+
 }
 
 .bgObjectItem {
@@ -100,14 +103,12 @@
 .bgObjectItem-Inner {
     -webkit-animation: bgObjectItemInnerAnim 4s cubic-bezier(.445, .05, .55, .95) 0s infinite alternate;
     animation: bgObjectItemInnerAnim 4s cubic-bezier(.445, .05, .55, .95) 0s infinite alternate;
-    animation-duration: 4s;
-    animation-delay: 0s;
+    -webkit-animation-play-state: running;
     animation-play-state: running;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
     margin-left: -40vmax;
     position: relative;
     width: 80vmax;
+    mix-blend-mode:soft-light;
 }
 
 .bgObjectItem-Inner img {
@@ -134,6 +135,13 @@
     margin-right: -40vmax;
 }
 
+.bgObjectItem:first-child .bgObjectItem-Inner:not(:first-child) {
+    margin-left: -1.333%;
+}
+
+.bgObjectItem:first-child {
+    width: 100% !important
+}
 
 .bgObjectItem[data-is-template="true"] {
     left: 0;
@@ -220,17 +228,15 @@
     width: 100%;
     opacity: 1;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-    color: #0066CC;
 }
 
 .headBlock__subtitle__line {
     position: relative;
     line-height: inherit;
     font-size: 1.3rem;
-    color: inherit;
+    color: white    ;
     font-weight: 300;
     font-family: 'Gilroy-Bold';
-    color: inherit;
     margin-left: 1em;
 
 }
@@ -238,13 +244,12 @@
 .headBlock__title__line {
     position: relative;
     font-size: 3rem;
-    color: inherit;
+    color: white;
     font-weight: inherit;
     filter: drop-shadow(1px 1px 3px black);
     letter-spacing: -.04em;
     line-height: .92;
     font-family: 'Gilroy-Semi-Bold';
-    color: inherit
 }
 
 .headBlock__description__line {
@@ -253,7 +258,7 @@
 
     line-height: inherit;
     font-size: 0.6rem;
-    color: inherit;
+    color: global.$color-rose;
     font-weight: 200;
 }
 
@@ -535,7 +540,7 @@
 
     .headBlock__titlesWrapper {
         padding-top: 7.5rem;
-        
+
     }
 
     .headBlock__title__container {
@@ -578,7 +583,7 @@
     .headBlock__title__container {
         left: 11.125rem;
         margin-top: 4rem;
-        
+
 
     }
 
@@ -609,7 +614,7 @@
         margin-top: 0rem;
         height: 20rem;
         width: 16rem;
-        left:1.5rem
+        left: 1.5rem
     }
 
     .headBlock__title__container {
