@@ -1,6 +1,35 @@
 @use "global.scss";
 
 // background objects
+
+ @keyframes bgObjectItemInnerAnimfirst {
+    0% {
+        background-image:
+        radial-gradient(at 83% 53%, hsla(85, 0%, 85%, 1) 0px, transparent 50%), 
+        radial-gradient(at 52% 54%, hsla(198, 100%, 60%, 1) 0px, transparent 50%),
+        radial-gradient(at 15% 48%, hsla(202, 100%, 63%, 1) 0px, transparent 50%);
+    }
+    33.3333% {
+        background-image:
+        radial-gradient(at 15% 48%, hsla(202, 100%, 63%, 1) 0px, transparent 50%),
+        radial-gradient(at 83% 53%, hsla(85, 0%, 85%, 1) 0px, transparent 50%),
+        radial-gradient(at 52% 54%, hsla(198, 100%, 60%, 1) 0px, transparent 50%);
+    }
+    66.666% {
+        background-image:
+        radial-gradient(at 15% 48%, hsla(202, 100%, 63%, 1) 0px, transparent 50%),
+        radial-gradient(at 52% 54%, hsla(198, 100%, 60%, 1) 0px, transparent 50%),
+        radial-gradient(at 83% 53%, hsla(85, 0%, 85%, 1) 0px, transparent 50%);
+    }
+    100% {
+        background-image:
+        radial-gradient(at 52% 54%, hsla(198, 100%, 60%, 1) 0px, transparent 50%),
+        radial-gradient(at 15% 48%, hsla(202, 100%, 63%, 1) 0px, transparent 50%),
+        radial-gradient(at 83% 53%, hsla(85, 0%, 85%, 1) 0px, transparent 50%);
+    }
+  }
+  
+
 @-webkit-keyframes bgObjectItemInnerAnim {
     0% {
         -webkit-transform: translateX(-4%);
@@ -108,20 +137,21 @@
     margin-left: -40vmax;
     position: relative;
     width: 80vmax;
-    mix-blend-mode:soft-light;
+    mix-blend-mode: soft-light;
 }
 
 .bgObjectItem-Inner img {
     -webkit-animation: bgObjectItemImageAnim 4s cubic-bezier(.445, .05, .55, .95) 0s infinite alternate;
     animation: bgObjectItemImageAnim 4s cubic-bezier(.445, .05, .55, .95) 0s infinite alternate;
     animation-play-state: running;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
     height: 100%;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
+    box-shadow: 0 0 8px 8px transparent inset;
 }
 
 .bgObjectItem:nth-child(odd) {
@@ -135,13 +165,28 @@
     margin-right: -40vmax;
 }
 
-.bgObjectItem:first-child .bgObjectItem-Inner:not(:first-child) {
-    margin-left: -1.333%;
+// first bgobjectitem
+.bgObjectItem:nth-child(1) .bgObjectItem-Inner {
+    margin-left: 0;
+    margin-right: 0vmax;
+    background-image:
+        radial-gradient(at 83% 53%, hsla(85, 0%, 85%, 1) 0px, transparent 50%),
+        radial-gradient(at 52% 54%, hsla(198, 100%, 60%, 1) 0px, transparent 50%),
+        radial-gradient(at 15% 48%, hsla(202, 100%, 63%, 1) 0px, transparent 50%);
+    animation: bgObjectItemInnerAnimfirst 2s ease-in-out infinite alternate both;
+    -webkit-animation-play-state: playing;
+    animation-play-state: playing;
+
+}
+
+.bgObjectItem:first-child .bgObjectItem-Inner {
+    width: 100%;
 }
 
 .bgObjectItem:first-child {
     width: 100% !important
 }
+
 
 .bgObjectItem[data-is-template="true"] {
     left: 0;
@@ -234,7 +279,7 @@
     position: relative;
     line-height: inherit;
     font-size: 1.3rem;
-    color: white    ;
+    color: white;
     font-weight: 300;
     font-family: 'Gilroy-Bold';
     margin-left: 1em;

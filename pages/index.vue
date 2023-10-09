@@ -3,10 +3,8 @@
 <template>
     <div class="bgObjects" aria-hidden="true">
       <div class="bgObjectItem">
-        <div class="bgObjectItem-Inner">
-          <img class="js-image" src="https://static.igem.wiki/teams/4584/wiki/bg-objects/ellipse-1.png" style="animation-duration: 3.13207s; animation-delay: -3.16601s;" alt="" decoding="async">
-          <img class="js-image" src="https://static.igem.wiki/teams/4584/wiki/bg-objects/vector-1.png" style="animation-duration: 3.13207s; animation-delay: -3.16601s;" alt="" decoding="async">
-          <img class="js-image" src="https://static.igem.wiki/teams/4584/wiki/bg-objects/ellipse-2.png" style="animation-duration: 3.13207s; animation-delay: -3.16601s;" alt="" decoding="async">
+        <div class="bgObjectItem-Inner ">
+          <div class = "js-image" style="animation-duration: 1.13207s; animation-delay: -3.16601s;" alt="" decoding="async"></div>
         </div>
       </div>
       <div class="bgObjectItem">
@@ -16,12 +14,12 @@
       </div>
       <div class="bgObjectItem">
         <div class="bgObjectItem-Inner">
-          <img class="js-image" src="https://static.igem.wiki/teams/4584/wiki/bg-objects/bgobject-header3.png" style="animation-duration: 3.13207s; animation-delay: -3.16601s;" alt="" decoding="async">
+          <img class="js-image" src="https://static.igem.wiki/teams/4584/wiki/bg-objects/vector-1.png" style="animation-duration: 3.13207s; animation-delay: -3.16601s;" alt="" decoding="async">
         </div>
       </div>
       <div class="bgObjectItem">
         <div class="bgObjectItem-Inner">
-          <img class="js-image" src="https://static.igem.wiki/teams/4584/wiki/bg-objects/bgobject-header3.png" style="animation-duration: 3.13207s; animation-delay: -3.16601s;" alt="" decoding="async">
+          <img class="js-image" src="https://static.igem.wiki/teams/4584/wiki/bg-objects/vector-1.png" style="animation-duration: 3.13207s; animation-delay: -3.16601s;" alt="" decoding="async">
         </div>
       </div>
 
