@@ -2,13 +2,33 @@
 
 // background objects
 
+@-webkit-keyframes text-shadow-drop-center {
+    0% {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+    }
+}
+
+@keyframes text-shadow-drop-center {
+    0% {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+    }
+}
+
 @keyframes bgObjectItemInnerAnimfirst {
     0% {
-        opacity: 0.5;
+        opacity: 0.12;
     }
 
     25% {
-        opacity: 0.65;
+        opacity: 0.45;
     }
 
     100% {
@@ -125,7 +145,7 @@
     margin-left: -40vmax;
     position: relative;
     width: 80vmax;
-    mix-blend-mode: soft-light;
+    mix-blend-mode: screen;
 }
 
 .bgObjectItem-Inner img {
@@ -154,28 +174,22 @@
 }
 
 // first bgobjectitem
-.bgObjectItem:nth-child(1) .bgObjectItem-Inner {
+.bgObjectItem:first-child .bgObjectItem-Inner {
     margin-left: 0;
+    width: 100%;
+    height: 100%;
     margin-right: 0vmax;
     background-image:
-        radial-gradient(at 44% 14%, hsla(98, 0%, 85%, 1) 0px, transparent 50%),
         radial-gradient(at 85% 53%, hsla(85, 0%, 85%, 1) 0px, transparent 50%),
         radial-gradient(at 50% 57%, hsla(198, 100%, 60%, 1) 0px, transparent 50%),
         radial-gradient(at 16% 34%, hsla(202, 100%, 63%, 1) 0px, transparent 50%);
     animation: bgObjectItemInnerAnimfirst 10s ease-in infinite alternate both;
     -webkit-animation-play-state: playing;
     animation-play-state: playing;
+    mix-blend-mode: normal;
+
 
 }
-
-.bgObjectItem:first-child .bgObjectItem-Inner {
-    width: 100%;
-}
-
-.bgObjectItem:first-child {
-    width: 100% !important
-}
-
 
 .bgObjectItem[data-is-template="true"] {
     left: 0;
@@ -270,8 +284,9 @@
     font-size: 1.3rem;
     color: white;
     font-weight: 300;
-    font-family: 'Gilroy-Bold';
+    font-family: 'Tildasans-VF';
     margin-left: 1em;
+    margin-bottom: 0.2em;
 
 }
 
@@ -280,10 +295,12 @@
     font-size: 3rem;
     color: white;
     font-weight: inherit;
-    filter: drop-shadow(1px 1px 3px black);
-    letter-spacing: -.04em;
+    letter-spacing: -.01em;
     line-height: .92;
-    font-family: 'Gilroy-Semi-Bold';
+    font-family: 'Migra-Extra-Bold';
+    -webkit-animation: text-shadow-drop-center 0.6s 2s both;
+    animation: text-shadow-drop-center 0.6s 2s both;
+
 }
 
 .headBlock__description__line {
@@ -320,14 +337,6 @@
     position: absolute;
     width: 4rem;
     height: 6rem;
-}
-
-@media (max-width: 480px) {
-    .index-header .title {
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-    }
 }
 
 #index-title {
@@ -520,6 +529,15 @@
     position: relative;
 }
 
+@media (max-width: 480px) {
+    .index-header .title {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+}
+
+
 @media (min-width: 524px) {
     .headBlock__subtitle__line {
         font-size: 2.025rem;
@@ -530,7 +548,7 @@
     }
 
     .headBlock__description__line {
-        font-size: 0.9rem;
+        font-size: 1.3rem;
     }
 
     .index_headBlockImage-container {
@@ -559,7 +577,7 @@
     }
 
     .headBlock__description__line {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         margin-left: 1em;
     }
 
@@ -568,7 +586,7 @@
         height: 17rem;
         width: 14rem;
         left: -1rem;
-        margin-top: 0rem;
+        margin-top: 1rem;
 
     }
 
@@ -608,9 +626,10 @@
 
     .index_headBlockImage-container {
         position: absolute;
+
         height: 19rem;
         width: 14rem;
-        margin-top: 0rem;
+        margin-top: 1rem;
 
     }
 
@@ -630,8 +649,9 @@
 
 @media (min-width: 1280px) {
     .headBlock__subtitle__line {
-        margin-left: 1em;
-        font-size: 3.2rem;
+        margin-left: 1.5em;
+        font-size: 3.5rem;
+        margin-bottom: 0.4em;
     }
 
     .headBlock__title__line {
@@ -639,16 +659,16 @@
     }
 
     .headBlock__description__line {
-        margin-left: 1em;
-        font-size: 1.5rem;
+        margin-left: 0.7em;
+        font-size: 1.9rem;
     }
 
     .index_headBlockImage-container {
         position: absolute;
-        margin-top: 0rem;
+        margin-top: 1rem;
         height: 20rem;
         width: 16rem;
-        left: 1.5rem
+        left: 3rem
     }
 
     .headBlock__title__container {
