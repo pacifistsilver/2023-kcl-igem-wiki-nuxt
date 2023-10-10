@@ -83,24 +83,18 @@
                       As a multicultural team, one of our main priority within our outreach and education was reaching a
                       diverse audience, ensuring efficient and effective communication with as many individuals as
                       possible.
-                      This was particularly important for our educational outreach, given the the multicultural
-                      composition
-                      of
-                      schools in London with pupils from all across the world. Therefore, we recognised the importance of
-                      developing cultural competency skills in order to interact effectively with people from various
-                      cultural
-                      backgrounds. Accordingly, to enhance our understanding of cultural competency, we read Erin Meyer’s
-                      ‘The
-                      Cultural Map’ book which provided valuable insights on how to navigate and interact effectively
-                      across
-                      diverse cultures.
+                      This was particularly important for our educational outreach, given the the <b> multicultural
+                      composition of schools in London</b> with pupils from all across the world. Therefore, we recognised the importance of
+                      developing <b>cultural competency skills </b>in order to interact effectively with people from various
+                      cultural backgrounds. Accordingly, to enhance our understanding of cultural competency, we read Erin Meyer’s
+                      ‘The Cultural Map’ book which provided valuable insights on how to navigate and interact effectively
+                      across diverse cultures.
                       <br>
                       Furthermore, before launching any educational programs, we consulted Professor Thompson and our
                       primary
-                      investigator Dr.Anatoliy, for guidance on approaching different age groups and determining suitable
+                      investigator Dr. Anatoliy, for guidance on approaching different age groups and determining suitable
                       activities. After receiving general advice on how to structure our educational initiatives, we
-                      reached
-                      out to local schools. We organised meetings with teachers to gain a deeper understanding of their
+                      reached out to local schools. We organised meetings with teachers to gain a deeper understanding of their
                       students' needs and tailored our educational approaches accordingly.
                     </p>
                   </section>
