@@ -9,17 +9,17 @@
       </div>
       <div class="bgObjectItem">
         <div class="bgObjectItem-Inner">
-          <img class="js-image" src="https://static.igem.wiki/teams/4584/wiki/bg-objects/vector-1.png" style="animation-duration: 3.13207s; animation-delay: -3.16601s;" alt="" decoding="async">
+          <img class="js-image" src="https://static.igem.wiki/teams/4584/wiki/bg-objects/bgobject.png" style="animation-duration: 3.13207s; animation-delay: -3.16601s;" alt="" decoding="async">
         </div>
       </div>
       <div class="bgObjectItem">
         <div class="bgObjectItem-Inner">
-          <img class="js-image" src="https://static.igem.wiki/teams/4584/wiki/bg-objects/vector-1.png" style="animation-duration: 3.13207s; animation-delay: -3.16601s;" alt="" decoding="async">
+          <img class="js-image" src="https://static.igem.wiki/teams/4584/wiki/bg-objects/bgobject.png" style="animation-duration: 3.13207s; animation-delay: -3.16601s;" alt="" decoding="async">
         </div>
       </div>
       <div class="bgObjectItem">
         <div class="bgObjectItem-Inner">
-          <img class="js-image" src="https://static.igem.wiki/teams/4584/wiki/bg-objects/vector-1.png" style="animation-duration: 3.13207s; animation-delay: -3.16601s;" alt="" decoding="async">
+          <img class="js-image" src="https://static.igem.wiki/teams/4584/wiki/bg-objects/bgobject.png" style="animation-duration: 3.13207s; animation-delay: -3.16601s;" alt="" decoding="async">
         </div>
       </div>
 
