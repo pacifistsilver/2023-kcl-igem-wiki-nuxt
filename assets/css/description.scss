@@ -115,6 +115,7 @@
 .reference-header {
   position: relative; 
   display: inline-block; 
+  transform: translateX(10%);
 }
 
 .close-btn {
@@ -124,9 +125,8 @@
   transform: translateY(-50%); 
   border-radius: 5px;  /* Adjust for desired corner roundness */
   display: inline-block; 
-  width: 30px;  /* Adjust for desired button width */
-  height: 30px;  /* Adjust for desired button height */
-  line-height: 30px;  /* Adjust to center the × vertically */
+  width: autopx;  /* Adjust for desired button width */
+  line-height: none;  /* Adjust to center the × vertically */
   text-align: center; 
   margin-left: 10px; 
   cursor: pointer; 
