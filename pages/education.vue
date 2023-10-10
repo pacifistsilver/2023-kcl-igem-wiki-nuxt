@@ -38,7 +38,7 @@
                         <!-- Content -->
               <div class="content-wrapper" id="human-practices-wrapper">
                 <section id="intro">
-                <h1 class="bold-italic adjusted-section"> Introduction </h1>
+                <h1 class="p-sectionHeader__label"> Introduction </h1>
                 <p>
                   This year, ColoEcho dedicated immense effort to designing, tailoring, and implementing educational
                   events
