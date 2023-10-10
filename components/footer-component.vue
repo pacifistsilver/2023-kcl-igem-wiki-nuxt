@@ -3,7 +3,7 @@
     <div class="container" data-aos="fade-up" data-aos-duration="1200">
       <div class="row mb-4 footer-details">
         <div class="col-sm-6 logo-footer d-flex align-items-center">
-          <a href="https://www.kcl.ac.uk/" data-aos="fade-up" data-aos-duration="1200">
+          <a data-aos="fade-up" data-aos-duration="1200">
             <img class="myLogo" src="https://static.igem.wiki/teams/4584/wiki/blue-logo-name-white-background-removebg-preview.png"
               alt="iGEM King's College London" width="160" height=auto>
           </a>
@@ -55,7 +55,7 @@
               rel="gitlab" target="_blank">gitlab.igem.org/2023/kcl-uk</a>.</p>
         </div>
 
-        <div class="col-sm-2 creds-social">
+        <div class="col-sm-2 creds-social socialsLogo">
           <div>
             <a href="https://www.instagram.com/igem_kcl/?hl=en/">
               <img src="https://static.igem.wiki/teams/4497/wiki/footer/instagram.svg" alt="insta">

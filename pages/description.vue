@@ -62,7 +62,7 @@
             <div id="description-content" class="col-lg-9">
 
               <section id="project-description" data-aos="fade-up">
-                <h2 id="1" class="bold-italic adjusted-section" style="text-align: center; margin-top: 30px;">Introduction
+                <h2 id="1" class="bold-italic adjusted-section box-shape" style="text-align: center; margin-top: 30px;">Introduction
                 </h2>
                 <p>
                   The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled
@@ -82,7 +82,7 @@
               </section>
 
               <section id="colorectal-cancer" data-aos="fade-up">
-                <h3 id="2" class="bold-italic adjusted-section" style="text-align: center;">Colorectal Cancer: Defining
+                <h3 id="2" class="bold-italic adjusted-section box-shape" style="text-align: center;">Colorectal Cancer: Defining
                   the problem</h3>
                 <p>Colorectal cancer (CRC) ranks amongst the most prevalent oncological diseases, placing fourth in the
                   United Kingdom and third globally according to 2022 NHS data, with approximately two million new
@@ -134,7 +134,7 @@
                 <hr>
               </section>
               <section id="solution" data-aos="fade-up">
-                <h3 id="3" class="bold-italic adjusted-section" style="text-align: center;">Our solution: Synthetic
+                <h3 id="3" class="bold-italic adjusted-section box-shape" style="text-align: center;">Our solution: Synthetic
                   Biology</h3>
                 <p>Recognising the challenges associated with the diagnosis of CRC,
                   ColoEcho is committed to devise a non-invasive and patient-friendly screening method that can be
@@ -156,7 +156,7 @@
                   (Shapiro, 2014).
                 </p>
                 <hr>
-                <h3 id="4" class="bold-italic adjusted-section" style="text-align: center;">Our motivation to tackle
+                <h3 id="4" class="bold-italic adjusted-section box-shape" style="text-align: center;">Our motivation to tackle
                   Colorectal Cancer</h3>
                 <p>Colorectal cancer holds a deep personal significance to us. As a diverse team, many of our members come
                   from
@@ -172,7 +172,7 @@
               </section>
 
               <section id="project-goals" data-aos="fade-up">
-                <h3 id="5" class="bold-italic adjusted-section" style="text-align: center;">Project Goals</h3>
+                <h3 id="5" class="bold-italic adjusted-section box-shape" style="text-align: center;">Project Goals</h3>
                 <ul style="font-size: 20px; margin-top: 30px;">
                   <li>Design a plasmid containing ligand-inducible gene expression system for the CRC biomarker(s) and
                     transform it to a competent E.coli Nissl strain.</li>
@@ -187,10 +187,13 @@
               <button id="backToTop" title="Go to top" v-show="showBackToTop" @click="scrollToTop">Back to Top</button>
 
               <section id="references" data-aos="fade-up" class="box4">
-                <h3 id="6" class="bold-italic adjusted-section box-reference hovering" @click="toggleReferences"
-                  style="text-align: center;">References</h3>
-
-                <div v-show="showReferences">
+                <h3 id="6" class="bold-italic box-reference hovering" @click="toggleReferences" style="text-align: center; color: white;">
+                  <div class="reference-header">
+                    References
+                  </div>
+                  <span class="close-btn" @click.stop="toggleReferences">×</span>
+                </h3>
+                <div class="references-content" v-show="showReferences">
                   <ul style="font-size: 15px; margin-top: 30px;">
                     <li>
                       <a href="https://doi.org/10.1016/j.amsu.2022.104453" target="_blank">
@@ -274,8 +277,8 @@
                     </li>
                   </ul>
                 </div>
-                <hr>
               </section>
+              <div style="margin-bottom: 50px;"></div>
             </div>
           </div>
         </div>

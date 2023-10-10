@@ -5,10 +5,9 @@
   min-height: 30vh;
   animation: Gradient 6s ease infinite, slideIn 2s forwards;
 }
-.box-shape {
-  background-color: #00619B;   /* box color for the texts (could change it if needed)*/
+.box-shape {   
   border-radius: 15px;      /* Rounded corners */
-  padding: 20px;            /* Some padding inside the box for content */
+  padding: 20px;            
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);  /*shadow for text depth */
 }
 @keyframes fadeInOut {
@@ -98,6 +97,44 @@
 }
 .box4 {
   background-color: #2155a1;
+}
+.references-content ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.references-content ul li a:hover {
+  color: #c7bdbd;
+}
+
+.references-content ul li {
+  color: white;
+}
+
+.reference-header {
+  position: relative; 
+  display: inline-block; 
+}
+
+.close-btn {
+  position: absolute; 
+  right: 0; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  border-radius: 5px;  /* Adjust for desired corner roundness */
+  display: inline-block; 
+  width: 30px;  /* Adjust for desired button width */
+  height: 30px;  /* Adjust for desired button height */
+  line-height: 30px;  /* Adjust to center the × vertically */
+  text-align: center; 
+  margin-left: 10px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.close-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2); 
 }
 /* human-practices page */
 

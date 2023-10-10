@@ -49,8 +49,10 @@
                   <li><a href="#ref">References</a></li>
                 </ul>
 
-              </nav>
-            </div>
+                </nav>
+              </div>
+              <button id="backToTop" title="Go to top" v-show="showBackToTop" @click="scrollToTop">Back to Top</button>
+
 
             <div id="content-main" class="col-lg-9">
               <div class="box-container">
@@ -64,8 +66,8 @@
                     <img src="https://static.igem.wiki/teams/4584/wiki/human-practice/hp-intro-to-diversity.png"
                       alt="intro pic diversity">
                   </div>
-                  <section id="introduction" class="box-shape">
-                    <h2 id="list-item-1" class="bold-italic adjusted-section" style="text-align: center;">1. The Problem
+                  <section id="introduction">
+                    <h2 id="list-item-1" class="bold-italic box-shape" style="text-align: center;">1. The Problem
                     </h2>
                     <p>
                       The origins of ColoEcho stem from our fascination with the distinct acoustic properties of
@@ -121,94 +123,72 @@
                       component
                       for an ultrasound-detectable biosensor.
                     </p>
-                  </section>
-                  <section id="define">
-                    <h2 id="list-item-2" class="bold-italic adjusted-section" style="text-align: center;">2. Defining a
-                      Solution</h2>
-                    <p>
-                      The origins of ColoEcho stem from our fascination with the distinct acoustic properties of
-                      gas-filled molecules,
-                      which can be contrasted to that of normal tissues and detected by ultrasound imaging.
-                      Our journey officially began after conversing with one of our team member’s head of department,
-                      who extensively researches the therapeutic application of such molecules, specifically microbubbles.
-                      This discussion expanded our perspective on the vast potential for widening the clinical application
-                      of ultrasound.
-                      Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles.
-                      These structures are formed by certain proteins that are expressed in select aquatic bacteria
-                      species.
-                      The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited
-                      component
+                  </section>  
+                  <section id = "define">
+                    <h2 id="list-item-2" class="bold-italic adjusted-section box-shape" style="text-align: center;">2. Defining a Solution</h2>
+                    <p >
+                      The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
+                      which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
+                      Our journey officially began after conversing with one of our team member’s head of department, 
+                      who extensively researches the therapeutic application of such molecules, specifically microbubbles. 
+                      This discussion expanded our perspective on the vast potential for widening the clinical application of ultrasound. 
+                      Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles. 
+                      These structures are formed by certain proteins that are expressed in select aquatic bacteria species. 
+                      The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited component 
                       for an ultrasound-detectable biosensor.
                     </p>
-
-                  </section>
-                  <section id="design">
-                    <h2 id="list-item-3" class="bold-italic adjusted-section" style="text-align: center;">3. Designing a
-                      Solution</h2>
-                    <p>
-                      The origins of ColoEcho stem from our fascination with the distinct acoustic properties of
-                      gas-filled molecules,
-                      which can be contrasted to that of normal tissues and detected by ultrasound imaging.
-                      Our journey officially began after conversing with one of our team member’s head of department,
-                      who extensively researches the therapeutic application of such molecules, specifically microbubbles.
-                      This discussion expanded our perspective on the vast potential for widening the clinical application
-                      of ultrasound.
-                      Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles.
-                      These structures are formed by certain proteins that are expressed in select aquatic bacteria
-                      species.
-                      The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited
-                      component
+                    
+                  </section>  
+                  <section id = "design">
+                    <h2 id="list-item-3" class="bold-italic adjusted-section box-shape" style="text-align: center;">3. Designing a Solution</h2>
+                    <p >
+                      The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
+                      which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
+                      Our journey officially began after conversing with one of our team member’s head of department, 
+                      who extensively researches the therapeutic application of such molecules, specifically microbubbles. 
+                      This discussion expanded our perspective on the vast potential for widening the clinical application of ultrasound. 
+                      Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles. 
+                      These structures are formed by certain proteins that are expressed in select aquatic bacteria species. 
+                      The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited component 
                       for an ultrasound-detectable biosensor.
                     </p>
-
-                  </section>
-                  <section id="implement">
-                    <h2 id="list-item-4" class="bold-italic adjusted-section" style="text-align: center;">4. Our
-                      Implementation</h2>
-                    <p>
-                      The origins of ColoEcho stem from our fascination with the distinct acoustic properties of
-                      gas-filled molecules,
-                      which can be contrasted to that of normal tissues and detected by ultrasound imaging.
-                      Our journey officially began after conversing with one of our team member’s head of department,
-                      who extensively researches the therapeutic application of such molecules, specifically microbubbles.
-                      This discussion expanded our perspective on the vast potential for widening the clinical application
-                      of ultrasound.
-                      Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles.
-                      These structures are formed by certain proteins that are expressed in select aquatic bacteria
-                      species.
-                      The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited
-                      component
+                    
+                  </section>  
+                  <section id = "implement">
+                    <h2 id="list-item-4" class="bold-italic adjusted-section box-shape" style="text-align: center;">4. Our Implementation</h2>
+                    <p >
+                      The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
+                      which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
+                      Our journey officially began after conversing with one of our team member’s head of department, 
+                      who extensively researches the therapeutic application of such molecules, specifically microbubbles. 
+                      This discussion expanded our perspective on the vast potential for widening the clinical application of ultrasound. 
+                      Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles. 
+                      These structures are formed by certain proteins that are expressed in select aquatic bacteria species. 
+                      The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited component 
                       for an ultrasound-detectable biosensor.
                     </p>
-
-                  </section>
-                  <section id="ref">
-                    <h2 id="list-item-5" class="bold-italic adjusted-section" style="text-align: center;">References</h2>
-                    <p>
-                      Colorectal cancer (CRC) ranks amongst the most prevalent oncological diseases, placing fourth in the
-                      United Kingdom and third globally according to 2022 NHS data, with approximately two million new
-                      diagnoses in 2020 alone. When CRC is diagnosed early during the localised phase,
-                      the primary tumour can be removed through surgical intervention, resulting in a patient survival
-                      rate exceeding 90% (Chakrabarti, 2020). However, the prognosis significantly deteriorates as
-                      the disease advances and metastasises to nearby regional lymph nodes and blood vessels.
-                      Unfortunately,
-                      a significant portion of patients receives their diagnosis in the later stages, contributing to CRC
-                      being
-                      the second leading cause of cancer-related mortality in the United Kingdom between 2017 and 2019
-                      (Cancer Research UK). These data emphasise the critical necessity of early detection strategies for
-                      CRC.
-                      The origins of ColoEcho stem from our fascination with the distinct acoustic properties of
-                      gas-filled molecules,
-                      which can be contrasted to that of normal tissues and detected by ultrasound imaging.
-                      Our journey officially began after conversing with one of our team member’s head of department,
-                      who extensively researches the therapeutic application of such molecules, specifically microbubbles.
-                      This discussion expanded our perspective on the vast potential for widening the clinical application
-                      of ultrasound.
-                      Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles.
-                      These structures are formed by certain proteins that are expressed in select aquatic bacteria
-                      species.
-                      The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited
-                      component
+                    
+                  </section>  
+                  <section id = "ref">
+                    <h2 id="list-item-5" class="bold-italic adjusted-section box-shape" style="text-align: center;">References</h2>
+                    <p >
+                      Colorectal cancer (CRC) ranks amongst the most prevalent oncological diseases, placing fourth in the 
+                      United Kingdom and third globally according to 2022 NHS data, with approximately two million new 
+                      diagnoses in 2020 alone. When CRC is diagnosed early during the localised phase, 
+                      the primary tumour can be removed through surgical intervention, resulting in a patient survival 
+                      rate exceeding 90% (Chakrabarti, 2020). However, the prognosis significantly deteriorates as 
+                      the disease advances and metastasises to nearby regional lymph nodes and blood vessels. Unfortunately, 
+                      a significant portion of patients receives their diagnosis in the later stages, contributing to CRC being 
+                      the second leading cause of cancer-related mortality in the United Kingdom between 2017 and 2019 
+                      (Cancer Research UK). These data emphasise the critical necessity of early detection strategies for CRC.
+                      The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
+                      which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
+                      Our journey officially began after conversing with one of our team member’s head of department, 
+                      who extensively researches the therapeutic application of such molecules, specifically microbubbles. 
+                      This discussion expanded our perspective on the vast potential for widening the clinical application of ultrasound. 
+                      Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles. 
+                      These structures are formed by certain proteins that are expressed in select aquatic bacteria species. 
+                      The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited component 
                       for an ultrasound-detectable biosensor.
                     </p>
                   </section>
@@ -313,6 +293,20 @@ export default {
             .parentElement.classList.remove('active');
         }
       });
+    },
+
+    // Method to show/hide the "Back to Top" button
+    checkScrollPosition() {
+      if (document.body.scrollTop > window.innerHeight / 2 || document.documentElement.scrollTop > window.innerHeight / 2) {
+        this.showBackToTop = true;
+      } else {
+        this.showBackToTop = false;
+      }
+    },
+    // Method to scroll to the top of the page
+    scrollToTop() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
     },
 
     showHumanPracticesContent() {
