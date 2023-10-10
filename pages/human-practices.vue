@@ -19,7 +19,7 @@
             </li>
           </ol>
         </div>
-        <div class="col-4">
+        <div class="index_p-contentsCard_inner col-8">
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="..." alt="Card image cap">
             <div class="card-body">
