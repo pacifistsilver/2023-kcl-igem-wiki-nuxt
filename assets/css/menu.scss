@@ -469,30 +469,6 @@ li.p-menuNavListItem>a {
   position: relative;
 }
 
-[href]::after,
-[tabindex]:not([tabindex="-1"])::after,
-button::after,
-input::after,
-select::after,
-textarea::after {
-  border: 2px solid var(--color-corporate);
-  border-radius: inherit;
-  bottom: 1px;
-  content: "";
-  left: 1px;
-  opacity: 0;
-  pointer-events: none;
-  position: absolute;
-  right: 1px;
-  top: 1px;
-  -webkit-transition-duration: .1s;
-  transition-duration: .1s;
-  -webkit-transition-property: border-color, opacity;
-  transition-property: border-color, opacity;
-  -webkit-transition-timing-function: linear;
-  transition-timing-function: linear;
-}
-
 .c-roundedButton__inner::before {
   background-color: currentColor;
   content: "";

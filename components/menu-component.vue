@@ -85,46 +85,46 @@
 
                             </NuxtLink>
                             <ul class="dropdown-menu " aria-labelledby="navbar-item">
-                                <li class="p-headerNavListItem">
+                                <li class="">
                                     <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./description">
-                                        <span class="p-headerNavListItem__label">Description</span>
+                                        <span class="">Description</span>
                                     </NuxtLink>
                                 </li>
-                                <li class="p-headerNavListItem">
+                                <li class="">
                                     <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./model">
-                                        <span class="p-headerNavListItem__label">Model</span>
+                                        <span class="">Model</span>
 
                                     </NuxtLink>
                                 </li>
-                                <li class="p-headerNavListItem">
+                                <li class="">
                                     <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./experiments">
-                                        <span class="p-headerNavListItem__label">Experiments</span>
+                                        <span class="">Experiments</span>
 
 
                                     </NuxtLink>
                                 </li>
-                                <li class="p-headerNavListItem">
+                                <li class="">
                                     <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./engineering">
-                                        <span class="p-headerNavListItem__label">Engineering</span>
+                                        <span class="">Engineering</span>
 
 
                                     </NuxtLink>
                                 </li>
-                                <li class="p-headerNavListItem">
+                                <li class="">
                                     <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./results">
-                                        <span class="p-headerNavListItem__label">Results</span>
+                                        <span class="">Results</span>
 
 
                                     </NuxtLink>
                                 </li>
-                                <li class="p-headerNavListItem">
+                                <li class="">
                                     <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./notebook">
-                                        <span class="p-headerNavListItem__label">Notebook</span>
+                                        <span class="">Notebook</span>
                                     </NuxtLink>
                                 </li>
-                                <li class="p-headerNavListItem">
+                                <li class="">
                                     <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./contribution">
-                                        <span class="p-headerNavListItem__label">Contributions</span>
+                                        <span class="">Contributions</span>
                                     </NuxtLink>
                                 </li>
                             </ul>
@@ -153,21 +153,21 @@
                             </NuxtLink>
 
                             <ul class="dropdown-menu" aria-labelledby="navbar-item">
-                                <li class="p-headerNavListItem">
+                                <li class="">
                                     <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./parts"><span
-                                            class="p-headerNavListItem__label">
+                                            class="">
                                             New Basic Part
                                         </span></NuxtLink>
                                 </li>
-                                <li class="p-headerNavListItem">
+                                <li class="">
                                     <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./ihp"><span
-                                            class="p-headerNavListItem__label">
+                                            class="">
                                             Integrated Human Practices
                                         </span></NuxtLink>
                                 </li>
-                                <li class="p-headerNavListItem">
+                                <li class="">
                                     <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./education"><span
-                                            class="p-headerNavListItem__label">
+                                            class="">
                                             Education
                                         </span></NuxtLink>
                                 </li>
@@ -185,11 +185,11 @@
                                 <span class="p-headerNavListItem__label">Team</span>
                             </NuxtLink>
                             <ul class="dropdown-menu" aria-labelledby="navbar item">
-                                <li class="p-headerNavListItem">
+                                <li class="">
                                     <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./members">Members
                                     </NuxtLink>
                                 </li>
-                                <li class="p-headerNavListItem">
+                                <li class="">
                                     <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./attributions">
                                         Attributions</NuxtLink>
                                 </li>
