@@ -30,6 +30,8 @@
 
                 </nav>
               </div>
+              <button id="backToTop" title="Go to top" v-show="showBackToTop" @click="scrollToTop">Back to Top</button>
+
 
             <div id = "content-main" class="col-lg-9">
               <div class="box-container">
@@ -42,8 +44,8 @@
                   <div class="humanpracticespic">
                     <img src="https://static.igem.wiki/teams/4584/wiki/human-practice/hp-intro-to-diversity.png" alt="intro pic diversity">
                   </div>
-                  <section id = "introduction" class="box-shape">
-                    <h2 id="list-item-1" class="bold-italic adjusted-section" style="text-align: center;">1. The Problem</h2>
+                  <section id = "introduction">
+                    <h2 id="list-item-1" class="bold-italic box-shape" style="text-align: center;">1. The Problem</h2>
                     <p >
                       The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
                       which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
@@ -84,7 +86,7 @@
                     </p>
                   </section>  
                   <section id = "define">
-                    <h2 id="list-item-2" class="bold-italic adjusted-section" style="text-align: center;">2. Defining a Solution</h2>
+                    <h2 id="list-item-2" class="bold-italic adjusted-section box-shape" style="text-align: center;">2. Defining a Solution</h2>
                     <p >
                       The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
                       which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
@@ -99,7 +101,7 @@
                     
                   </section>  
                   <section id = "design">
-                    <h2 id="list-item-3" class="bold-italic adjusted-section" style="text-align: center;">3. Designing a Solution</h2>
+                    <h2 id="list-item-3" class="bold-italic adjusted-section box-shape" style="text-align: center;">3. Designing a Solution</h2>
                     <p >
                       The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
                       which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
@@ -114,7 +116,7 @@
                     
                   </section>  
                   <section id = "implement">
-                    <h2 id="list-item-4" class="bold-italic adjusted-section" style="text-align: center;">4. Our Implementation</h2>
+                    <h2 id="list-item-4" class="bold-italic adjusted-section box-shape" style="text-align: center;">4. Our Implementation</h2>
                     <p >
                       The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
                       which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
@@ -129,7 +131,7 @@
                     
                   </section>  
                   <section id = "ref">
-                    <h2 id="list-item-5" class="bold-italic adjusted-section" style="text-align: center;">References</h2>
+                    <h2 id="list-item-5" class="bold-italic adjusted-section box-shape" style="text-align: center;">References</h2>
                     <p >
                       Colorectal cancer (CRC) ranks amongst the most prevalent oncological diseases, placing fourth in the 
                       United Kingdom and third globally according to 2022 NHS data, with approximately two million new 
@@ -252,6 +254,20 @@ export default {
             .parentElement.classList.remove('active');
         }
       });
+    },
+
+    // Method to show/hide the "Back to Top" button
+    checkScrollPosition() {
+      if (document.body.scrollTop > window.innerHeight / 2 || document.documentElement.scrollTop > window.innerHeight / 2) {
+        this.showBackToTop = true;
+      } else {
+        this.showBackToTop = false;
+      }
+    },
+    // Method to scroll to the top of the page
+    scrollToTop() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
     },
 
     showHumanPracticesContent() {

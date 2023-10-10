@@ -121,4 +121,10 @@ footer a {
 .myLogo {
     width: 270px;  
     height: auto;
+    user-select: none;
+    filter: brightness(0) invert(1);
+}
+.socialsLogo {  
+    user-select: none;
+    filter: brightness(0) invert(1);
 }
