@@ -164,6 +164,22 @@
 .p-headerNavListItem:not(:first-child) {
   margin-left: .625rem;
 }
+
+.p-headerNavListItem__label {
+	-webkit-font-feature-settings: normal;
+	font-feature-settings: normal;
+	color: white;
+	display: inline-block;
+	font-family: 'Tildasans-VF';
+	font-size: 1rem;
+	font-weight: 500;
+	letter-spacing: -.04em;
+	line-height: .92;
+	position: relative;
+	text-transform: none;
+	white-space: nowrap;
+	z-index: 1;
+}
 // shrink navbar on scroll
 .p-headerNav {
   transition-duration: .2s, .4s, .2s;
@@ -406,21 +422,23 @@ li.p-menuNavListItem>a {
   position: relative;
   width: 100%;
 }
-.p-headerNavListItem__label {
+
+.p-menuNavListItem__label {
 	-webkit-font-feature-settings: normal;
 	font-feature-settings: normal;
 	color: white;
 	display: inline-block;
-	font-family: 'Tildasans-VF';
 	font-size: 1rem;
 	font-weight: 500;
 	letter-spacing: -.04em;
 	line-height: .92;
 	position: relative;
 	text-transform: none;
+	text-transform: uppercase;
 	white-space: nowrap;
 	z-index: 1;
 }
+
 // contact button
 
 .c-roundedButton::before {
@@ -502,7 +520,6 @@ textarea::after {
   font-feature-settings: normal;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  font-family: TWK Everett, Noto Sans JP, sans-serif;
   font-size: .625rem;
   font-weight: 500;
   letter-spacing: -.04em;
@@ -520,7 +537,7 @@ textarea::after {
 }
 
 .p-menuContactLink__label {
-  color: var(--color-white);
+  color: white;
 }
 
 [data-whatintent="mouse"] .c-roundedButton__inner:not(:disabled):hover .c-roundedButton__label,
