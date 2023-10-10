@@ -14,46 +14,46 @@
                     itemtype="http://schema.org/SiteNavigationElement">
                     <ul class="p-menuNavList">
                         <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
-                            <NuxtLink class="p-headerNavListItem__inner" to="./">
-                                <span class="p-headerNavListItem__label">Home</span>
+                            <NuxtLink class="p-menuNavListItem__inner" to="./">
+                                <span class="p-menuNavListItem__label">Home</span>
 
                             </NuxtLink>
                         </li>
                         <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
-                            <NuxtLink class="p-headerNavListItem__inner" to="./description">
-                                <span class="p-headerNavListItem__label">Project Description</span>
+                            <NuxtLink class="p-menuNavListItem__inner" to="./description">
+                                <span class="p-menuNavListItem__label">Project</span>
 
                             </NuxtLink>
                         </li>
                         <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
-                            <NuxtLink class="p-headerNavListItem__inner" to="./safety">
-                                <span class="p-headerNavListItem__label">Safety</span>
-
-                            </NuxtLink>
-
-                        </li>
-                        <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
-                            <NuxtLink class="p-headerNavListItem__inner" to="./humanprac">
-                                <span class="p-headerNavListItem__label">Human Practices</span>
-
-                            </NuxtLink>
-                        </li>
-                        <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
-                            <NuxtLink class="p-headerNavListItem__inner" to="./awards">
-                                <span class="p-headerNavListItem__label">Awards</span>
-
-                            </NuxtLink>
-                        </li>
-                        <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
-                            <NuxtLink class="p-headerNavListItem__inner" to="./resukts">
-                                <span class="p-headerNavListItem__label">Results</span>
+                            <NuxtLink class="p-menuNavListItem__inner" to="./safety">
+                                <span class="p-menuNavListItem__label">Safety</span>
 
                             </NuxtLink>
 
                         </li>
                         <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
-                            <NuxtLink class="p-headerNavListItem__inner" to="./members">
-                                <span class="p-headerNavListItem__label">Team</span>
+                            <NuxtLink class="p-menuNavListItem__inner" to="./humanprac">
+                                <span class="p-menuNavListItem__label">Human Practices</span>
+
+                            </NuxtLink>
+                        </li>
+                        <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
+                            <NuxtLink class="p-menuNavListItem__inner" to="./awards">
+                                <span class="p-menuNavListItem__label">Awards</span>
+
+                            </NuxtLink>
+                        </li>
+                        <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
+                            <NuxtLink class="p-menuNavListItem__inner" to="./resukts">
+                                <span class="p-menuNavListItem__label">Results</span>
+
+                            </NuxtLink>
+
+                        </li>
+                        <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
+                            <NuxtLink class="p-menuNavListItem__inner" to="./members">
+                                <span class="p-menuNavListItem__label">Team</span>
 
                             </NuxtLink>
                         </li>
