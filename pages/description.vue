@@ -48,11 +48,11 @@
                 <h3>contents</h3>
 
                 <ul class="section-nav-list">
-                  <li><a href="#project-description">Introduction</a></li>
-                  <li><a href="#colorectal-cancer">Colorectal Cancer</a></li>
-                  <li><a href="#solution">The Solution</a></li>
-                  <li><a href="#project-goals">Project Goals</a></li>
-                  <li><a href="#references">References</a></li>
+                  <li><a href="#project-description">1. Introduction</a></li>
+                  <li><a href="#colorectal-cancer">2. Colorectal Cancer</a></li>
+                  <li><a href="#solution">3. The Solution</a></li>
+                  <li><a href="#project-goals">4. Project Goals</a></li>
+                  <li><a href="#references">5. References</a></li>
                 </ul>
 
               </nav>

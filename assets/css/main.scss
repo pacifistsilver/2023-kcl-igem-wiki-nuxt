@@ -41,7 +41,6 @@ main {
     flex-direction: column;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    overflow: hidden;
     position: relative;
     width: 100%;
     z-index: 1;
@@ -54,7 +53,6 @@ body {
     line-height: 30px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
     background-color: #f9f9f9;
     box-sizing: border-box;
     background-blend-mode: screen;
@@ -204,28 +202,14 @@ section {
     text-decoration: underline;
 }
 
-.section-nav {
-    padding-left: 0;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    display: none
-}
 
-@media(min-width:992px) {
-    .section-nav {
-        display: block;
-    }
-}
+// contents menu rule
 
 .section-nav {
-    position: -webkit-sticky;
     position: sticky;
-    padding: 10px;
-    top: 75px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    background-color: #16324F;
-    transform: translateX(-22%);
+    top: 4.1176470588rem;
+    height: auto;
+    overflow-y: auto;
 }
 
 .section-nav-header {
@@ -237,28 +221,34 @@ section {
 }
 
 .section-nav a {
+    color: #666;
+	font-weight: 500;
+	line-height: 1.2;
     font-size: 1.1em;
     text-decoration: none;
-    color: #fff;
     transition: all .5s ease-in-out;
-    line-height: 60px;
     display: block;
-    font-weight: 60;
 }
 
 .section-nav-list {
-    list-style: none;
     display: flex;
     flex-direction: column;
+    row-gap: .6rem;
+}
+
+.section-nav ul li {
+    display: block;
+    list-style-type: none;
 }
 
 .section-nav h3 {
+    padding-top: 2rem;
+    margin-bottom: .8rem;
+    color: #999;
+    font-size: .8rem;
     font-weight: 600;
-    font-size: 0.8rem;
-    color: #fff;
     letter-spacing: 1px;
     text-transform: uppercase;
-    transform: translateX(15%);
 }
 
 .section-nav a:hover,
@@ -303,4 +293,11 @@ section {
     font-weight: bold;
     font-style: normal;
     color: #16324f;
+}
+
+
+@media(max-width:992px) {
+    .section-nav {
+        display: none;
+    }
 }
