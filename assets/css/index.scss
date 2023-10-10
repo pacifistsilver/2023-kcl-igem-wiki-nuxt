@@ -2,33 +2,21 @@
 
 // background objects
 
- @keyframes bgObjectItemInnerAnimfirst {
+@keyframes bgObjectItemInnerAnimfirst {
     0% {
-        background-image:
-        radial-gradient(at 83% 53%, hsla(85, 0%, 85%, 1) 0px, transparent 50%), 
-        radial-gradient(at 52% 54%, hsla(198, 100%, 60%, 1) 0px, transparent 50%),
-        radial-gradient(at 15% 48%, hsla(202, 100%, 63%, 1) 0px, transparent 50%);
+        opacity: 0.5;
     }
-    33.3333% {
-        background-image:
-        radial-gradient(at 15% 48%, hsla(202, 100%, 63%, 1) 0px, transparent 50%),
-        radial-gradient(at 83% 53%, hsla(85, 0%, 85%, 1) 0px, transparent 50%),
-        radial-gradient(at 52% 54%, hsla(198, 100%, 60%, 1) 0px, transparent 50%);
+
+    25% {
+        opacity: 0.65;
     }
-    66.666% {
-        background-image:
-        radial-gradient(at 15% 48%, hsla(202, 100%, 63%, 1) 0px, transparent 50%),
-        radial-gradient(at 52% 54%, hsla(198, 100%, 60%, 1) 0px, transparent 50%),
-        radial-gradient(at 83% 53%, hsla(85, 0%, 85%, 1) 0px, transparent 50%);
-    }
+
     100% {
-        background-image:
-        radial-gradient(at 52% 54%, hsla(198, 100%, 60%, 1) 0px, transparent 50%),
-        radial-gradient(at 15% 48%, hsla(202, 100%, 63%, 1) 0px, transparent 50%),
-        radial-gradient(at 83% 53%, hsla(85, 0%, 85%, 1) 0px, transparent 50%);
+        opacity: 1;
+
     }
-  }
-  
+}
+
 
 @-webkit-keyframes bgObjectItemInnerAnim {
     0% {
@@ -170,10 +158,11 @@
     margin-left: 0;
     margin-right: 0vmax;
     background-image:
-        radial-gradient(at 83% 53%, hsla(85, 0%, 85%, 1) 0px, transparent 50%),
-        radial-gradient(at 52% 54%, hsla(198, 100%, 60%, 1) 0px, transparent 50%),
-        radial-gradient(at 15% 48%, hsla(202, 100%, 63%, 1) 0px, transparent 50%);
-    animation: bgObjectItemInnerAnimfirst 2s ease-in-out infinite alternate both;
+        radial-gradient(at 44% 14%, hsla(98, 0%, 85%, 1) 0px, transparent 50%),
+        radial-gradient(at 85% 53%, hsla(85, 0%, 85%, 1) 0px, transparent 50%),
+        radial-gradient(at 50% 57%, hsla(198, 100%, 60%, 1) 0px, transparent 50%),
+        radial-gradient(at 16% 34%, hsla(202, 100%, 63%, 1) 0px, transparent 50%);
+    animation: bgObjectItemInnerAnimfirst 10s ease-in infinite alternate both;
     -webkit-animation-play-state: playing;
     animation-play-state: playing;
 
