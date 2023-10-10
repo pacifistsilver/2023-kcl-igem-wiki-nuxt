@@ -151,28 +151,26 @@
     color: white;
 }
 
+.index_p-contentsHeader {
+    padding-left: 11.1111111111%;
+    padding-right: 11.1111111111%;
+    background-color: #4E91C7;
+}
 
-@media (min-width: 1024px) {
-    .index_p-card {
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        align-items: center;
-        display: block;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-        justify-content: center;
-        margin-top: 6.5rem;
-
-    }
-
-    .index_p-contentsHeader {
-        padding-left: 11.1111111111%;
-        padding-right: 11.1111111111%;
-    }
+.index_p-card {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 6.5rem;
+    width: 100%
 
 }
