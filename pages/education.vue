@@ -18,10 +18,10 @@
                   <h3>contents</h3>
 
                     <ul class = "section-nav-list">  
-                      <li><a  href="#Design">Understanding the Problem</a></li>
-                      <li><a  href="#Idea">Defining a Good Solution</a></li>                  
-                      <li><a  href="#Test">Designing a Good Solution</a></li>                 
-                      <li><a  href="#Learn">Our Implementation and Evaluation</a></li>                       
+                      <li><a  href="#Design">Introduction</a></li>
+                      <li><a  href="#Idea">Our Engineering Cycle</a></li>                  
+                      <li><a  href="#Test">Our events</a></li>                 
+                      <li><a  href="#Learn">Conclusion and Reflection</a></li>                       
                     </ul>   
 
                 </nav>
@@ -30,10 +30,10 @@
 
             <div id = "content-main" class="col-lg-9">
               <div class="box-container">
-                <div class="box" @click="showEducationContent">Kazakhstan</div>
-                <div class="box" @click="showEducationContent2">Bexley</div>
-                <div class="box" @click="showEducationContent3">Education3</div>
-                <div class="box" @click="showEducationContent4">Education4</div>
+                <div class="box" @click="showEducationContent">General Public</div>
+                <div class="box" @click="showEducationContent2">Higher Education</div>
+                <div class="box" @click="showEducationContent3">Further education</div>
+                <div class="box" @click="showEducationContent4">Primary education</div>
               </div>
                         <!-- Content -->
               <div class="content-wrapper" id="human-practices-wrapper">
