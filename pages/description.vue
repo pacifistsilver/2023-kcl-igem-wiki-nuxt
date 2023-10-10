@@ -1,5 +1,8 @@
 <template>
   <div class="content">
+    <div class="index_headBlockImage-container1">
+      <img src="https://static.igem.wiki/teams/4584/wiki/gv.png" alt="" decoding="async">
+    </div>
     <div class="index_p-contentsHeader row">
       <div class="index_p-contentsHeader_inner col-8">
         <ol class="index_p-card" style="--m: 4; --tan: 0.41">
@@ -31,12 +34,35 @@
     </div>
     <div>
 
-      <header class="header-content custom-shape" id="header">
-        <div class="bg">
-          <h1 id="title" style="text-align: center; font-weight: bold;" class="header-text">Ultrasound diagnostic tool for
-            colorectal cancer</h1>
-          <h1 id="subtitle" style="text-align: center; font-weight: bold;" class="header-text">More info coming along
-            soon.</h1>
+      <header class="content">
+        <div class="index_p-contentsHeader row">
+          <div class="index_p-contentsHeader_inner col-8">
+            <ol class="index_p-card" style="--m: 4; --tan: 0.41">
+              <li style="--i: 1" class="index_p-card__inner">
+                <span class="index_p-cardItem__label">Learn</span>
+              </li>
+              <li style="--i: 2" class="index_p-card__inner">
+                <span class="index_p-cardItem__label">Design</span>
+              </li>
+              <li style="--i: 3" class="index_p-card__inner">
+                <span class="index_p-cardItem__label">Build</span>
+              </li>
+              <li style="--i: 4" class="index_p-card__inner">
+                <span class="index_p-cardItem__label">Test</span>
+              </li>
+            </ol>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
 
