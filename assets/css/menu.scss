@@ -180,8 +180,7 @@
 
 [data-is-scrolled="true"] .p-header {
   height: 4.1176470588rem !important;
-  background-color: transparent !important;
-
+  opacity: 0.75;
   transition: height background-color 300ms;
 
 }
@@ -200,10 +199,6 @@
   user-select: none;
   filter: brightness(0) invert(1);;
   transition: all .75s cubic-bezier(.19, 1, .22, 1);
-}
-
-[data-is-scrolled="true"] .p-headerLogo img {
-  filter: none;
 }
 
 .p-headerLogo img:hover {
