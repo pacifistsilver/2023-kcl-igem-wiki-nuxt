@@ -5,10 +5,9 @@
   min-height: 30vh;
   animation: Gradient 6s ease infinite, slideIn 2s forwards;
 }
-.box-shape {
-  background-color: #00619B;   /* box color for the texts (could change it if needed)*/
+.box-shape {   
   border-radius: 15px;      /* Rounded corners */
-  padding: 20px;            /* Some padding inside the box for content */
+  padding: 20px;            
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);  /*shadow for text depth */
 }
 @keyframes fadeInOut {
