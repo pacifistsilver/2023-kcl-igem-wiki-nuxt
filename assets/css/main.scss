@@ -21,6 +21,7 @@ body,
 html {
     display: block;
     position: relative;
+    overflow-x: clip;
 }
 
 html {
@@ -222,8 +223,8 @@ section {
 
 .section-nav a {
     color: #666;
-	font-weight: 500;
-	line-height: 1.2;
+    font-weight: 500;
+    line-height: 1.2;
     font-size: 1.1em;
     text-decoration: none;
     transition: all .5s ease-in-out;
@@ -249,6 +250,17 @@ section {
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+
+.section-nav-sublist {
+    margin-top: .6rem;
+    padding-left: 1rem;
+
+}
+
+.section-nav-sublist li:nth-child(n):not(:last-child) {
+    margin-bottom: 0.5rem;
 }
 
 .section-nav a:hover,
