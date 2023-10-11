@@ -100,7 +100,7 @@
                   Ultrasound imaging is the chosen modality for its safe, cost-efficient, and easily accessible nature.
                 </p> 
                 <div class="wiki-image-container">
-                    <img src="https://static.igem.wiki/teams/4584/wiki/biorender-figures/biorender-figures/biorender.png" alt="biorender">
+                    <img src="https://static.igem.wiki/teams/4584/wiki/biorender-figures/biorender-figures/newbiorender.png" alt="biorender">
                 </div>
                 <p >To construct the ultrasound-biosensor system, we plan to induce the production of gas vesicles in engineered 
                   probiotic E.coli Nissel strain when the biomarker-specific synthetic receptor binds to CRC antigen. 
@@ -109,7 +109,7 @@
                   Shapiro lab. Thus, the expression of the gene encoding for GVs, ARG1 can be used as a reporting gene (Shapiro, 2014).
                 </p>
                 <div class="wiki-image-container">
-                    <img src="https://static.igem.wiki/teams/4584/wiki/biorender-figures/biorender-figures/biorender2.png" alt="biorender2">
+                    <img src="https://static.igem.wiki/teams/4584/wiki/biorender-figures/biorender-figures/newbiorender2.png" alt="biorender2">
                 </div>
                 <p>
                   Focusing on the initial steps of the ultrasound-biosensor system, we delve into the solid tumor environment 
@@ -124,7 +124,7 @@
                 </p>
                 <hr>
                 <div class="wiki-image-container">
-                    <img src="https://static.igem.wiki/teams/4584/wiki/biorender-figures/biorender-figures/biorender3.png" alt="biorender3">
+                    <img src="https://static.igem.wiki/teams/4584/wiki/biorender-figures/biorender-figures/newbiorender3.png" alt="biorender3">
                 </div>
                 <p>
                   In the absence of a solid tumor, L-lactate levels remain unchanged. Without this key metabolite, 
@@ -133,7 +133,7 @@
                   signature.
                 </p>
                 <div class="wiki-image-container">
-                    <img src="https://static.igem.wiki/teams/4584/wiki/biorender-figures/biorender-figures/rnap-in-plasmid-system-blocked-close-up-1.png" alt="biorender4">
+                    <img src="https://static.igem.wiki/teams/4584/wiki/biorender-figures/biorender-figures/newrnap-in-plasmid-system-blocked-close-up-1.png" alt="biorender4">
                 </div>
                 <p>
                   Diving deeper into the molecular intricacies of our engineered system, the fourth figure provides a 
