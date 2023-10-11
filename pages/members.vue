@@ -131,7 +131,7 @@
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Jonathan Collard </p>
-                <p class="team-tabs-person-name-desc">Entrepeneurship</p>
+                <p class="team-tabs-person-name-desc">Entrepreneurship</p>
               </div>
             </div>
             <div class="teams-tab-person col-lg-3">
