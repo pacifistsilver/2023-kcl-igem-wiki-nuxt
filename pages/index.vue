@@ -58,8 +58,10 @@
     <section class="index-section">
       <div class="container">
         <div class="row">
-          <div class="col" data-aos="fade-up" data-aos-duration="900">
-            <img src="https://static.igem.wiki/teams/4584/wiki/planet.png" class="person-img"></div>
+          <div class="col">
+            <div class="index_image__inner">
+              <img src="https://static.igem.wiki/teams/4584/wiki/planet.png" class="">
+            </div>
             <div class="col" data-aos="fade-up" data-aos-duration="1200">
               <h1 class="display-4" id="index-title">Project: ColoEcho</h1>
               <p class="index-text">
