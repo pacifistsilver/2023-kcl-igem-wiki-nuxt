@@ -76,7 +76,7 @@
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Hamza Haji Nur</p>
-                <p class="team-tabs-person-name-desc">Social Media</p>
+                <p class="team-tabs-person-name-desc">Science Communication</p>
               </div>
             </div>
             <div class="teams-tab-person col-lg-3">
@@ -96,7 +96,7 @@
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Wing Gee Shum</p>
-                <p class="team-tabs-person-name-desc">Social Media</p>
+                <p class="team-tabs-person-name-desc">Human Practices</p>
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Nicole Salem </p>
-                <p class="team-tabs-person-name-desc">Human Practices</p>
+                <p class="team-tabs-person-name-desc">Wet Lab</p>
               </div>
             </div>
             <div class="teams-tab-person col-lg-3">
@@ -121,7 +121,7 @@
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Rheima Saptari</p>
-                <p class="team-tabs-person-name-desc">Wetlab</p>
+                <p class="team-tabs-person-name-desc">Wet Lab</p>
               </div>
             </div>
             <div class="teams-tab-person col-lg-3">
@@ -131,7 +131,7 @@
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Jonathan Collard </p>
-                <p class="team-tabs-person-name-desc">Human Practices</p>
+                <p class="team-tabs-person-name-desc">Entrepeneurship</p>
               </div>
             </div>
             <div class="teams-tab-person col-lg-3">
@@ -141,7 +141,7 @@
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Sri Gullapalli</p>
-                <p class="team-tabs-person-name-desc">Wetlab</p>
+                <p class="team-tabs-person-name-desc">Wet Lab</p>
               </div>
             </div>
           </div>
@@ -156,7 +156,7 @@
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Katalin Kovacs</p>
-                <p class="team-tabs-person-name-desc">Wetlab</p>
+                <p class="team-tabs-person-name-desc">Wet Lab</p>
               </div>
             </div>
             <div class="teams-tab-person col-lg-3">
@@ -166,7 +166,7 @@
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Daniella Cetta</p>
-                <p class="team-tabs-person-name-desc">Wetlab</p>
+                <p class="team-tabs-person-name-desc">Dry Lab</p>
               </div>
             </div>
             <div class="teams-tab-person col-lg-3">
@@ -176,7 +176,7 @@
               </div>
               <div class="teams-tab-person-info">
                 <p class="team-tabs-person-name-title">Uyen Tran</p>
-                <p class="team-tabs-person-name-desc">Wetlab</p>
+                <p class="team-tabs-person-name-desc">Wet Lab</p>
               </div>
             </div>
             <div class="teams-tab-person col-lg-3">
@@ -186,7 +186,7 @@
             </div>
             <div class="teams-tab-person-info">
               <p class="team-tabs-person-name-title">Margherita Autelitano</p>
-              <p class="team-tabs-person-name-desc">Drylab</p>
+              <p class="team-tabs-person-name-desc">Dry Lab</p>
             </div>
           </div>
         </div>
