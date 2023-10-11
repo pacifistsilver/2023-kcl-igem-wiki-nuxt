@@ -344,13 +344,14 @@
 }
 
 .index-text {
-    color: global.$color-rose;
-    font-size: 1.5em;
-
+    color: #c0b3d0;
+    font-size: .75rem;
+    line-height: 1.2rem;
 }
 
-.white {
-    color: global.$color-white;
+.index-title {
+    font-size:0.85rem;
+    color: white;   
 }
 
 #index-cards {
@@ -392,141 +393,26 @@
     vertical-align: middle;
 }
 
-// image gallery
-.c-borderedImage {
-    opacity: 0;
-    position: relative
-}
-
-.c-borderedImage:before {
-    content: "";
-    display: block;
-    width: 100%
-}
-
-.c-borderedImage.--square:before {
-    padding-top: 100%
-}
-
-.c-borderedImage.--sizeS.--portrait {
-    width: 9.9rem
-}
-
-.c-borderedImage.--sizeS.--portrait:before {
-    padding-top: 121.25%
-}
-
-.c-borderedImage.--sizeS.--landscape {
-    width: 12.00375rem
-}
-
-.c-borderedImage.--sizeS.--landscape:before {
-    padding-top: 82.4742268041%
-}
-
-.c-borderedImage.--sizeL.--portrait {
-    width: 13.921875rem
-}
-
-.c-borderedImage.--sizeL.--portrait:before {
-    padding-top: 121.1111111111%
-}
-
-.c-borderedImage.--sizeL.--landscape {
-    width: 269.775
-}
-
-.c-borderedImage.--sizeL.--landscape:before {
-    padding-top: 82.5688073394%
-}
-
-.c-borderedImage__container,
-.c-borderedImage__inner {
-    border-radius: 1rem;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%
-}
-
-.c-borderedImage__inner {
-    background: var(--color-gray);
-    overflow: hidden
-}
-
-.c-borderedImage__inner img {
-    height: 100%;
-    left: 0;
-    -o-object-fit: cover;
-    object-fit: cover;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    -webkit-transition-duration: .2s;
-    transition-duration: .2s;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-    -webkit-transition-timing-function: linear;
-    transition-timing-function: linear;
-    width: 100%
-}
-
-.c-borderedImage__inner:after {
-    border: .5rem solid #fff;
-    border-radius: 1.25rem;
-    border-radius: inherit;
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%
-}
-
-.c-borderedImage[data-is-loaded=true] img {
-    opacity: 1
-}
-
-.c-borderedImage[data-is-playing=true] {
-    opacity: 1;
-    -webkit-transition-duration: .2s;
-    transition-duration: .2s;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-    -webkit-transition-timing-function: linear;
-    transition-timing-function: linear
-}
-
-.c-borderedImage[data-is-playing=true] .c-borderedImage__container {
-    -webkit-transition-duration: 1.2s;
-    transition-duration: 1.2s;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    transition-property: transform;
-    transition-property: transform, -webkit-transform;
-    -webkit-transition-timing-function: cubic-bezier(.215, .61, .355, 1);
-    transition-timing-function: cubic-bezier(.215, .61, .355, 1)
-}
-
-.c-borderedImage[data-is-playing=true] .c-borderedImage__inner {
-    -webkit-transform: none !important;
-    transform: none !important;
-    -webkit-transition-duration: 1.2s;
-    transition-duration: 1.2s;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    transition-property: transform;
-    transition-property: transform, -webkit-transform;
-    -webkit-transition-timing-function: cubic-bezier(.19, 1, .22, 1);
-    transition-timing-function: cubic-bezier(.19, 1, .22, 1)
-}
-
 .headBlock__inner {
     height: 26.75rem;
     padding-left: 7.2%;
     padding-right: 7.2%;
     position: relative;
+}
+
+.index_image-container {
+    position: relative;
+    height: 20rem;
+    width: 4rem;
+    margin-top: 0rem;
+}
+
+.index_image-container img {
+    width: 100%;
+    height: 100%;
+}
+.index_image_label {
+    padding-top: 4rem;
 }
 
 @media (max-width: 480px) {
@@ -535,6 +421,7 @@
         flex-direction: column;
         max-width: 100%;
     }
+
 }
 
 
@@ -645,6 +532,16 @@
         padding-left: 11.1111111111%;
         padding-right: 11.1111111111%;
     }
+    .index-text {
+        font-size: 1.4rem;
+        line-height: 1.2rem;
+    }
+    
+    .index-title {
+        font-size:2.5rem;
+    }
+
+
 }
 
 @media (min-width: 1280px) {
@@ -674,5 +571,16 @@
     .headBlock__title__container {
         left: 16.125rem;
         margin-top: 4rem;
+    }
+    .index-text {
+        font-size: 1.4rem;
+        line-height: 1.2rem;
+    }
+    
+    .index-title {
+        font-size:2.5rem;
+    }
+    .index_image-container {
+        width: 1rem
     }
 }
