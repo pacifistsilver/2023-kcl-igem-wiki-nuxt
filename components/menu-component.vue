@@ -205,42 +205,42 @@
                             </NuxtLink>
                             <ul class="dropdown-menu " aria-labelledby="navbar-item">
                                 <li class="">
-                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./description">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="/description">
                                         <span class="">Description</span>
                                     </NuxtLink>
                                 </li>
                                 <li class="">
-                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./model">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="/model">
                                         <span class="">Model</span>
 
                                     </NuxtLink>
                                 </li>
                                 <li class="">
-                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./experiments">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="/experiments">
                                         <span class="">Experiments</span>
                                     </NuxtLink>
                                 </li>
                                 <li class="">
-                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./engineering">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="/engineering">
                                         <span class="">Engineering</span>
 
 
                                     </NuxtLink>
                                 </li>
                                 <li class="">
-                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./results">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="/results">
                                         <span class="">Results</span>
 
 
                                     </NuxtLink>
                                 </li>
                                 <li class="">
-                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./notebook">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="/notebook">
                                         <span class="">Notebook</span>
                                     </NuxtLink>
                                 </li>
                                 <li class="">
-                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./contribution">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="/contribution">
                                         <span class="">Contributions</span>
                                     </NuxtLink>
                                 </li>
@@ -249,14 +249,14 @@
 
                         <!---- SAFETY ---->
                         <li class="nav-item p-headerNavListItem">
-                            <NuxtLink class="nav-link p-headerNavListItem__inner" id="navbar-item" to="./safety">
+                            <NuxtLink class="nav-link p-headerNavListItem__inner" id="navbar-item" to="/safety">
                                 <span class="p-headerNavListItem__label">Safety</span>
                             </NuxtLink>
                         </li>
 
                         <!---- HUMAN PRACTICES ---->
                         <li class="nav-item p-headerNavListItem">
-                            <NuxtLink class="nav-link p-headerNavListItem__inner" id="navbar-item" to="./human-practices">
+                            <NuxtLink class="nav-link p-headerNavListItem__inner" id="navbar-item" to="/human-practices">
                                 <span class="p-headerNavListItem__label">Human Practices</span>
                             </NuxtLink>
                         </li>
@@ -271,17 +271,17 @@
 
                             <ul class="dropdown-menu" aria-labelledby="navbar-item">
                                 <li class="">
-                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./parts"><span class="">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="/parts"><span class="">
                                             New Basic Part
                                         </span></NuxtLink>
                                 </li>
                                 <li class="">
-                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./ihp"><span class="">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="/ihp"><span class="">
                                             Integrated Human Practices
                                         </span></NuxtLink>
                                 </li>
                                 <li class="">
-                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./education"><span
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="/education"><span
                                             class="">
                                             Education
                                         </span></NuxtLink>
@@ -289,23 +289,23 @@
                             </ul>
                         </li>
                         <li class="nav-item p-headerNavListItem">
-                            <NuxtLink class="nav-link p-headerNavListItem__inner" id="navbar-item" to="./results">
+                            <NuxtLink class="nav-link p-headerNavListItem__inner" id="navbar-item" to="/results">
                                 <span class="p-headerNavListItem__label">Results</span>
                             </NuxtLink>
                         </li>
 
                         <li class="nav-item dropdown p-headerNavListItem">
                             <NuxtLink class="nav-link dropdown-toggle p-headerNavListItem__inner" id="navbar-item"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false" to="./team">
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false" to="/team">
                                 <span class="p-headerNavListItem__label">Team</span>
                             </NuxtLink>
                             <ul class="dropdown-menu" aria-labelledby="navbar item">
                                 <li class="">
-                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./members">Members
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="/members">Members
                                     </NuxtLink>
                                 </li>
                                 <li class="">
-                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./attributions">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="/attributions">
                                         Attributions</NuxtLink>
                                 </li>
                             </ul>
