@@ -380,17 +380,18 @@ export default {
         };
 
         function handleHamburgerClick() {
-            hamburger.classList.toggle("is-active")
-            const submenuElementsClosed = true;
-
-            if (menuElement.getAttribute("data-is-menu-opened") === "false") {
-                menuElement.setAttribute("data-is-menu-opened", "true");
-            } else {
+            if (hamburger.classList.contains("is-active")) {
+                hamburger.classList.remove("is-active")
                 menuElement.setAttribute("data-is-menu-opened", "false");
                 submenuElements.forEach((submenuElements, i) => {
                     submenuElements.setAttribute("data-is-submenu-opened", "false");
                 });
+
             }
+            else {
+                hamburger.classList.add("is-active");
+                menuElement.setAttribute("data-is-menu-opened", "true");}
+
         };
         function handleSubMenuClick(element) {
             submenuElements.forEach((submenuElements, i) => {
@@ -434,7 +435,6 @@ export default {
         });
         submenuBackButton.forEach(function (item, index) {
             item.addEventListener("click", handleMenuBackClick);
-            console.log(item)
         });
         // this is quite possibly the worst code I have ever written
     },
