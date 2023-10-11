@@ -284,7 +284,7 @@
   position: fixed;
   right: 1.6875rem;
   top: 0.1875rem;
-  width: 4.25rem;
+  width: 3.25rem;
   z-index: 15;
 }
 
@@ -317,12 +317,12 @@
   visibility: hidden;
 }
 
-.p-menu,
+.p-menu,.p-menuButton,
 .p-submenu {
   opacity: 0;
   position: fixed;
-  right: 1.6875rem;
-  top: 1.1875rem;
+  right: 1.7rem;
+  top: 0.5875rem;
   -webkit-transition-duration: .2s;
   transition-duration: .2s;
   -webkit-transition-property: opacity, visibility;
@@ -586,6 +586,7 @@ li.p-menuNavListItem>a {
 
   .p-menuButton {
     opacity: 0;
+    width: 3.25rem;
     position: fixed;
     -webkit-transform: translateX(5.625rem);
     transform: translateX(5.625rem);
