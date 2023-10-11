@@ -6,19 +6,6 @@
       </div>
     </header>
     <main>
-      <div class="container">
-        <div class="row">
-          <div class="col lg-3">
-            <nav class="section-nav">
-              <h3>contents</h3>
-
-      <header class="header-content custom-shape" id ="header">
-        <div class="bg">
-          <h1 id="title" style="text-align: center; font-weight: bold;" class="header-text">Ultrasound diagnostic tool for colorectal cancer</h1>
-          <h1 id="subtitle" style="text-align: center; font-weight: bold;" class="header-text">More info coming along soon.</h1>
-        </div>
-      </header>
-
       <main>
         <div class="container">
           <div class="row">
