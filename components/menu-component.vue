@@ -19,11 +19,11 @@
 
                             </NuxtLink>
                         </li>
-                        <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
-                            <NuxtLink class="p-menuNavListItem__inner" to="./description">
+                        <li id="submenu-button1" class="p-menuNavListItem submenu1" itemprop="hasPart" itemscope=""
+                            itemtype="http://schema.org/WebPage">
+                            <div class="p-menuNavListItem__inner " to="">
                                 <span class="p-menuNavListItem__label">Project</span>
-
-                            </NuxtLink>
+                            </div>
                         </li>
                         <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
                             <NuxtLink class="p-menuNavListItem__inner" to="./safety">
@@ -33,26 +33,28 @@
 
                         </li>
                         <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
-                            <NuxtLink class="p-menuNavListItem__inner" to="./humanprac">
+                            <NuxtLink class="p-menuNavListItem__inner" to="./ihp">
                                 <span class="p-menuNavListItem__label">Human Practices</span>
 
                             </NuxtLink>
                         </li>
-                        <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
-                            <NuxtLink class="p-menuNavListItem__inner" to="./awards">
+                        <li id="submenu-button2" class="p-menuNavListItem" itemprop="hasPart" itemscope=""
+                            itemtype="http://schema.org/WebPage">
+                            <NuxtLink class="p-menuNavListItem__inner" to="">
                                 <span class="p-menuNavListItem__label">Awards</span>
 
                             </NuxtLink>
                         </li>
                         <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
-                            <NuxtLink class="p-menuNavListItem__inner" to="./resukts">
+                            <NuxtLink class="p-menuNavListItem__inner" to="./results">
                                 <span class="p-menuNavListItem__label">Results</span>
 
                             </NuxtLink>
 
                         </li>
-                        <li class="p-menuNavListItem" itemprop="hasPart" itemscope="" itemtype="http://schema.org/WebPage">
-                            <NuxtLink class="p-menuNavListItem__inner" to="./members">
+                        <li id="submenu-button3" class="p-menuNavListItem" itemprop="hasPart" itemscope=""
+                            itemtype="http://schema.org/WebPage">
+                            <NuxtLink class="p-menuNavListItem__inner" to="">
                                 <span class="p-menuNavListItem__label">Team</span>
 
                             </NuxtLink>
@@ -68,6 +70,123 @@
             </div>
         </div>
     </div>
+
+
+    <div class="p-submenu" id="submenu1" data-is-submenu-opened="false" tabindex="-1">
+        <div class="p-menu__inner" style="height: 24.938rem;">
+            <div class="p-menu__contents">
+                <nav class="p-menuNav" aria-label="ナビゲーションメニュー" itemscope="" itemprop="hasPart">
+
+                    <ul class="p-menuNavList" aria-labelledby="navbar-item">
+                        <li class="p-menuNavListItem" id="p-menuNavListItem__back">
+                            <div class="p-menuNavListItem__inner" to="/">
+                                <span class="p-menuNavListItem__label">Back</span>
+                            </div>
+                        </li>
+
+                        <li class="p-menuNavListItem">
+                            <NuxtLink class="p-menuNavListItem__inner" to="./description">
+                                <span class="p-menuNavListItem__label">Description</span>
+                            </NuxtLink>
+                        </li>
+                        <li class="p-menuNavListItem">
+                            <NuxtLink class="p-menuNavListItem__inner" to="./model">
+                                <span class="p-menuNavListItem__label">Model</span>
+                            </NuxtLink>
+                        </li>
+                        <li class="p-menuNavListItem">
+                            <NuxtLink class="p-menuNavListItem__inner" to="./experiments">
+                                <span class="p-menuNavListItem__label">Experiments</span>
+                            </NuxtLink>
+                        </li>
+                        <li class="p-menuNavListItem">
+                            <NuxtLink class="p-menuNavListItem__inner" to="./engineering">
+                                <span class="p-menuNavListItem__label">Engineering</span>
+                            </NuxtLink>
+                        </li>
+                        <li class="p-menuNavListItem">
+                            <NuxtLink class="p-menuNavListItem__inner" to="./results">
+                                <span class="p-menuNavListItem__label">Results</span>
+                            </NuxtLink>
+                        </li>
+                        <li class="p-menuNavListItem">
+                            <NuxtLink class="p-menuNavListItem__inner" to="./notebook">
+                                <span class="p-menuNavListItem__label">Notebook</span>
+                            </NuxtLink>
+                        </li>
+                        <li class="p-menuNavListItem">
+                            <NuxtLink class="p-menuNavListItem__inner" to="./contribution">
+                                <span class="p-menuNavListItem__label">Contributions</span>
+                            </NuxtLink>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-submenu" id="submenu2" data-is-submenu-opened="false" tabindex="-1">
+        <div class="p-menu__inner" style="height: 24.938rem;">
+            <div class="p-menu__contents">
+                <nav class="p-menuNav" aria-label="ナビゲーションメニュー" itemscope="" itemprop="hasPart">
+
+                    <ul class="p-menuNavList" aria-labelledby="navbar-item">
+                        <li class="p-menuNavListItem" id="p-menuNavListItem__back">
+                            <div class="p-menuNavListItem__inner" to="/">
+                                <span class="p-menuNavListItem__label">Back</span>
+                            </div>
+                        </li>
+
+                        <li class="p-menuNavListItem">
+                            <NuxtLink class="p-menuNavListItem__inner" to="./parts">
+                                <span class="p-menuNavListItem__label">New Basic Part</span>
+                            </NuxtLink>
+                        </li>
+                        <li class="p-menuNavListItem">
+                            <NuxtLink class="p-menuNavListItem__inner" to="./ihp">
+                                <span class="p-menuNavListItem__label">IHP</span>
+                            </NuxtLink>
+                        </li>
+                        <li class="p-menuNavListItem">
+                            <NuxtLink class="p-menuNavListItem__inner" to="./education">
+                                <span class="p-menuNavListItem__label">Education</span>
+                            </NuxtLink>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-submenu" id="submenu3" data-is-submenu-opened="false" tabindex="-1">
+        <div class="p-menu__inner" style="height: 24.938rem;">
+            <div class="p-menu__contents">
+                <nav class="p-menuNav" aria-label="ナビゲーションメニュー" itemscope="" itemprop="hasPart">
+
+                    <ul class="p-menuNavList" aria-labelledby="navbar-item">
+                        <li class="p-menuNavListItem" id="p-menuNavListItem__back">
+                            <div class="p-menuNavListItem__inner" to="/">
+                                <span class="p-menuNavListItem__label">Back</span>
+                            </div>
+                        </li>
+
+                        <li class="p-menuNavListItem">
+                            <NuxtLink class="p-menuNavListItem__inner" to="./members">
+                                <span class="p-menuNavListItem__label">Members</span>
+                            </NuxtLink>
+                        </li>
+                        <li class="p-menuNavListItem">
+                            <NuxtLink class="p-menuNavListItem__inner" to="./attributions">
+                                <span class="p-menuNavListItem__label">Attributions</span>
+                            </NuxtLink>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
     <nav class="p-header" id="navbar" :class="{ 'solid-blue-background': isIndexPage }">
         <a class="p-headerLogo" href="/kcl-uk/">
             <img src="https://static.igem.wiki/teams/4584/wiki/blue-logo-name-white-background-removebg-preview.png">
@@ -99,8 +218,6 @@
                                 <li class="">
                                     <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./experiments">
                                         <span class="">Experiments</span>
-
-
                                     </NuxtLink>
                                 </li>
                                 <li class="">
@@ -154,14 +271,12 @@
 
                             <ul class="dropdown-menu" aria-labelledby="navbar-item">
                                 <li class="">
-                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./parts"><span
-                                            class="">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./parts"><span class="">
                                             New Basic Part
                                         </span></NuxtLink>
                                 </li>
                                 <li class="">
-                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./ihp"><span
-                                            class="">
+                                    <NuxtLink class="dropdown-item p-headerNavListItem__inner" to="./ihp"><span class="">
                                             Integrated Human Practices
                                         </span></NuxtLink>
                                 </li>
@@ -219,10 +334,16 @@ export default {
         })
     },
     mounted() {
-        const menuElement = document.getElementById("menu");
         const appLayoutElement = document.getElementById("app-layout");
         const hamburger = document.querySelector(".hamburger");
         const viewportSizeThreshold = 1024;
+        const menuElement = document.getElementById("menu");
+        const submenuElements = document.querySelectorAll(".p-submenu");
+        const submenuElementButton1 = document.getElementById("submenu-button1");
+        const submenuElementButton2 = document.getElementById("submenu-button2");
+        const submenuElementButton3 = document.getElementById("submenu-button3");
+        const submenuBackButton = document.querySelectorAll("#p-menuNavListItem__back");
+
 
         function changeRootFontSize() {
             const windowWidth = window.innerWidth;
@@ -240,17 +361,11 @@ export default {
             } else {
                 appLayoutElement.setAttribute("data-is-scrolled", "false");
                 menuElement.setAttribute("data-is-menu-opened", "false");
+                submenuElements.forEach((submenuElements, i) => {
+                    submenuElements.setAttribute("data-is-submenu-opened", "false");
+                });
+
                 hamburger.classList.remove("is-active");
-            }
-        };
-
-        function handleHamburgerClick() {
-            hamburger.classList.toggle("is-active");
-
-            if (menuElement.getAttribute("data-is-menu-opened") === "false") {
-                menuElement.setAttribute("data-is-menu-opened", "true");
-            } else {
-                menuElement.setAttribute("data-is-menu-opened", "false");
             }
         };
 
@@ -263,12 +378,64 @@ export default {
                 hamburger.classList.remove("is-active");
             }
         };
+
+        function handleHamburgerClick() {
+            hamburger.classList.toggle("is-active")
+            const submenuElementsClosed = true;
+
+            if (menuElement.getAttribute("data-is-menu-opened") === "false") {
+                menuElement.setAttribute("data-is-menu-opened", "true");
+            } else {
+                menuElement.setAttribute("data-is-menu-opened", "false");
+                submenuElements.forEach((submenuElements, i) => {
+                    submenuElements.setAttribute("data-is-submenu-opened", "false");
+                });
+            }
+        };
+        function handleSubMenuClick(element) {
+            submenuElements.forEach((submenuElements, i) => {
+                var current_submenuID = submenuElements.id
+                var current_elementID = element.id
+                if (current_elementID.slice(-1) === current_submenuID.slice(-1)) {
+                    submenuElements.setAttribute("data-is-submenu-opened", "true");
+                    menuElement.setAttribute("data-is-menu-opened", "false");
+                } else {
+                    submenuElements.setAttribute("data-is-submenu-opened", "false");
+                }
+            });
+        };
+
+        function handleMenuBackClick() {
+            if (menuElement.getAttribute("data-is-menu-opened") === "false") {
+                menuElement.setAttribute("data-is-menu-opened", "true");
+                submenuElements.forEach((submenuElements, i) => {
+                    submenuElements.setAttribute("data-is-submenu-opened", "false");
+                });
+            } else {
+                menuElement.setAttribute("data-is-menu-opened", "false");
+            }
+        };
+
         window.addEventListener("scroll", handleScroll);
         window.addEventListener("resize", handleViewportResize);
         window.addEventListener("resize", changeRootFontSize);
         document.onreadystatechange = () => { changeRootFontSize };
         hamburger.addEventListener("click", handleHamburgerClick);
+        submenuElementButton1.addEventListener("click", function () {
+            handleSubMenuClick(submenuElementButton1);
+        });
 
+        submenuElementButton2.addEventListener("click", function () {
+            handleSubMenuClick(submenuElementButton2);
+        });
+
+        submenuElementButton3.addEventListener("click", function () {
+            handleSubMenuClick(submenuElementButton3);
+        });
+        submenuBackButton.forEach(function (item, index) {
+            item.addEventListener("click", handleMenuBackClick);
+            console.log(item)
+        });
     },
 };
 </script>

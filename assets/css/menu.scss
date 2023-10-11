@@ -61,6 +61,7 @@
   -webkit-transition-timing-function: linear;
   transition-timing-function: linear;
 }
+
 .p-header__inner {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -87,6 +88,7 @@
   transition-timing-function: linear, cubic-bezier(.19, 1, .22, 1), cubic-bezier(.19, 1, .22, 1);
   width: 100%;
 }
+
 // navlist rules
 .nav-item>a {
   position: relative;
@@ -156,6 +158,7 @@
   transition: background-color .2s linear, transform .4s cubic-bezier(.19, 1, .22, 1), -webkit-transform .4s cubic-bezier(.19, 1, .22, 1);
   z-index: 9;
 }
+
 .p-headerNavListItem {
   pointer-events: all;
   position: relative;
@@ -166,20 +169,21 @@
 }
 
 .p-headerNavListItem__label {
-	-webkit-font-feature-settings: normal;
-	font-feature-settings: normal;
-	color: white;
-	display: inline-block;
-	font-family: 'Tildasans-VF';
-	font-size: 1rem;
-	font-weight: 500;
-	letter-spacing: -.04em;
-	line-height: .92;
-	position: relative;
-	text-transform: none;
-	white-space: nowrap;
-	z-index: 1;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  color: white;
+  display: inline-block;
+  font-family: 'Tildasans-VF';
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -.04em;
+  line-height: .92;
+  position: relative;
+  text-transform: none;
+  white-space: nowrap;
+  z-index: 1;
 }
+
 // shrink navbar on scroll
 .p-headerNav {
   transition-duration: .2s, .4s, .2s;
@@ -213,7 +217,8 @@
 .p-headerLogo img {
   height: 100%;
   user-select: none;
-  filter: brightness(0) invert(1);;
+  filter: brightness(0) invert(1);
+  ;
   transition: all .75s cubic-bezier(.19, 1, .22, 1);
 }
 
@@ -285,12 +290,26 @@
 
 // hamburger menu extension
 
-.p-menu[data-is-menu-opened="true"] {
+
+.p-submenu[data-is-submenu-opened="true"] .p-menu__inner {
+  border-radius: 0.5rem;
+  transform: translate(0.825rem, -0.325rem);
+  width: 13.75rem;
+}
+
+.p-submenu[data-is-submenu-opened="false"] .p-menu__inner {
+  border-radius: 0.625rem;
+  height: 2.3125rem !important;
+  width: 3.25rem !important;
+}
+
+
+.p-menu[data-is-menu-opened="true"], .p-submenu[data-is-submenu-opened="true"] {
   opacity: 1;
   visibility: visible;
 }
 
-.p-menu[data-is-menu-opened="false"] {
+.p-menu[data-is-menu-opened="false"], .p-submenu[data-is-submenu-opened="false"] {
   opacity: 0;
   pointer-events: none;
   -webkit-transition-delay: .4s;
@@ -298,7 +317,8 @@
   visibility: hidden;
 }
 
-.p-menu {
+.p-menu,
+.p-submenu {
   opacity: 0;
   position: fixed;
   right: 1.6875rem;
@@ -424,20 +444,43 @@ li.p-menuNavListItem>a {
 }
 
 .p-menuNavListItem__label {
-	-webkit-font-feature-settings: normal;
-	font-feature-settings: normal;
-	color: white;
-	display: inline-block;
-	font-size: 1rem;
-	font-weight: 500;
-	letter-spacing: -.04em;
-	line-height: .92;
-	position: relative;
-	text-transform: none;
-	text-transform: uppercase;
-	white-space: nowrap;
-	z-index: 1;
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  color: white;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -.04em;
+  line-height: .92;
+  position: relative;
+  text-transform: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 1;
 }
+
+.p-menuNavSubListItem {
+  cursor: pointer;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-duration: .3s;
+  border-bottom: 1px solid #1e6cf7;
+  padding: 12px 0;
+  position: relative;
+}
+
+[data-is-submenu-opened="false"] .p-submenu {
+  --tw-skew-y: 6deg;
+  transform: translate(0, 0) rotate(0) skewX(0) skewY(6deg) scaleX(1) scaleY(1);
+  transition-duration: .5s;
+}
+
+[data-is-submenu-opened="true"] .p-submenu {
+  --tw-translate-x: -100%;
+  transform: translate(-100%, 0) rotate(0) skewX(0) skewY(0) scaleX(var1) scaleY(1);
+  transition-duration: .5s;
+}
+
+
 
 // contact button
 
@@ -560,6 +603,7 @@ li.p-menuNavListItem>a {
   }
 
   .p-menu,
+  .p-submenu,
   .p-menuButton {
     right: 1.25rem;
     top: 0.55rem;
