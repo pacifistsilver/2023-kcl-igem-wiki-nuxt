@@ -1,110 +1,64 @@
-.team-header-contents {
-    padding-top: 7rem;
-    margin: 0 auto;
-    width: 61.9rem;
-  }
-.team-header-text {
-    font-size: 23.996px;
-    color:white;
-    line-height: 32px;
-    text-shadow: 0 0 5px #000;
-}   
-.team-header-title {
-    font-size: 3rem;
-    font-weight: 400;
-    color: white;
-    text-shadow: 0 0 5px #000;
+.team-tabs-header.bg {
+    height: 45vh
 }
-.header-image-team {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: left center;
-    background: url("https://static.igem.wiki/teams/4584/wiki/member-pics/3bfa7c0e-8c4c-4cbb-92a9-e32e00a644ef.jpeg") fixed center center;
-    background-color: rgba(0, 0, 0, 0);
-    background-size: auto;
-    background-size: cover;
-    
-}
-.team-tabs-header.bg {height: 45vh}
 
-.team-tabs-content {
-    margin: 0 auto;
-    width: 9.92rem;
-  }
-.team-tabs-people {
+.m-memberslist {
     display: grid;
-    margin: 0 auto;
-}
-
-.team-tabs-person {
-    cursor: pointer;
-    width: 2.1rem;
-  }
-.teams-tab-person-img {
-    height: 9.7rem;
-    margin: 0 auto 0.16rem;
-    position: relative;
-    width: 10.7rem;
-    border-radius: 50%; 
+    grid-template-columns: 1fr;
+    gap: 1rem 2rem;
 
 }
-.person-img {
-    height: 100%;
-    margin: 0 auto .16rem;
-    position: relative;
-    width: 10.71rem;
+
+.m-memberslist__inner {
+    border-radius: 1rem;
+    display: flex;
+    --flex-column-gap: 0px;
+
+}
+
+.m-memberslist__img {
+    width: 190px;
+    height: 285px;
+    margin-right: 1rem !important;
+    align-self: start;
+    flex-shrink: 0;
     object-fit: cover;
-    border-radius: 15%; 
-
-}
-.team-tabs-people-row {
-    margin: 0 auto;
+    background-color: rgba(0, 0, 0, .0666666667);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 
-.team-tabs-person-name-title {
-    margin-bottom: .08rem;
-    position: relative;
-    text-align: center;
-    font-size: 17.997px;
-    color: #00619b;
+.m-memberlist__labelTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
 }
-.team-tabs-person-name-desc {
-    position: relative;
-    text-align: center;
-    font-size: 15.9973px;
-    color: #009b87;
+
+.m-memberlist__labelDesc {
+    margin-top: .2rem;
+    color: #999;
+
 }
-.team-tabs {
-    margin-top: 4rem;
+
+.m-memberlist__labelArea {
+    color: #000;
+    margin: .6rem 0;
 }
-.teams-tab-person-img:hover::after, .teams-tab-person-img:hover::before{
-    transform: scale(1, 1);
+
+.m-memberslist__header {
+    margin: 2rem 0;
+    font-size: 2rem;
+
 }
-.teams-tab-person {
-    cursor: pointer;    
-  }
-.teams-tab-person:hover .team-tabs-person-name-title,
-.teams-tab-person:hover .team-tabs-person-name-desc {
-  text-decoration:underline;
+
+@media (min-width: 1000px) {
+    .m-memberslist {
+        grid-template-columns: 1fr 1fr;
+    }
 }
-.teams-tab-person-img::after, .teams-tab-person-img::before{
-    content: '';
-    position: absolute;
-    inset: 0;
-    transition: 0.3s;
-}
-.teams-tab-person-img::after{
-    border-right: 5px solid rgba(0, 155, 135, 0.75);
-    border-left: 5px solid rgba(0, 155, 135, 0.75);
-    border-radius: 15%; 
-    background: rgba(0, 155, 135, 0.2);
-    transform: scale(1, 0);
-}
-.teams-tab-person-img::before{
-    border-top: 5px solid rgba(0, 155, 135, 0.75);
-    border-bottom: 5px solid rgba(0, 155, 135, 0.75);
-    border-radius: 15%; 
-    background: rgba(0, 155, 135, 0.2);
-    transform: scale(0, 1);
+
+@media (min-width: 1400px) {
+    .m-memberslist {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
 }

@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div app id = "app-layout">
+  <div app id = "app-layout" data-is-scrolled = "false">
         <main>
             <menu-component />
             <NuxtPage />

@@ -1,62 +1,645 @@
 @use "global.scss";
 
-// todo: navbar dropdown working but the menu width is too small. 
-// shift to hamburger menu?
-
-#navbar{   
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 7rem;
-    padding: 0 var(--side-margin);
-    background-color: #e5e5e5;
-    box-shadow: 0 2px 6px rgba(0,0,0,.1333333333);
-    width: 100%;
-    z-index: 10;
-    position: fixed;
-    transition: height 300ms;}
-
-.navbar-scrolled {
-    height: 4.1176470588rem !important;
-    transition: height 300ms;   
+// bootstrap overrides
+.nav-link {
+  color: var(--bs-nav-link-color);
 }
 
-.navbar-brand img {
-    height: 100%;
-    user-select: none;} 
+.navbar-nav .dropdown-menu {
+  position: absolute !important;
+}
 
-.navbar-brand   {
-    width: fit-content;
-    height: 100%;
-    margin-right: 2rem;
-    padding: .4rem 0;
-    color: #000;
-    display: flex;
+.navbar-nav.p-headerNavList {
+  flex-direction: row !important;
+}
+
+// navbar rules
+#navbar-item {
+  color: white
+}
+
+.p-headerNav {
+  display: none;
+}
+
+.p-headerNavListWrapper {
+  position: relative;
+}
+
+.p-header {
+  height: 3.75rem;
+  left: 0;
+  padding: 0 1.6875rem;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  background-color: #142432;
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.25));
+  transition-property: height background-color;
+  transition-duration: .4s;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem
+}
+
+[data-is-scrolled="true"] .p-header__inner::after {
+  background-color: black;
+  bottom: 0;
+  content: "";
+  height: .0625rem;
+  left: 0;
+  opacity: .10;
+  position: absolute;
+  right: 0;
+  -webkit-transition-delay: .8s;
+  transition-delay: .8s;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+.p-header__inner {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  -webkit-transition-duration: .2s, .6s, .6s;
+  transition-duration: .2s, .6s, .6s;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+  -webkit-transition-timing-function: linear, cubic-bezier(.19, 1, .22, 1), cubic-bezier(.19, 1, .22, 1);
+  transition-timing-function: linear, cubic-bezier(.19, 1, .22, 1), cubic-bezier(.19, 1, .22, 1);
+  width: 100%;
+}
+
+// navlist rules
+.nav-item>a {
+  position: relative;
+  display: inline-block;
+  padding: .5em 1em .4em;
 }
 
 .nav-item {
-    padding: .6rem 1rem;
-    border-radius: 4px;
-    transition: background-color 150ms;
-}
-#navbar-item:hover {
-    background-color: var(--item-background, global.$color-coloblue);
-    color: #fff;  
-    transition: all .2s cubic-bezier(0.17,0.17,0.41,1.0);
-}
-#navbar-item {
-    color: #000000;
-    font-size: 1.2rem;  
-    font-weight: bold;
-    padding: .6rem 1rem;
-    border-radius: 4px;
-    transition: background-color 150ms;
-    transition: all .2s cubic-bezier(0.17,0.17,0.41,1.0);
-
-}
-#navbar-container {
-    height: 100%;
+  padding: .4em .8em;
 }
 
+.p-headerNavList {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  align-items: center;
+  /* display: -webkit-box; */
+  /* display: -ms-flexbox; */
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.p-headerNavListItem__inner {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: flex-start;
+  padding: 1.25rem .9375rem;
+  position: relative;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  width: 100%;
+}
+
+.p-headerNavListItem__label::after {
+  position: absolute;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+  bottom: -0.5em;
+  left: -.1em;
+  width: 100%;
+  height: 2px;
+  content: "";
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  background-color: #ffffff;
+  -webkit-transition: background-color .2s linear, -webkit-transform .4s cubic-bezier(.19, 1, .22, 1);
+  transition: background-color .2s linear, -webkit-transform .4s cubic-bezier(.19, 1, .22, 1);
+  transition: background-color .2s linear, transform .4s cubic-bezier(.19, 1, .22, 1);
+  transition: background-color .2s linear, transform .4s cubic-bezier(.19, 1, .22, 1), -webkit-transform .4s cubic-bezier(.19, 1, .22, 1);
+  z-index: 9;
+}
+
+.p-headerNavListItem {
+  pointer-events: all;
+  position: relative;
+}
+
+.p-headerNavListItem:not(:first-child) {
+  margin-left: .625rem;
+}
+
+.p-headerNavListItem__label {
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  color: white;
+  display: inline-block;
+  font-family: 'Tildasans-VF';
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -.04em;
+  line-height: .92;
+  position: relative;
+  text-transform: none;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+// shrink navbar on scroll
+.p-headerNav {
+  transition-duration: .2s, .4s, .2s;
+  transition-timing-function: linear, cubic-bezier(.19, 1, .22, 1), cubic-bezier(.19, 1, .22, 1);
+  transition-property: opacity, -webkit-transform, transform;
+}
+
+[data-is-scrolled="true"] .p-headerNav {
+  -webkit-transform: translateY(-120%);
+  transform: translateY(-120%);
+  pointer-events: none;
+
+}
+
+[data-is-scrolled="true"] .p-header {
+  height: 4.1176470588rem !important;
+  opacity: 0.75;
+  transition: height background-color 300ms;
+
+}
+
+[data-is-scrolled="true"] .p-headerNav {
+  opacity: 1;
+}
+
+// brand img effects 
+.p-headerLogo {
+  height: 3.6em;
+}
+
+.p-headerLogo img {
+  height: 100%;
+  user-select: none;
+  filter: brightness(0) invert(1);
+  ;
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+}
+
+.p-headerLogo img:hover {
+  transition: all .5s cubic-bezier(.19, 1, .22, 1);
+  transform: scale(1.15)
+}
+
+.p-headerLogo {
+  bottom: 0;
+  height: 4rem;
+  left: 1.6875rem;
+  margin: auto 0;
+  mix-blend-mode: normal;
+  pointer-events: all;
+  -webkit-transition-duration: .6s;
+  transition-duration: .6s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: cubic-bezier(.19, 1, .22, 1);
+  transition-timing-function: cubic-bezier(.19, 1, .22, 1);
+  width: 5.875rem;
+}
+
+.p-headerLogo,
+.p-headerLogo svg {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+
+// hamburger menu
+[data-is-scrolled="true"] .hamburger {
+  visibility: visible;
+}
+
+// Menu Hover Effects
+#navbar-item:hover .p-headerNavListItem__label:after,
+#navbar-item.is-current .p-headerNavListItem__label:after {
+  -webkit-transform: scaleX(1) !important;
+  transform: scaleX(1) !important;
+}
 
 
+// navbar hamburger menu
+
+[data-is-scrolled="true"] .p-menuButton {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-duration: .2s, .2s, .6s, .6s;
+  transition-duration: .2s, .2s, .6s, .6s;
+  visibility: visible;
+  z-index: 12;
+}
+
+.p-menuButton {
+  position: fixed;
+  right: 1.6875rem;
+  top: 0.1875rem;
+  width: 3.25rem;
+  z-index: 15;
+}
+
+// hamburger menu extension
+
+.p-menu[data-is-menu-opened="true"],
+.p-submenu[data-is-submenu-opened="true"] {
+  opacity: 1;
+  visibility: visible;
+}
+
+.p-menu[data-is-menu-opened="false"],
+.p-submenu[data-is-submenu-opened="false"] {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s;
+  visibility: hidden;
+}
+
+.p-menu,
+.p-menuButton,
+.p-submenu {
+  opacity: 0;
+  position: fixed;
+  right: 1.7rem;
+  top: 0.5875rem;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  -webkit-transition-property: opacity, visibility;
+  transition-property: opacity, visibility;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  visibility: hidden;
+  z-index: 11;
+}
+
+.p-submenu[data-is-submenu-opened="true"] .p-menu__inner,
+.p-menu[data-is-menu-opened="true"] .p-menu__inner {
+  border-radius: .9rem;
+  -webkit-transform: translate(.825rem, -.325rem);
+  transform: translate(.825rem, -.325rem);
+  width: 13.75rem;
+}
+
+.p-submenu[data-is-submenu-opened="false"] .p-menu__inner,
+.p-menu[data-is-menu-opened="false"] .p-menu__inner {
+  border-radius: .625rem;
+  height: 2.3125rem !important;
+  width: 3.25rem !important;
+}
+
+.p-menu__inner {
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-transition-duration: .6s;
+  transition-duration: .6s;
+  -webkit-transition-property: width, height, -webkit-transform;
+  /* transition-property: width,height,-webkit-transform; */
+  /* transition-property: transform,width,height; */
+  transition-property: transform, width, height, -webkit-transform;
+  -webkit-transition-timing-function: cubic-bezier(.19, 1, .22, 1);
+  transition-timing-function: cubic-bezier(.19, 1, .22, 1);
+}
+
+.p-menu__contents {
+  background-color: #142432;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 13.75rem;
+}
+
+.p-menuNav,
+.p-menuNavList {
+  display: block;
+  position: relative;
+  width: 100%;
+  list-style-type: none
+}
+
+.p-menuNav {
+  padding: 3.6875rem 1.8125rem 2rem;
+}
+
+li.p-menuNavListItem>a {
+  text-decoration: none;
+}
+
+.p-menuNav .p-menuNavList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.p-menuNavListItem__inner {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  align-items: center;
+  /* display: -webkit-box; */
+  /* display: -ms-flexbox; */
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: flex-start;
+  padding-left: .3125rem;
+  position: relative;
+  width: 100%;
+}
+
+.p-menuNavListItem:first-child::after,
+.p-menuNavListItem:last-child::after {
+  background-color: white;
+  bottom: -1.1875rem;
+  content: "";
+  height: .0625rem;
+  left: .3125rem;
+  opacity: .15;
+  position: absolute;
+  right: .3125rem;
+  width: 100%;
+}
+
+.p-menuNavListItem:first-child {
+  margin-bottom: 2.375rem;
+}
+
+.p-menuNavListItem:not(:first-child) {
+  margin-top: .125rem;
+}
+
+.p-menuNavListItem:last-child {
+  margin-bottom: 2.6875rem;
+}
+
+.p-menuNavListItem {
+  height: 1.625rem;
+  position: relative;
+  width: 100%;
+}
+
+.p-menuNavListItem__label {
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  color: white;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -.04em;
+  line-height: .92;
+  position: relative;
+  text-transform: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.p-menuNavSubListItem {
+  cursor: pointer;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-duration: .3s;
+  border-bottom: 1px solid #1e6cf7;
+  padding: 12px 0;
+  position: relative;
+}
+
+[data-is-submenu-opened="false"] .p-submenu {
+  --tw-skew-y: 6deg;
+  transform: translate(0, 0) rotate(0) skewX(0) skewY(6deg) scaleX(1) scaleY(1);
+  transition-duration: .5s;
+}
+
+[data-is-submenu-opened="true"] .p-submenu {
+  --tw-translate-x: -100%;
+  transform: translate(-100%, 0) rotate(0) skewX(0) skewY(0) scaleX(var1) scaleY(1);
+  transition-duration: .5s;
+}
+
+
+
+// contact button
+
+.c-roundedButton::before {
+  border: .0625rem solid;
+  border-radius: inherit;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.p-menuContactLink {
+  color: var(--color-white);
+  display: inline-block;
+  pointer-events: all;
+}
+
+.c-roundedButton {
+  text-rendering: auto;
+  -webkit-font-smoothing: never;
+  border-radius: 624.9375rem;
+  height: 1.25rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.c-roundedButton__inner::before {
+  background-color: currentColor;
+  content: "";
+  height: 101%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+  -webkit-transition-duration: .4s;
+  transition-duration: .4s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: cubic-bezier(.19, 1, .22, 1);
+  transition-timing-function: cubic-bezier(.19, 1, .22, 1);
+  width: 100%;
+}
+
+.c-roundedButton__label {
+  -webkit-font-feature-settings: normal;
+  font-feature-settings: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: .625rem;
+  font-weight: 500;
+  letter-spacing: -.04em;
+  line-height: .92;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.p-menuContactLink__label {
+  color: white;
+}
+
+[data-whatintent="mouse"] .c-roundedButton__inner:not(:disabled):hover .c-roundedButton__label,
+[data-whatintent="pointer"] .c-roundedButton__inner:not(:disabled):hover .c-roundedButton__label {
+  color: var(--color-corporate);
+  -webkit-transition-duration: .1s;
+  transition-duration: .1s;
+}
+
+// menu media rules
+
+@media (min-width: 1024px) {
+  .p-headerNav {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .p-menuButton {
+    opacity: 0;
+    width: 3.25rem;
+    position: fixed;
+    -webkit-transform: translateX(5.625rem);
+    transform: translateX(5.625rem);
+    -webkit-transition-delay: 0s, 0s, .2s, .2s;
+    transition-delay: 0s, 0s, .2s, .2s;
+    -webkit-transition-duration: .2s, .2s, 0s, 0s;
+    transition-duration: .2s, .2s, 0s, 0s;
+    -webkit-transition-property: opacity, visibility, -webkit-transform;
+    /* transition-property: opacity,visibility,-webkit-transform; */
+    /* transition-property: opacity,visibility,transform; */
+    transition-property: opacity, visibility, transform, -webkit-transform;
+    -webkit-transition-timing-function: linear, linear, cubic-bezier(.19, 1, .22, 1), cubic-bezier(.19, 1, .22, 1);
+    transition-timing-function: linear, linear, cubic-bezier(.19, 1, .22, 1), cubic-bezier(.19, 1, .22, 1);
+    visibility: hidden;
+  }
+
+  .p-menu,
+  .p-submenu,
+  .p-menuButton {
+    right: 1.25rem;
+    top: 0.55rem;
+  }
+
+  .p-menuButton {
+    opacity: 0;
+    position: fixed;
+    -webkit-transform: translateX(5.625rem);
+    transform: translateX(5.625rem);
+    -webkit-transition-delay: 0s, 0s, .2s, .2s;
+    transition-delay: 0s, 0s, .2s, .2s;
+    -webkit-transition-duration: .2s, .2s, 0s, 0s;
+    transition-duration: .2s, .2s, 0s, 0s;
+    -webkit-transition-property: opacity, visibility, -webkit-transform;
+    transition-property: opacity, visibility, -webkit-transform;
+    transition-property: opacity, visibility, transform;
+    transition-property: opacity, visibility, transform, -webkit-transform;
+    -webkit-transition-timing-function: linear, linear, cubic-bezier(.19, 1, .22, 1), cubic-bezier(.19, 1, .22, 1);
+    transition-timing-function: linear, linear, cubic-bezier(.19, 1, .22, 1), cubic-bezier(.19, 1, .22, 1);
+    visibility: hidden;
+  }
+
+  .menuNavItem__label::after {
+    height: 2px;
+    bottom: .1em;
+
+  }
+
+  .p-headerLogo {
+    height: 3.75rem;
+    left: 2.5rem;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    width: 10rem;
+  }
+
+  .p-header {
+    height: 5.25rem;
+    padding: 0 2.5rem;
+  }
+
+  .nav-item>a {
+    padding: .4em .8em;
+    position: relative;
+  }
+}

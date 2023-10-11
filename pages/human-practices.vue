@@ -30,6 +30,8 @@
 
                 </nav>
               </div>
+              <button id="backToTop" title="Go to top" v-show="showBackToTop" @click="scrollToTop">Back to Top</button>
+
 
             <div id = "content-main" class="col-lg-9">
               <div class="box-container">

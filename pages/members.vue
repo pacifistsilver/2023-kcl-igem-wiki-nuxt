@@ -1,181 +1,162 @@
 <template>
-  <!-- not happy with the current style -->
   <header>
-    <div class="team-tabs-header bg" style= "
+    <div class="team-tabs-header bg" style="
       background:url(https://static.igem.wiki/teams/4584/wiki/member-pics/3bfa7c0e-8c4c-4cbb-92a9-e32e00a644ef.jpeg) 
       fixed center; 
       background-size:cover">
-          <h1 class = "header-text">Team Members</h1>
-          
+      <h1 class="header-text">Team Members</h1>
+
     </div>
   </header>
   <main>
-    <section class = "team-tabs">
-      <div class = "container">
-            <div class = "team-tabs-people">
-              <div class = "team-tabs-people-row row">
-                <div class = "teams-tab-person col-lg-3 ">
-                  <div class = "teams-tab-person-img">
-                    <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img" alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
-                  </div>
-                  <div class = "teams-tab-person-info">
-                    <p class="team-tabs-person-name-title">Asmae Ait Abdallah</p>
-                    <p class="team-tabs-person-name-desc">Team Leader</p>
-                  </div>
-                </div>
-                <div class = "teams-tab-person col-lg-3">
-                  <div class = "teams-tab-person-img">
-                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/julia.jpg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/julia.jpg">
-                  </div>
-                  <div class = "teams-tab-person-info">
-                    <p class="team-tabs-person-name-title">Julija Gellere</p>
-                    <p class="team-tabs-person-name-desc">Team Leader</p>
-                  </div>
-                </div>
-                <div class = "teams-tab-person col-lg-3">
-                  <div class = "teams-tab-person-img">
-                    <img data-src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822" class="person-img" alt="DOG" src="https://www.dogecore.com/cdn/shop/files/thicc_100x.png?v=1669641822">
-                  </div>
-                  <div class = "teams-tab-person-info">
-                    <p class="team-tabs-person-name-title">I Cheng Kan</p>
-                    <p class="team-tabs-person-name-desc">Dry Lab</p>
-                  </div>
-                </div>
-                <div class = "teams-tab-person col-lg-3">
-                  <div class = "teams-tab-person-img">
-                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/tiffie.jpeg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/tiffie.jpeg">
-                  </div>
-                  <div class = "teams-tab-person-info">
-                    <p class="team-tabs-person-name-title">Tiffanie Dihardjo</p>
-                    <p class="team-tabs-person-name-desc">Wet Lab</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <div class = "team-tabs-people">
-              <div class = "team-tabs-people-row row">
-                <div class = "teams-tab-person col-lg-3 ">
-                  <div class = "teams-tab-person-img">
-                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/pema.png" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/pema.png">
-                  </div>
-                  <div class = "teams-tab-person-info">
-                    <p class="team-tabs-person-name-title">Pema Tsering</p>
-                    <p class="team-tabs-person-name-desc">Dry Lab</p>
-                  </div>
-                </div>
-                <div class = "teams-tab-person col-lg-3">
-                  <div class = "teams-tab-person-img">
-                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/hamza.jpg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/hamza.jpg">
-                  </div>
-                  <div class = "teams-tab-person-info">
-                    <p class="team-tabs-person-name-title">Hamza Haji Nur</p>
-                    <p class="team-tabs-person-name-desc">Social Media</p>
-                  </div>
-                </div>
-                <div class = "teams-tab-person col-lg-3">
-                  <div class = "teams-tab-person-img">
-                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/dan.jpg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/dan.jpg">
-                  </div>
-                  <div class = "teams-tab-person-info">
-                    <p class="team-tabs-person-name-title">Daniel Wei Luo</p>
-                    <p class="team-tabs-person-name-desc">Dry Lab</p>
-                  </div>
-                </div>
-                <div class = "teams-tab-person col-lg-3">
-                  <div class = "teams-tab-person-img">
-                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/gigi.jpg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/gigi.jpg">
-                  </div>
-                  <div class = "teams-tab-person-info">
-                    <p class="team-tabs-person-name-title">Wing Gee Shum</p>
-                    <p class="team-tabs-person-name-desc">Social Media</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>            <div class = "team-tabs-people">
-              <div class = "team-tabs-people-row row">
-                <div class = "teams-tab-person col-lg-3 ">
-                  <div class = "teams-tab-person-img">
-                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/nicole.jpeg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/nicole.jpeg">
-                  </div>
-                  <div class = "teams-tab-person-info">
-                    <p class="team-tabs-person-name-title">Nicole Salem </p>
-                    <p class="team-tabs-person-name-desc">Human Practices</p>
-                  </div>
-                </div>
-                <div class = "teams-tab-person col-lg-3">
-                  <div class = "teams-tab-person-img">
-                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/rheima.jpeg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/rheima.jpeg">
-                  </div>
-                  <div class = "teams-tab-person-info">
-                    <p class="team-tabs-person-name-title">Rheima Saptari</p>
-                    <p class="team-tabs-person-name-desc">Wetlab</p>
-                  </div>
-                </div>
-                <div class = "teams-tab-person col-lg-3">
-                  <div class = "teams-tab-person-img">
-                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/jon.jpeg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/jon.jpeg">
-                  </div>
-                  <div class = "teams-tab-person-info">
-                    <p class="team-tabs-person-name-title">Jonathan Collard </p>
-                    <p class="team-tabs-person-name-desc">Human Practices</p>
-                  </div>
-                </div>
-                <div class = "teams-tab-person col-lg-3">
-                  <div class = "teams-tab-person-img">
-                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/sri.jpeg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/sri.jpeg">
-                  </div>
-                  <div class = "teams-tab-person-info">
-                    <p class="team-tabs-person-name-title">Sri Gullapalli</p>
-                    <p class="team-tabs-person-name-desc">Wetlab</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-                        <div class = "team-tabs-people">
-              <div class = "team-tabs-people-row row">
-                <div class = "teams-tab-person col-lg-3 ">
-                  <div class = "teams-tab-person-img">
-                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/kati.jpg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/kati.jpg">
-                  </div>
-                  <div class = "teams-tab-person-info">
-                    <p class="team-tabs-person-name-title">Katalin Kovacs</p>
-                    <p class="team-tabs-person-name-desc">Wetlab</p>
-                  </div>
-                </div>
-                <div class = "teams-tab-person col-lg-3">
-                  <div class = "teams-tab-person-img">
-                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/dan2.jpg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/dan2.jpg">
-                  </div>
-                  <div class = "teams-tab-person-info">
-                    <p class="team-tabs-person-name-title">Daniella Cetta</p>
-                    <p class="team-tabs-person-name-desc">Wetlab</p>
-                  </div>
-                </div>
-                <div class = "teams-tab-person col-lg-3">
-                  <div class = "teams-tab-person-img">
-                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/wren.jpg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/wren.jpg">
-                  </div>
-                  <div class = "teams-tab-person-info">
-                    <p class="team-tabs-person-name-title">Uyen Tran</p>
-                    <p class="team-tabs-person-name-desc">Wetlab</p>
-                  </div>
-                </div>
-                <div class = "teams-tab-person col-lg-3">
-                  <div class = "teams-tab-person-img">
-                    <img data-src="https://static.igem.wiki/teams/4584/wiki/member-pics/margherita.jpeg" class="person-img" alt="DOG" src="https://static.igem.wiki/teams/4584/wiki/member-pics/margherita.jpeg">
-                  </div>
-                  <div class = "teams-tab-person-info">
-                    <p class="team-tabs-person-name-title">Margherita Autelitano</p>
-                    <p class="team-tabs-person-name-desc">Drylab</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
+    <div class="container">
+      <h2 class = "m-memberslist__header">Team Members</h2>
+      <div class="m-memberslist">
+        <div class="m-memberslist__inner">
+          <img class="m-memberslist__img"
+            src="https://static.igem.wiki/teams/4584/wiki/member-pics/asmae.jpg">
+          <div class="m-memberlist__label">
+            <div class="m-memberlist__labelTitle">Asmae Ait Abdallah</div>
+            <div class="m-memberlist__labelDesc">BSc Neuroscience</div>
+            <div class="m-memberlist__labelArea">Team Lead</div>
           </div>
-    </section>
+        </div>
+        <div class="m-memberslist__inner">
+          <img class="m-memberslist__img"
+            src="https://static.igem.wiki/teams/4584/wiki/member-pics/daniel.jpg">
+          <div class="m-memberlist__label">
+            <div class="m-memberlist__labelTitle">Daniel Luo</div>
+            <div class="m-memberlist__labelDesc">BSc Biochemistry</div>
+            <div class="m-memberlist__labelArea">Wiki Development</div>
+          </div>
+        </div>
+        <div class="m-memberslist__inner">
+          <img class="m-memberslist__img"
+            src="https://static.igem.wiki/teams/4584/wiki/member-pics/daniella.jpg">
+          <div class="m-memberlist__label">
+            <div class="m-memberlist__labelTitle">Daniella Cetta</div>
+            <div class="m-memberlist__labelDesc">BSc Chemistry with Biomedicine</div>
+            <div class="m-memberlist__labelArea">Dry Lab</div>
+          </div>
+        </div>
+        <div class="m-memberslist__inner">
+          <img class="m-memberslist__img"
+            src="https://static.igem.wiki/teams/4584/wiki/member-pics/gigi.jpg">
+          <div class="m-memberlist__label">
+            <div class="m-memberlist__labelTitle">Wing Gee Shum</div>
+            <div class="m-memberlist__labelDesc">BSc Neuroscience</div>
+            <div class="m-memberlist__labelArea">Education</div>
+          </div>
+        </div>
+        <div class="m-memberslist__inner">
+          <img class="m-memberslist__img"
+            src="https://static.igem.wiki/teams/4584/wiki/member-pics/hamza.jpg">
+          <div class="m-memberlist__label">
+            <div class="m-memberlist__labelTitle">Hamza Haji Nur</div>
+            <div class="m-memberlist__labelDesc">BSc Global Health</div>
+            <div class="m-memberlist__labelArea">Human Practices</div>
+          </div>
+        </div>
+        <div class="m-memberslist__inner">
+          <img class="m-memberslist__img"
+            src="https://static.igem.wiki/teams/4584/wiki/member-pics/jonathan.jpg">
+          <div class="m-memberlist__label">
+            <div class="m-memberlist__labelTitle">Jonathan Collard</div>
+            <div class="m-memberlist__labelDesc">BSc Molecular Genetics</div>
+            <div class="m-memberlist__labelArea">Wet Lab</div>
+          </div>
+        </div>
+        <div class="m-memberslist__inner">
+          <img class="m-memberslist__img"
+            src="https://static.igem.wiki/teams/4584/wiki/member-pics/julia.jpg">
+          <div class="m-memberlist__label">
+            <div class="m-memberlist__labelTitle">Julija Gellere</div>
+            <div class="m-memberlist__labelDesc">BSc Biochemistry</div>
+            <div class="m-memberlist__labelArea">Team Lead</div>
+          </div>
+        </div>
+        <div class="m-memberslist__inner">
+          <img class="m-memberslist__img"
+            src="https://static.igem.wiki/teams/4584/wiki/member-pics/kati.jpg">
+          <div class="m-memberlist__label">
+            <div class="m-memberlist__labelTitle">Katalin Kovacs</div>
+            <div class="m-memberlist__labelDesc">BSc Biochemistry</div>
+            <div class="m-memberlist__labelArea">Wet Lab</div>
+          </div>
+        </div>
+        <div class="m-memberslist__inner">
+          <img class="m-memberslist__img"
+            src="https://static.igem.wiki/teams/4584/wiki/member-pics/margherita.jpg">
+          <div class="m-memberlist__label">
+            <div class="m-memberlist__labelTitle">Margherita Autelitano</div>
+            <div class="m-memberlist__labelDesc">BSc Biophysics</div>
+            <div class="m-memberlist__labelArea">Dry Lab</div>
+          </div>
+        </div>
+        <div class="m-memberslist__inner">
+          <img class="m-memberslist__img"
+            src="https://static.igem.wiki/teams/4584/wiki/member-pics/nicole.jpg">
+          <div class="m-memberlist__label">
+            <div class="m-memberlist__labelTitle">Nicole Salem</div>
+            <div class="m-memberlist__labelDesc">BSc Pharmacology</div>
+            <div class="m-memberlist__labelArea">Human Practices</div>
+          </div>
+        </div>
+        <div class="m-memberslist__inner">
+          <img class="m-memberslist__img"
+            src="https://static.igem.wiki/teams/4584/wiki/member-pics/pema.jpg">
+          <div class="m-memberlist__label">
+            <div class="m-memberlist__labelTitle">Pema Tsering</div>
+            <div class="m-memberlist__labelDesc">BSc Biochemistry</div>
+            <div class="m-memberlist__labelArea">Wiki Development</div>
+          </div>
+        </div>
+        <div class="m-memberslist__inner">
+          <img class="m-memberslist__img"
+            src="https://static.igem.wiki/teams/4584/wiki/member-pics/sri.jpg">
+          <div class="m-memberlist__label">
+            <div class="m-memberlist__labelTitle">Sri Vidya Niharika Gullapalli</div>
+            <div class="m-memberlist__labelDesc">BSc Biomedical Science</div>
+            <div class="m-memberlist__labelArea">Wet Lab</div>
+          </div>
+        </div>
+        <div class="m-memberslist__inner">
+          <img class="m-memberslist__img"
+            src="https://static.igem.wiki/teams/4584/wiki/member-pics/tiffanie.jpg">
+          <div class="m-memberlist__label">
+            <div class="m-memberlist__labelTitle">Tiffanie Victoria Dihardjo</div>
+            <div class="m-memberlist__labelDesc">BSc Biochemistry</div>
+            <div class="m-memberlist__labelArea">Wet Lab</div>
+          </div>
+        </div>
+        <div class="m-memberslist__inner">
+          <img class="m-memberslist__img"
+            src="https://static.igem.wiki/teams/4584/wiki/member-pics/tiffany.jpg">
+          <div class="m-memberlist__label">
+            <div class="m-memberlist__labelTitle">I Cheng Kan</div>
+            <div class="m-memberlist__labelDesc">BSc Biomedical Engineering</div>
+            <div class="m-memberlist__labelArea">Dry Lab</div>
+          </div>
+        </div>
+        <div class="m-memberslist__inner">
+          <img class="m-memberslist__img"
+            src="https://static.igem.wiki/teams/4584/wiki/member-pics/wren.jpg">
+          <div class="m-memberlist__label">
+            <div class="m-memberlist__labelTitle">Uyen Tran</div>
+            <div class="m-memberlist__labelDesc">BSc Biochemistry</div>
+            <div class="m-memberlist__labelArea">Wet Lab</div>
+          </div>
+        </div>
+        <div class="m-memberslist__inner">
+          <img class="m-memberslist__img"
+            src="https://static.igem.wiki/teams/4584/wiki/member-pics/rheima.jpg">
+          <div class="m-memberlist__label">
+            <div class="m-memberlist__labelTitle">Rheima Graciella Saptari</div>
+            <div class="m-memberlist__labelDesc">BSc Biochemistry</div>
+            <div class="m-memberlist__labelArea">Human Practices</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
