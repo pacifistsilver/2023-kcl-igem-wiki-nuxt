@@ -34,38 +34,6 @@
     </div>
     <div>
 
-      <header class="content">
-        <div class="index_p-contentsHeader row">
-          <div class="index_p-contentsHeader_inner col-8">
-            <ol class="index_p-card" style="--m: 4; --tan: 0.41">
-              <li style="--i: 1" class="index_p-card__inner">
-                <span class="index_p-cardItem__label">Learn</span>
-              </li>
-              <li style="--i: 2" class="index_p-card__inner">
-                <span class="index_p-cardItem__label">Design</span>
-              </li>
-              <li style="--i: 3" class="index_p-card__inner">
-                <span class="index_p-cardItem__label">Build</span>
-              </li>
-              <li style="--i: 4" class="index_p-card__inner">
-                <span class="index_p-cardItem__label">Test</span>
-              </li>
-            </ol>
-          </div>
-          <div class="col-4">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                  content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
       <main>
         <div class="container">
           <div class="row">
@@ -78,17 +46,19 @@
                   <li><a href="#colorectal-cancer">2. Colorectal Cancer</a></li>
                   <li><a href="#solution">3. The Solution</a></li>
                   <li><a href="#project-goals">4. Project Goals</a></li>
-                  <li><a href="#references">5. References</a></li>
+                  <li><a href="#project-goals">5. Motivation</a></li>
+
+                  <li><a href="#references">6. References</a></li>
                 </ul>
 
               </nav>
             </div>
 
 
-            <div id="description-content" class="col-lg-9">
+            <div id="content-main" class="col-lg-9">
 
               <section id="project-description" data-aos="fade-up">
-                <h2 id="1" class="bold-italic adjusted-section box-shape" style="text-align: center; margin-top: 30px;">Introduction
+                <h2 id="1" class="bold-italic adjusted-section box-shape" style="text-align: center">1. Introduction
                 </h2>
                 <p>
                   The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled
@@ -108,7 +78,8 @@
               </section>
 
               <section id="colorectal-cancer" data-aos="fade-up">
-                <h3 id="2" class="bold-italic adjusted-section box-shape" style="text-align: center;">Colorectal Cancer: Defining
+                <h3 id="2" class="bold-italic adjusted-section box-shape" style="text-align: center;">2. Colorectal
+                  Cancer: Defining
                   the problem</h3>
                 <p>Colorectal cancer (CRC) ranks amongst the most prevalent oncological diseases, placing fourth in the
                   United Kingdom and third globally according to 2022 NHS data, with approximately two million new
@@ -160,7 +131,8 @@
                 <hr>
               </section>
               <section id="solution" data-aos="fade-up">
-                <h3 id="3" class="bold-italic adjusted-section box-shape" style="text-align: center;">Our solution: Synthetic
+                <h3 id="3" class="bold-italic adjusted-section box-shape" style="text-align: center;">3. Our solution:
+                  Synthetic
                   Biology</h3>
                 <p>Recognising the challenges associated with the diagnosis of CRC,
                   ColoEcho is committed to devise a non-invasive and patient-friendly screening method that can be
@@ -182,23 +154,29 @@
                   (Shapiro, 2014).
                 </p>
                 <hr>
-                <h3 id="4" class="bold-italic adjusted-section box-shape" style="text-align: center;">Our motivation to tackle
-                  Colorectal Cancer</h3>
-                <p>Colorectal cancer holds a deep personal significance to us. As a diverse team, many of our members come
-                  from
-                  regions where late-stage diagnoses are common due to insufficient screening programs and poor disease
-                  awareness.
-                  These late-stage diagnoses significantly reduce effective treatments, resulting in poorer prognoses and
-                  culminating in high mortality rates. We understand the profound implications of this disease, which
-                  can impact any individual, directly or indirectly, as those dear to us, or even ourselves,
-                  could be at risk. This prompted us to contribute to the fight against colorectal cancer with the
-                  aim of enhancing early diagnosis and, consequently, improving patient survival outcomes.
-                </p>
-                <hr>
+                <section id="motivation" data-aos="fade-up">
+                  <h3 id="4" class="bold-italic adjusted-section box-shape" style="text-align: center;">4. Our motivation
+                    to tackle
+                    Colorectal Cancer</h3>
+                  <p>Colorectal cancer holds a deep personal significance to us. As a diverse team, many of our members
+                    come
+                    from
+                    regions where late-stage diagnoses are common due to insufficient screening programs and poor disease
+                    awareness.
+                    These late-stage diagnoses significantly reduce effective treatments, resulting in poorer prognoses
+                    and
+                    culminating in high mortality rates. We understand the profound implications of this disease, which
+                    can impact any individual, directly or indirectly, as those dear to us, or even ourselves,
+                    could be at risk. This prompted us to contribute to the fight against colorectal cancer with the
+                    aim of enhancing early diagnosis and, consequently, improving patient survival outcomes.
+                  </p>
+                  <hr>
+                </section>
               </section>
 
               <section id="project-goals" data-aos="fade-up">
-                <h3 id="5" class="bold-italic adjusted-section box-shape" style="text-align: center;">Project Goals</h3>
+                <h3 id="5" class="bold-italic adjusted-section box-shape" style="text-align: center;">5. Project Goals
+                </h3>
                 <ul style="font-size: 20px; margin-top: 30px;">
                   <li>Design a plasmid containing ligand-inducible gene expression system for the CRC biomarker(s) and
                     transform it to a competent E.coli Nissl strain.</li>
@@ -213,9 +191,10 @@
               <button id="backToTop" title="Go to top" v-show="showBackToTop" @click="scrollToTop">Back to Top</button>
 
               <section id="references" data-aos="fade-up" class="box4">
-                <h3 id="6" class="bold-italic box-reference hovering" @click="toggleReferences" style="text-align: center; color: white;">
+                <h3 id="6" class="bold-italic box-reference hovering" @click="toggleReferences"
+                  style="text-align: center; color: white;">
                   <div class="reference-header">
-                    References
+                    6. References
                   </div>
                   <span class="close-btn" @click.stop="toggleReferences">×</span>
                 </h3>
