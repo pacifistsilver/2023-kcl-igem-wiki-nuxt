@@ -71,6 +71,7 @@
                       <li> <b>Impact</b>: With different populations, we may want to impact them to (1) be curious, (2) be
                         invested, or (3) be proactive.</li>
                     </ul>
+                    <img class="wiki-image-container" src="https://static.igem.wiki/teams/4584/wiki/education/educationpic1.png" alt="education">
                     </p>
                   </section>
                   <br>
