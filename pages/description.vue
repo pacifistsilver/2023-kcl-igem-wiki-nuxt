@@ -6,20 +6,23 @@
       </div>
     </header>
     <main>
-      <main>
-        <div class="container">
-          <div class="row">
-            <div class="col lg-3">
-              <nav class="section-nav">
-                <h3>contents</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col lg-3">
+            <nav class="section-nav">
+              <h3>contents</h3>
 
-                  <ul class="section-nav-list">  
-                    <li><a  href="#project-description">Introduction</a></li>
-                    <li><a  href="#colorectal-cancer">Colorectal Cancer</a></li>                  
-                    <li><a  href="#solution">The Solution</a></li>                 
-                    <li><a  href="#project-goals">Project Goals</a></li>             
-                    <li><a href="#references">References</a></li>            
-                  </ul>   
+              <ul class="section-nav-list">
+                <li><a href="#project-description">1. Introduction</a></li>
+                <li><a href="#colorectal-cancer">2. Colorectal Cancer</a></li>
+                <li><a href="#current-solutions">3. Current Solutions</a></li>
+
+                <li><a href="#solution">4. Our Solution</a></li>
+                <li><a href="#project-goals">5. Project Goals</a></li>
+                <li><a href="#project-goals">6. Motivation</a></li>
+
+                <li><a href="#references">7. References</a></li>
+              </ul>
 
             </nav>
           </div>
@@ -27,24 +30,57 @@
 
           <div id="content-main" class="col-lg-9">
 
-              <section id = "project-description" data-aos = "fade-up">
-                <h2 id="1" class="bold-italic adjusted-section" style="text-align: center; margin-top: 30px;">Introduction</h2>
-                <p >
-                  The origins of ColoEcho stem from our fascination with the distinct acoustic properties of gas-filled molecules, 
-                  which can be contrasted to that of normal tissues and detected by ultrasound imaging. 
-                  Our journey officially began after conversing with one of our team member’s head of department, 
-                  who extensively researches the therapeutic application of such molecules. 
-                  This discussion expanded our perspective on the vast potential for widening the clinical application of ultrasound. 
-                  Upon further research, we discovered a biological alternative to microbubbles known as gas vesicles. 
-                  These structures are formed by certain proteins that are expressed in select aquatic bacteria species. 
-                  The ability to condition its expression and, thus, the signal, makes gas vesicles a well-suited component 
-                  for an ultrasound-detectable biosensor.
-                </p>
-                <div class="line-container">
-                  <div class="line line-left" data-aos="fade-right"></div>
-                  <div class="line line-right" data-aos="fade-left"></div>
-                </div>
-              </section>  
+            <section id="project-description" data-aos="fade-up">
+              <h2 id="1" class="bold-italic adjusted-section box-shape" style="text-align: center">1. Introduction
+              </h2>
+              <p>
+                Colorectal cancer is the third most common cancer worldwide and the second most deadly. According to the
+                World Health Organization (WHO), there were more than 1.9 million new cases of colorectal cancer in 2020
+                and over 930,000 deaths. This problem does not appear to be reaching a resolution as the WHO expects an
+                increase to 3.2 million new cases per year by 2040 (63% increase) and 1.6 million deaths per year (73%
+                increase). In the UK alone, colorectal cancer is the second most deadly cancer, constituting 10% of all
+                cancer deaths. However, the morality rate of colorectal cancer can be significantly reduced if it is
+                identified in the earlier stages. According to Cancer Research UK, about 10% of those diagnosed with
+                stage 4 colorectal cancer will survive for 5 years or more post-diagnosis, but if diagnosed in the
+                earlier stages (stages 1 and 2), about 85-90% of people will survive for 5 years or more. Despite this,
+                early detection of colorectal cancer is difficult to achieve as it is often asymptomatic and significant
+                symptoms such as polyps, colon disfiguration, substantial tumour size, and abdominal pain generally
+                manifest after stage 2 (Ann, 2006). Current detection methods also do not allow for accessible or
+                routine screening, which hinders rates of early diagnosis.
+              </p>
+              <hr>
+            </section>
+            <section id="current-solutions" data-aos="fade-up">
+              <h2 id="1" class="bold-italic adjusted-section box-shape" style="text-align: center">2. Current Solutions
+              </h2>
+              <p>
+                Colorectal cancer is the third most common cancer worldwide and the second most deadly. According to the
+                World Health Organization (WHO), there were more than 1.9 million new cases of colorectal cancer in 2020
+                and over 930,000 deaths. This problem does not appear to be reaching a resolution as the WHO expects an
+                increase to 3.2 million new cases per year by 2040 (63% increase) and 1.6 million deaths per year (73%
+                increase). In the UK alone, colorectal cancer is the second most deadly cancer, constituting 10% of all
+                cancer deaths. However, the morality rate of colorectal cancer can be significantly reduced if it is
+                identified in the earlier stages. According to Cancer Research UK, about 10% of those diagnosed with
+                stage 4 colorectal cancer will survive for 5 years or more post-diagnosis, but if diagnosed in the
+                earlier stages (stages 1 and 2), about 85-90% of people will survive for 5 years or more. Despite this,
+                early detection of colorectal cancer is difficult to achieve as it is often asymptomatic and significant
+                symptoms such as polyps, colon disfiguration, substantial tumour size, and abdominal pain generally
+                manifest after stage 2 (Ann, 2006). Current detection methods also do not allow for accessible or
+                routine screening, which hinders rates of early diagnosis.
+              </p>
+              <hr>
+            </section>
+            <section id="colorectal-cancer" data-aos="fade-up">
+              <h3 id="2" class="bold-italic adjusted-section box-shape" style="text-align: center;">3. Colorectal
+                Cancer: Defining
+                the problem</h3>
+              <p>The gold standard test for colorectal cancer is the colonoscopy. The procedure involves the insertion
+                of a scope through the anus into the colorectal region. If a polyp is present, it is biopsied and
+                checked for the presence of colorectal cancer. However, due to the highly invasive nature of the
+                colonoscopy, there are risks associated with the procedure, such as bleeding and perforations. Hence,
+                colonoscopies should not be carried out repeatedly as this could put patients at an unnecessary risk for
+                complications.
+              </p>
 
               <p>Another alternative to the colonoscopy is the virtual colonoscopy that utilises CT-scan technology to
                 screen for malignant tissue in the colon lining without the insertion of a scope. While less invasive
@@ -141,111 +177,35 @@
                   age or gender. This prompted us to contribute to the fight against colorectal cancer with the aim of
                   enhancing early diagnosis and, consequently, improving patient survival outcomes.
                 </p>
-                <div class="line-container">
-                  <div class="line line-left" data-aos="fade-right"></div>
-                  <div class="line line-right" data-aos="fade-left"></div>
-                </div>
-              </section>
-              <section id = "solution" data-aos = "fade-up">
-                <h3 id="3" class="bold-italic adjusted-section" style="text-align: center;">Our solution: Synthetic Biology</h3>
-                <p >Recognising the challenges associated with the diagnosis of CRC, 
-                  ColoEcho is committed to devise a non-invasive and patient-friendly screening method that can be 
-                  integrated into the healthcare system adressing the limitations of current detection methods. 
-                  Our team has devised a CRC screening procedure in the form of a probiotic pill, designed to emit an 
-                  enhanced ultrasound contrast upon detection of a CRC biomarker, utilising ultrasonography to observe this. 
-                  Ultrasound imaging is the chosen modality for its safe, cost-efficient, and easily accessible nature.
-                </p> 
-                <div class="wiki-image-container">
-                    <img src="https://static.igem.wiki/teams/4584/wiki/biorender-figures/biorender-figures/newbiorender.png" alt="biorender">
-                </div>
-                <p >To construct the ultrasound-biosensor system, we plan to induce the production of gas vesicles in engineered 
-                  probiotic E.coli Nissel strain when the biomarker-specific synthetic receptor binds to CRC antigen. 
-                  Gas vesicles (GVs) is air-filled aquatic bacterial proteins which oscillates non-linearly with ultrasound wave, 
-                  this unique acoustic property results in enhanced ultrasound signal contrast detection, as demonstrated by the 
-                  Shapiro lab. Thus, the expression of the gene encoding for GVs, ARG1 can be used as a reporting gene (Shapiro, 2014).
-                </p>
-                <div class="wiki-image-container">
-                    <img src="https://static.igem.wiki/teams/4584/wiki/biorender-figures/biorender-figures/newbiorender2.png" alt="biorender2">
-                </div>
-                <p>
-                  Focusing on the initial steps of the ultrasound-biosensor system, we delve into the solid tumor environment 
-                  where this intricate mechanism begins. Within this tumor milieu, L-lactate, a prominent metabolite, is 
-                  present in elevated concentrations. Our engineered probiotic E. coli Nissle strain is equipped with a 
-                  lactate permease, a protein transporter specifically tailored to facilitate the uptake of L-lactate. As 
-                  L-lactate is transported into the cell, it interacts with the Lldr regulatory protein. This binding event 
-                  triggers the activation of the P_Hyper spank promoter. Sequentially, this activation sets off a cascade: 
-                  firstly, the P_AlPaGA +1 promoter is induced, and subsequently, the ARG2 Serratia gene cluster is expressed. 
-                  This particular gene cluster holds the blueprint for the synthesis of gas vesicles, buoyant, 
-                  air-filled protein structures that exhibit unique acoustic properties.
-                </p>
                 <hr>
-                <div class="wiki-image-container">
-                    <img src="https://static.igem.wiki/teams/4584/wiki/biorender-figures/biorender-figures/newbiorender3.png" alt="biorender3">
-                </div>
-                <p>
-                  In the absence of a solid tumor, L-lactate levels remain unchanged. Without this key metabolite, 
-                  the engineered E. coli Nissle strain remains inactive. As a result, the cascade leading to the production 
-                  of gas vesicles is not triggered, ensuring that no gas vesicles are synthesized in the absence of the tumor 
-                  signature.
-                </p>
-                <div class="wiki-image-container">
-                    <img src="https://static.igem.wiki/teams/4584/wiki/biorender-figures/biorender-figures/newrnap-in-plasmid-system-blocked-close-up-1.png" alt="biorender4">
-                </div>
-                <p>
-                  Diving deeper into the molecular intricacies of our engineered system, the fourth figure provides a 
-                  detailed visualization of the role of RNA polymerase (RNAP) within the plasmid context. 
-                  Under specific conditions, RNAP becomes dissociated, preventing its binding to the promoter regions in 
-                  the plasmid. This dissociation acts as a molecular switch, halting the transcriptional machinery. 
-                  Without RNAP's active involvement, the ARG2 gene remains transcriptionally silent. This finely-tuned 
-                  regulation ensures that the ARG2 gene, pivotal for gas vesicle production, is not transcribed, 
-                  thereby negating the synthesis of gas vesicles in the system.
-                </p>
-                <div class="wiki-image-container">
-                    <img src="https://static.igem.wiki/teams/4584/wiki/biorender-figures/biorender-figures/biorender5.png" alt="biorender5">
-                </div>
-                <p>
-                  This figure provides a vivid depiction of the gas vesicle (GV) structure. 
-                  Characterized by its unique cylindrical form, the GV is a marvel of nature, optimized for buoyancy. 
-                  The diagram underscores its intricate architecture and offers a scale reference, 
-                  highlighting its nanoscale dimensions. This compact size, coupled with its distinctive structure, 
-                  underscores the vesicle's ability to resonate effectively with ultrasound waves.
-                </p>
-                <div class="line-container">
-                  <div class="line line-left" data-aos="fade-right"></div>
-                  <div class="line line-right" data-aos="fade-left"></div>
-                </div>
-                <h3 id="4" class="bold-italic adjusted-section" style="text-align: center;">Our motivation to tackle Colorectal Cancer</h3>
-                <p >Colorectal cancer holds a deep personal significance to us. As a diverse team, many of our members come from 
-                  regions where late-stage diagnoses are common due to insufficient screening programs and poor disease awareness. 
-                  These late-stage diagnoses significantly reduce effective treatments, resulting in poorer prognoses and 
-                  culminating in high mortality rates. We understand the profound implications of this disease, which 
-                  can impact any individual, directly or indirectly, as those dear to us, or even ourselves, 
-                  could be at risk. This prompted us to contribute to the fight against colorectal cancer with the 
-                  aim of enhancing early diagnosis and, consequently, improving patient survival outcomes.
-                </p>
-                <div class="line-container">
-                  <div class="line line-left" data-aos="fade-right"></div>
-                  <div class="line line-right" data-aos="fade-left"></div>
-                </div>
               </section>
+            </section>
 
-              <section id = "project-goals" data-aos = "fade-up">
-                <h3 id="5" class="bold-italic adjusted-section" style="text-align: center;">Project Goals</h3>
-                <ul style="font-size: 20px; margin-top: 30px;">
-                  <li>Design a plasmid containing ligand-inducible gene expression system for the CRC biomarker(s) and transform it to a competent E.coli Nissl strain.</li>
-                  <li>Validate the sensitivity of the system in detecting biosensor.</li>
-                  <li>Modify the plasmid containing ARG1 gene to be biosensor system-compatible.</li>
-                  <li>Transform modified plasmid containing ARG1 into competent E.Coli Nissl strain.</li>
-                  <li>Verify the GVs expression when signal is detected with ultrasound.</li>
-                </ul>
-                <div class="line-container">
-                  <div class="line line-left" data-aos="fade-right"></div>
-                  <div class="line line-right" data-aos="fade-left"></div>
+            <section id="project-goals" data-aos="fade-up">
+              <h3 id="5" class="bold-italic adjusted-section box-shape" style="text-align: center;">6. Project Goals
+              </h3>
+              <ul style="font-size: 20px; margin-top: 30px;">
+                <li>Design a plasmid containing ligand-inducible gene expression system for the CRC biomarker(s) and
+                  transform it to a competent E.coli Nissl strain.</li>
+                <li>Validate the sensitivity of the system in detecting biosensor.</li>
+                <li>Modify the plasmid containing ARG1 gene to be biosensor system-compatible.</li>
+                <li>Transform modified plasmid containing ARG1 into competent E.Coli Nissl strain.</li>
+                <li>Verify the GVs expression when signal is detected with ultrasound.</li>
+              </ul>
+              <hr>
+            </section>
+
+            <button id="backToTop" title="Go to top" v-show="showBackToTop" @click="scrollToTop">Back to Top</button>
+
+            <section id="references" data-aos="fade-up" class="box4">
+              <h3 id="6" class="bold-italic box-reference hovering" @click="toggleReferences"
+                style="text-align: center; color: white;">
+                <div class="reference-header">
+                  7. References
                 </div>
-              </section>
-
-              <section id="references" data-aos="fade-up">
-                <h3 id="6" class="bold-italic adjusted-section" style="text-align: center;">References</h3>
+                <span class="close-btn" @click.stop="toggleReferences">×</span>
+              </h3>
+              <div class="references-content" v-show="showReferences">
                 <ul style="font-size: 15px; margin-top: 30px;">
                   <li>
                     <a href="https://doi.org/10.1016/j.amsu.2022.104453" target="_blank">
@@ -328,64 +288,87 @@
                     </a>
                   </li>
                 </ul>
-                <div class="line-container">
-                  <div class="line line-left" data-aos="fade-right"></div>
-                  <div class="line line-right" data-aos="fade-left"></div>
-                </div>
-              </section>
-            </div>  
-          </div> 
-        </div> 
-      </main>
+              </div>
+            </section>
+            <div style="margin-bottom: 50px;"></div>
+          </div>
+        </div>
+      </div>
+    </main>
 
   </div>
 </template>
 <script>
 export default {
   data() {
-      return {
-          showReferences: false, // Add this line
-          currentPage: "Description",
-          observer: null,
-          options: {
-            easing: [0.25, 0.1, 0.25, 1.0],
-            force: true,
-            cancelable: false,
-            x: false,
-            y: true,
-            offset: -80,
-          }
-        }
+    return {
+      currentPage: "Description",
+      observer: null,
+      options: {
+        easing: [0.25, 0.1, 0.25, 1.0],
+        force: true,
+        cancelable: false,
+        x: false,
+        y: true,
+        offset: -80,
+      },
+      showReferences: false,
+      showBackToTop: false // New data property for the button
+    };
   },
   created() {
-      this.observer = new IntersectionObserver(this.onElementObserved, {
-          root: this.$el,
-          threshold: 0.5,
-      });
+    this.observer = new IntersectionObserver(this.onElementObserved, {
+      root: this.$el,
+      threshold: 0.5,
+    });
   },
   mounted() {
-      this.$el.querySelectorAll('section[id]').forEach((section) => {
-          this.observer.observe(section);
-      });
+    this.$el.querySelectorAll('section[id]').forEach((section) => {
+      this.observer.observe(section);
+    });
+
+    // Add the scroll event listener for the "Back to Top" button
+    window.addEventListener("scroll", this.checkScrollPosition);
   },
   beforeDestroy() {
-      this.observer.disconnect();
+    this.observer.disconnect();
+
+    // Remove the scroll event listener
+    window.removeEventListener("scroll", this.checkScrollPosition);
   },
-  methods: {  
+  methods: {
     onElementObserved(entries) {
-        entries.forEach(({ target, isIntersecting }) => {
-            const id = target.getAttribute('id');
-            if (isIntersecting) {
-                this.$el
-                    .querySelector(`div li a[href="#${id}"]`)
-                    .parentElement.classList.add('active');
-            } else {
-                this.$el
-                    .querySelector(`div li a[href="#${id}"]`)
-                    .parentElement.classList.remove('active');
-            }
-        });
+      entries.forEach(({ target, isIntersecting }) => {
+        const id = target.getAttribute('id');
+        if (isIntersecting) {
+          this.$el
+            .querySelector(`div li a[href="#${id}"]`)
+            .parentElement.classList.add('active');
+        } else {
+          this.$el
+            .querySelector(`div li a[href="#${id}"]`)
+            .parentElement.classList.remove('active');
+        }
+      });
     },
-  },
+    toggleReferences() {
+      this.showReferences = !this.showReferences;
+    },
+    // Method to show/hide the "Back to Top" button
+    checkScrollPosition() {
+      if (document.body.scrollTop > window.innerHeight / 2 || document.documentElement.scrollTop > window.innerHeight / 2) {
+        this.showBackToTop = true;
+      } else {
+        this.showBackToTop = false;
+      }
+    },
+    // Method to scroll to the top of the page
+    scrollToTop() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }
+  }
 }
 </script>
+
+
