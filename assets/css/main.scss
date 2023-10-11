@@ -207,27 +207,42 @@ section {
 // contents menu rule
 
 .section-nav {
+    padding-left:0;
+    margin-top:40px;
+    margin-bottom:40px;
+    display:none
+  }
+@media(min-width:992px) {
+.section-nav {
+    display:block;
+}
+}
+.section-nav {
+    width: 200px;
+    padding: 10px;
+    position: -webkit-sticky;
     position: sticky;
-    top: 4.1176470588rem;
-    height: auto;
-    overflow-y: auto;
+    top: 70px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #16324F;
+    transform:translateX(-32%);
 }
 
 .section-nav-header {
     font-size: .8rem;
     font-weight: bold;
-    color: #fff;
+    color: rgb(255, 255, 255);
     letter-spacing: 4px;
     text-transform: uppercase;
 }
 
 .section-nav a {
-    color: #666;
-    font-weight: 500;
-    line-height: 1.2;
-    font-size: 1.1em;
+    font-size: 1.0em;
     text-decoration: none;
+    color: #ffffff;
     transition: all .5s ease-in-out;
+    line-height: 60px;
     display: block;
 }
 
@@ -248,21 +263,12 @@ section {
     color: #999;
     font-size: .8rem;
     font-weight: 600;
-    letter-spacing: 1px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    letter-spacing: 2px;
     text-transform: uppercase;
+    transform: translateX(15%);
 }
-
-
-.section-nav-sublist {
-    margin-top: .6rem;
-    padding-left: 1rem;
-
-}
-
-.section-nav-sublist li:nth-child(n):not(:last-child) {
-    margin-bottom: 0.5rem;
-}
-
 .section-nav a:hover,
 .section-nav a:focus {
     color: #f2765d;
@@ -272,45 +278,34 @@ section {
     color: #f2765d;
     font-weight: 500;
 }
-
 .hovering {
     cursor: pointer;
 }
-
-// backtoTop button //
-#backToTop {
-    display: block;
-    visibility: visible;
-    position: fixed;
-    bottom: 15px;
-    left: 8px;
-    z-index: 99; // Make sure it appears on top of other elements
-    border: none;
-    outline: none;
-    background-color: global.$color-coloblue; // Choose your desired background color
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 4px;
-    font-size: 18px;
-
-    &:hover {
-        background-color: #228ecd; // Color when hovered
-    }
+.adjusted-section {
+    scroll-margin-top: 5vh; /* Adjust this value to fit your header height */
 }
-
-
-// global wiki detail page rules
-
-.p-sectionHeader__label {
-    font-weight: bold;
-    font-style: normal;
-    color: #16324f;
+.line-left {
+    background-image: linear-gradient(-89.97deg, #000000 -1.21%, hsla(0, 0%, 100%, 0) 88.76%);
+    right: 50%;
 }
-
-
-@media(max-width:992px) {
-    .section-nav {
-        display: none;
-    }
+  
+.line-right {
+    background-image: linear-gradient(89.97deg, #000000 -1.21%, hsla(0, 0%, 100%, 0) 88.76%);
+    left: 50%;
 }
+.line {
+    height: 0.1rem;
+    opacity: 0.4;
+    top: -0.43rem;
+    width: 100%;
+    
+}
+.line-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+
+
+  

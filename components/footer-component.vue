@@ -1,11 +1,38 @@
 <template>
-  <footer class="footer">
-    <div class="container" data-aos="fade-up" data-aos-duration="1200">
-      <div class="row mb-4 footer-details">
-        <div class="col-sm-6 logo-footer d-flex align-items-center">
-          <a data-aos="fade-up" data-aos-duration="1200">
-            <img class="myLogo" src="https://static.igem.wiki/teams/4584/wiki/blue-logo-name-white-background-removebg-preview.png"
-              alt="iGEM King's College London" width="160" height=auto>
+<footer class="footer">
+  <div class="container" data-aos = "fade-up" data-aos-duration = "1200">
+    <div class="row mb-4 footer-details">
+      <div class="col-sm-6 logo-footer d-flex align-items-center">
+        <a href = "https://www.kcl.ac.uk/" data-aos = "fade-up" data-aos-duration = "1200">
+          <img src="https://static.igem.wiki/teams/4584/wiki/blue-logo-name-white-background-removebg-preview.png" alt="iGEM King's College London" width= "250" height=auto>
+        </a>
+        <p data-aos = "fade-up" data-aos-duration = "1400">
+          <br>
+          King's College London
+          <br>
+          <br>
+          Guy's Campus
+          <br>
+          <br>
+          kings.igem@gmail.com
+        </p>
+      </div>
+      <div class = "col sm-6 sponsors d-flex align-items-center" data-aos = "fade-up" data-aos-duration = "1000">
+        <div>
+          <a href = "https://www.kclsu.org/">
+            <img src = "https://static.igem.wiki/teams/4584/wiki/t-kcl-uk-kclsu.png">
+          </a>
+          <a href = "https://www.kcl.ac.uk/">
+            <img src = "https://static.igem.wiki/teams/4584/wiki/t-kcl-uk-kres.png">
+          </a>
+          <a href = "https://www.kcl.ac.uk/">
+            <img src="https://static.igem.wiki/teams/4584/wiki/kcl-logo.svg">
+          </a>
+          <a href = "https://uk.neb.com/">
+            <img src = "https://static.igem.wiki/teams/4584/wiki/neb-logo-reversed-tagline2.svg">
+          </a>
+          <a href = "https://www.snapgene.com/">
+            <img src = "https://static.igem.wiki/teams/4584/wiki/logo-snapgene-dotmatics.svg">
           </a>
           <p data-aos="fade-up" data-aos-duration="1400">
             <br>
