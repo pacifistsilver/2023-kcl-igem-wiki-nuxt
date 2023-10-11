@@ -62,23 +62,23 @@
                     <h2 id="list-item-1" class="bold-italic box-shape" style="text-align: center;">1. Introduction
                     </h2>
                     <p>
-                      Our journey began with Caltech student Sophie Dalfonzo's vision, leading to a poster highlighting
-                      gas vesicles' (GV) potential. This curiosity steered us towards nanostructures, eventually bringing
-                      us to Dr. Mikhail Shapiro's pivotal paper on GVs for deep-tissue research in vivo. These structures
-                      offered the unique ability to be located within an organism with minimal impact on the host. We then
-                      asked the question ‘how could these nano-structures be applied?’, and our attention turned towards
-                      diagnostics, focusing on colorectal cancers (CRC), recognising the limited options available for
-                      sufferers in terms of non-invasive diagnostics, like colonoscopy.
-
+                      Our journey began with Caltech student Sophie Dalfonzo's vision, bottled up in a poster, it
+                      contained gas vesicles' (GV) potential. This curiosity steered us towards nanostructures, eventually
+                      bringing us to Dr. Mikhail Shapiro's pivotal paper on GVs for deep-tissue research in vivo. These
+                      structures offered the unique ability to be located within an organism with minimal impact on the
+                      host. We then asked the question ‘how could these nano-structures be applied?’, and our attention
+                      turned towards diagnostics, focusing on colorectal cancers (CRC), recognising the limited options
+                      available for sufferers in terms of non-invasive diagnostics, like colonoscopy.
                     </p>
                     <p>
-                      To address this, we explored lactate promoters and as referenced by Zúñiga and colleagues, they
+                      To address this, we explored expression systems which could be induced by particular biomarkers,
+                      later on landing on L-lactate as our biomarker. As referenced by Zúñiga and colleagues, they
                       developed a promoter capable of functioning under anoxic and glucose-rich conditions—a perfect match
                       for our vision of targeting colorectal cancer, which often presents these challenging environmental
                       conditions. This innovative methodology had yet to be applied comprehensively to cancers as a whole.
-                      Our innovation, a diagnostic tool that harnesses gas vesicle expression within a bacterial vector
-                      that can be imaged by leveraging ultrasound technology.
-                    </p>
+                      Our innovation, had yet to be applied comprehensively to cancers as a whole. We aimed to make this
+                      vision by developing a diagnostic tool that harnesses gas vesicle expression within a bacterial
+                      vector that can be imaged by leveraging ultrasound technology. </p>
                   </section>
                   <section id="cycle1">
                     <h2 id="list-item-2" class="bold-italic box-shape" style="text-align: center;">2. Cycle One -
