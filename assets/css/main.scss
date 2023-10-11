@@ -279,7 +279,8 @@ section {
 
 // backtoTop button //
 #backToTop {
-    display: none; // Initially hidden
+    display: block;
+    visibility: visible;
     position: fixed;
     bottom: 15px;
     left: 8px;
