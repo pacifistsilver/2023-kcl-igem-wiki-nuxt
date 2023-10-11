@@ -436,6 +436,7 @@ export default {
             item.addEventListener("click", handleMenuBackClick);
             console.log(item)
         });
+        // this is quite possibly the worst code I have ever written
     },
 };
 </script>
